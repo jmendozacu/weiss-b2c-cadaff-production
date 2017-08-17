@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<config>
+
+    <modules>
+        <Weiss_SiteSwitcher>
+            <version>0.1.0</version>
+        </Weiss_SiteSwitcher>
+    </modules>
+
+    <global>
+        <blocks>
+            <weiss_siteswitcher>
+                <class>Weiss_SiteSwitcher_Block</class>
+            </weiss_siteswitcher>
+        </blocks>
+
+        <models>
+            <weiss_siteswitcher>
+                <class>Weiss_SiteSwitcher_Model</class>
+            </weiss_siteswitcher>
+        </models>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <weiss_siteswitcher>
+                    <file>weiss_siteswitcher.xml</file>
+                </weiss_siteswitcher>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml>
+        <events>
+            <controller_action_postdispatch_adminhtml_system_config_save>
+                <observers>
+                    <weiss_siteswitcher>
+                        <type>singleton</type>
+                        <class>weiss_siteswitcher/observer</class>
+                        <method>afterAdminhtmlSystemConfigSave</method>
+                    </weiss_siteswitcher>
+                </observers>
+            </controller_action_postdispatch_adminhtml_system_config_save>
+        </events>
+
+        <translate>
+            <modules>
+                <Weiss_SiteSwitcher>
+                    <files>
+                        <default>Weiss_SiteSwitcher.csv</default>
+                    </files>
+                </Weiss_SiteSwitcher>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <design>
+            <site_switcher>
+                <title><![CDATA[Le site de commande en ligne pour les professionnels]]></title>
+                <cms_link_page>home</cms_link_page>
+                <cms_link_label><![CDATA[Tout sur Weiss]]></cms_link_label>
+                <selector_label><![CDATA[Oups ! Je me suis trompé de site...]]></selector_label>
+                <selector_options><![CDATA[Professionnels
+Particuliers (http://www.chocolat-weiss.fr)]]></selector_options>
+                <footer_text><![CDATA[&copy; Weiss 2015. All Right Reserved.]]></footer_text>
+            </site_switcher>
+        </design>
+    </default>
+
+</config>

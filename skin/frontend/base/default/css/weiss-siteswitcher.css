@@ -1,0 +1,288 @@
+﻿
+/**
+ * Weiss SiteSwitcher CSS style sheet
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Jérôme Carrot <jecar@smile.fr>
+ * @copyright  Smile 2015
+ */
+
+/*.header .links {
+	margin:0px;
+	top:0px;
+}
+ 
+.header .header-topbar {
+	padding-top:73px;
+}
+.menu-weiss {
+	top:48px;
+}
+.header .logo {
+	margin-top:68px;
+}*/
+ 
+.weiss-arrow {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/arrow-siteswitcher.png) 0 0 no-repeat;
+}
+
+.site-switcher-container {
+    color: #ffffff;
+    font-family: lato;
+	/*width:100%;
+	z-index:90000;
+	position:relative;*/
+}
+
+.site-switcher-header {
+    background-color: #735e92;
+}
+
+.site-switcher-footer {
+    background-color: #1d1d1b;
+}
+
+.site-switcher-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-switcher-container a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.site-switcher-container .title {
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+.site-switcher-container .title h1 {
+    display: inline;
+    line-height: 46px;
+    font-family: pacifico;
+    font-size: 19px;
+    margin: 0;
+}
+
+.site-switcher-container .footer-text {
+    font-size: 13px;
+    line-height: 70px;
+    color: #879094;
+}
+
+.site-switcher-container .right-selector {
+    line-height: 70px;
+    text-align: right;
+}
+
+.site-switcher-container .weiss-arrow {
+    float: left;
+    margin-right: 12px;
+    margin-left: 28px;
+    position: relative;
+    top: 23px;
+}
+
+.site-switcher-header .right-list {
+    list-style-type: disc;
+    margin-bottom: 2px;
+}
+
+.site-switcher-footer .right-list {
+    list-style-type: none;
+}
+
+.site-switcher-container .right-list li {
+    float: left;
+    margin-left: 32px;
+    font-size: 15px;
+}
+
+.site-switcher-container .right-list li .inner,
+.site-switcher-container .right-selector {
+    font-size: 13px;
+}
+
+.site-switcher-header .right-list li .inner {
+    line-height: 46px;
+}
+
+.site-switcher-footer .right-list li .inner {
+    line-height: 70px;
+}
+
+.site-switcher-container select {
+    border: none;
+    height: 32px;
+    padding: 6px;
+    margin-left: 6px;
+	background-color:#ffffff;
+}
+
+/*
+ * Media query for width < 1280
+ */
+
+@media (max-width: 1279px) {
+
+    .site-switcher-container .title h1 {
+        font-size: 17px;
+    }
+
+    .site-switcher-container .weiss-arrow {
+        margin-left: 12px;
+    }
+
+}
+
+/*
+ * Media query for width < 960
+ */
+
+@media (max-width: 959px) {
+
+    .site-switcher-container .weiss-arrow {
+        margin-left: 0;
+        background-position: 0 -25px;
+        top: -6px;
+    }
+
+    .site-switcher-container .title {
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    .site-switcher-container .title h1 {
+        line-height: 32px;
+    }
+
+    .site-switcher-header .right-list {
+        margin-bottom: 1px;
+    }
+
+    .site-switcher-header .right-list li .inner {
+        line-height: 30px;
+        margin-bottom: 6px;
+    }
+
+    .site-switcher-header .right-list select {
+        position: relative;
+        top: -2px;
+    }
+}
+
+/*
+ * Media query for width < 640
+ */
+
+@media (max-width: 639px) {
+
+    .site-switcher-container .title {
+        margin-top: 8px;
+    }
+
+    .site-switcher-container .title h1 {
+        line-height: 22px;
+    }
+
+    .site-switcher-container .weiss-arrow {
+        top: -8px;
+        left: -8px;
+        margin-right: 0;
+    }
+
+    .hide-below-640 {
+        display: none;
+    }
+
+    .site-switcher-header .right-list select {
+        top: -1px;
+    }
+
+    .site-switcher-header .right-list {
+        margin-top: 4px;
+    }
+
+    .site-switcher-container .right-list select {
+        margin-left: 0;
+    }
+
+    .site-switcher-container .footer-text {
+        width: 60%;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        line-height: inherit;
+    }
+
+    .site-switcher-container .right-selector {
+        width: 40%;
+        line-height: inherit;
+        margin-top: 20px;
+    }
+
+}
+
+/*
+ * Restate some ultimo/weiss CSS rules to make the site switcher module independant
+ */
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+.site-switcher-container .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-switcher-container .inner-container {
+    padding: 0 12px;
+}
+
+.inner-container::before,
+.inner-container::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+
+.inner-container::after {
+    clear: both;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('../fonts/pacifico/pacifico-webfont.eot');
+    src: url('../fonts/pacifico/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pacifico/pacifico-webfont.woff2') format('woff2'),
+    url('../fonts/pacifico/pacifico-webfont.woff') format('woff'),
+    url('../fonts/pacifico/pacifico-webfont.ttf') format('truetype'),
+    url('../fonts/pacifico/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato/lato-regular-webfont.eot');
+    src: url('../fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+    url('../fonts/lato/lato-regular-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-regular-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

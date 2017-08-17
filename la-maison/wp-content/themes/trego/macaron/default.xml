@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	fhShow Flip 1.0 configuration file
+	Please visit http://www.flshow.net/ for more info
+-->
+
+<slide_show>
+                 <options>
+        <debug>false</debug>                <!-- true, false -->
+        <background>#000000</background>    <!-- #RRGGBB, transparent -->
+        <friction>5</friction>              <!-- [1,100] -->
+        <fullscreen>false</fullscreen>      <!-- true, false -->
+        <fieldOfView>55</fieldOfView>       <!-- [1,179] -->
+ 
+        <margins>
+            <top>0</top>                    <!-- [-1000,1000] pixels -->
+            <left>0</left>                  <!-- [-1000,1000] pixels -->
+            <bottom>0</bottom>              <!-- [-1000,1000] pixels -->
+            <right>0</right>                <!-- [-1000,1000] pixels -->
+        </margins>
+ 
+        <interaction>
+            <flip>mouse</flip>                   <!-- auto, mouse, keyboard -->
+            <vertical>true</vertical>            <!-- true, false -->
+            <speed>100</speed>                   <!-- [-360,360] degrees per second -->
+ 
+            <default_speed>45</default_speed>    <!-- [-360,360] degrees per second -->
+            <reset_delay>3</reset_delay>        <!-- [0,600] seconds, 0 means never reset -->
+        </interaction>
+ 
+        <reflection>
+            <amount>100</amount>      <!-- [0,1000] pixels -->
+            <blur>2</blur>            <!-- [0,100] blur amount -->
+            <distance>0</distance>    <!-- [-1000,1000] pixels -->
+            <alpha>50%</alpha>        <!-- [0,100] percentage -->
+        </reflection>
+    </options>
+	<photo title="Macaron Myrtille">./images/myrtille.jpg</photo>
+	<photo title="Macaron Fraise Coquelicot" >./images/fraise.jpg</photo>
+ 	<photo title="Macaron Caramel Beurre salée" >./images/caramel.jpg</photo>
+	<photo title="Macaron Chocolat au lait" >./images/chocolat-au-lait.jpg</photo>
+	<photo title="Macaron Citron" >./images/citron.jpg</photo>
+	<photo title="Macaron Crème Brulée" >./images/creme-brulee.jpg</photo>
+	<photo title="Macaron Ecureuil" >./images/ecureuil.jpg</photo>
+	<photo title="Macaron Framboise" >./images/framboise.jpg</photo>
+	<photo title="Macaron Menthe" >./images/menthe.jpg</photo>
+	<photo title="Macaron Noir Intense" >./images/noir_intense.jpg</photo>
+	<photo title="Macaron Passion" >./images/passion.jpg</photo>
+	<photo title="Macaron Orangettes" >./images/orangettes.jpg</photo>
+	<photo title="Macaron Pistachet" >./images/pistache.jpg</photo>
+	<photo title="Macaron Pomme Tatin" >./images/pomme-tatin.jpg</photo>
+	<photo title="Macaron Rouge Baiser" >./images/rouge-baiser.jpg</photo>
+	<photo title="Macaron Vanille" >./images/vanille.jpg</photo>	
+		<photo title="Macaron café" >./images/cafe.jpg</photo>
+</slide_show>

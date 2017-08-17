@@ -1,0 +1,51 @@
+<?php
+/**
+ * Weiss SiteSwitcher overheader switcher template file
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Jérôme Carrot <jecar@smile.fr>
+ * @copyright  Smile 2015
+ * @var        $this Weiss_SiteSwitcher_Block_Switcher
+ */
+?>
+
+<?php /*if ($this->isVisible()):*/ ?>
+
+    <div id="site-switcher" class="site-switcher-container site-switcher-header">
+        <div class="container">
+            <div class="inner-container">
+
+                <div class="left reinsurance-top hide-below-768">
+                    <ul class="left left-list">
+                        <li ><a href="/modalites-livraison"><i class="header-top-icon icon-delivery"></i>Livraison gratuite à partir de 35€ HT d'achat</a></li>
+                        <li class="hide-below-1280"><a href="/services-cadeaux-affaires/envoi-multi-adresses"><i class="header-top-icon icon-multishipping"></i>Envoi en multi-adresses</a></li>
+                        <li class="hide-below-960"><a href="/contacts?subject=demande-devis"><i class="header-top-icon icon-quote"></i>Demander un devis</a></li>
+                        <li><span><i class="header-top-icon icon-phone"></i>04 77 49 41 42</span></li>
+                    </ul>
+                </div>
+                <div class="right site-switcher-element">
+                    <div class="right switcher-selector" >
+                        <span class="switcher-label">
+                            <?php echo str_replace('...','',$this->getSelectorLabel()); ?>
+                            <span class="ic ic-down"></span>
+                            <span class="ic ic-up"></span>
+                            </span>
+                        <ul class="switcher-list">
+                            <?php foreach ($this->getSelectorOptions() as $option): ?>
+                                <li>
+                                    <a href="<?php echo $option['value'] ?>">
+                                        <i class="ic ic-right"></i>
+                                        <span><?php echo $option['label'] ?></span>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php //endif; ?>

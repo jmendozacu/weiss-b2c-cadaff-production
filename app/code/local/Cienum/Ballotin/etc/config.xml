@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cienum_Ballotin>
+			<version>1.0.0</version>
+		</Cienum_Ballotin>
+	</modules>
+	    <global>
+        <helpers>
+            <common>
+                <class>Cienum_Ballotin_Helper</class>
+            </common>
+        </helpers>
+		<blocks>
+			<catalog>
+				<rewrite>
+					<product_view_options_type_select>Cienum_Ballotin_Block_Product_View_Options_Type_Select</product_view_options_type_select>
+				</rewrite>
+			</catalog>
+		</blocks>
+    </global>
+	<frontend>
+		<translate>
+            <modules>
+                <Cienum_Ballotin>
+                    <files>
+                        <default>Cienum_Ballotin.csv</default>
+                    </files>
+                </Cienum_Ballotin>
+            </modules>
+        </translate>
+	</frontend>
+</config>

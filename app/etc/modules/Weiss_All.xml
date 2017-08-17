@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Weiss_Customcron>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Weiss_Customcron>
+    </modules>
+</config>

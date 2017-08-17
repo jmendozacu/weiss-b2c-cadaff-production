@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_cart_index>
+        <reference name="checkout.cart.methods">
+            <block type="core/template" name="quotepdfprinter" template="quotepdfprinter/link.phtml" />
+        </reference>
+    </checkout_cart_index>
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label">
+                <name>quote_pdf_printer</name>
+                <path>quotepdfprinter/pdf/index</path>
+                <label>My PDF quotes</label>
+            </action>
+        </reference>
+    </customer_account>
+    <quotepdfprinter_pdf_index>
+        <update handle="customer_account" />
+        <reference name="my.account.wrapper">
+            <block type="quotepdfprinter/quote_history" name="quotepdfprinter.quote.history" />
+            <block type="customer/account_dashboard" name="customer.account.link.back" template="customer/account/link/back.phtml"/>
+        </reference>
+    </quotepdfprinter_pdf_index>
+</layout> 

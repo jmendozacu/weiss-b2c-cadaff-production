@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cienum_Ballotin>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Cienum_Ballotin>
+    </modules>
+</config>

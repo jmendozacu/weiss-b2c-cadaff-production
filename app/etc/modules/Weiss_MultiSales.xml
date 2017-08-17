@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Weiss_MultiSales>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Weiss_MultiSales>
+    </modules>
+</config>

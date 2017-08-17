@@ -1,0 +1,31 @@
+
+<script type="text/javascript">
+var processPurchaseShare = '<?php echo $this->getProcessingUrl(); ?>';
+
+Event.observe(document, 'dom:loaded', function() {
+    // if PurchaseShareReward is not defined, exit
+    if (typeof PurchaseShareReward === 'undefined') {
+        return this;
+    }
+
+    /**
+     * FB Share
+     */
+    window.oldFbPurchaseAsyncInit = window.fbAsyncInit || function(){};
+    window.fbAsyncInit = function() {
+        window.oldFbPurchaseAsyncInit();
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('f.e(j,\'o:n\',p(4){9(4.k.m(\'i\')){9(g b!==\'h\'){c 3=4.l.8(\'.C-z\'),2=3.6.7(\' \')[1]+\'-y\',a=3.8(),0=q[\'B\'+a.6.7(\' \')[1]].0,5={x:b,2:2,w:\'s\'};r.t(5,0);c d=u v(5);d.A()}}});',39,39,'data||notificationElement|widgetElement|event|args|className|split|up|if|widgetsElement|processPurchaseShare|var|purchaseShareReward|observe|Event|typeof|undefined|object_id|document|memo|target|hasOwnProperty|response|fb_purchase_share|function|window|Object|facebook|extend|new|PurchaseShareReward|actionType|rewardUrl|notification|widget|onShare|rewardsSocialWidgetHover|rewardssocial'.split('|'),0,{}));
+    };
+
+    /**
+     * Twitter Tweet
+     */
+    if (typeof twttr !== 'undefined') {
+        twttr.ready(function (twttr) {
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('o.p.q(\'n\',m(0){5 2=0.9.j(\'.c-e\')?0.9:0.9.6(\'.c-e\');d(2){d(s i!==\'z\'){5 3=2.6(),4=3.a.f(" ")[1]+\'-y\',g=3.6(),7=u[\'v\'+g.a.f(" ")[1]].7,8={w:i,4:4,t:\'x\'};A.B(8,7);5 h=r l(8);h.k()}b}b});',38,38,'event||targetElement|element|notificationElement|var|up|data|args|target|className|return|rewardssocial|if|rewardable|split|widgetsElement|purchaseShareReward|processPurchaseShare|match|onShare|PurchaseShareReward|function|tweet|twttr|events|bind|new|typeof|actionType|window|rewardsSocialWidgetHover|rewardUrl|twitter|notification|undefined|Object|extend'.split('|'),0,{}));
+        });
+    }
+});
+
+</script>

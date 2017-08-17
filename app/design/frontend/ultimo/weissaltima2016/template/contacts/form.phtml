@@ -1,0 +1,356 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+
+
+$mediaURL = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+
+
+ $textTopBlock = $this->getLayout()->createBlock('cms/block')->setBlockId('text_block_top_contact_form')->toHtml();
+
+?>
+<div class="contact-form">
+    <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+    <div class="page-title">
+        <h1 class="title-full-line">
+        <span class="container-title">
+            <span class="title-main">Contactez-nous</span>
+        </span>
+
+        </h1>
+    </div>
+    <div class="grid12-9">
+        <?php
+        if($textTopBlock != '' && $textTopBlock != null) {
+            echo '<div class="grid12-12"><div class="contact-text-block">'.$textTopBlock.'</div></div>';
+        }
+        ?>
+        <form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post">
+            <div class="fieldset">
+                <ul class="form-list">
+                    <li class="grid12-12 choice-pads choice-subject">
+                        <h2 class="legend">Votre demande concerne : </h2>
+                        <div class="choice-container grid12-4">
+                            <label for="demande-devis">
+                                <div class="choice-content">
+                                    <input type="radio" name="subject" value="Demande de Devis" id="demande-devis"/>
+                                    <span>Une demande de devis</span>
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="question-produits">
+                                <div class="choice-content">
+                                    <input type="radio" name="subject" value="Question sur les produits" id="question-produits"/>
+                                    <span>Une question sur les produits</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="suivi-commande">
+                                <div class="choice-content">
+                                    <input type="radio" name="subject" value="Le suivi de ma commande" id="suivi-commande"/>
+                                    <span>Le suivi de ma commande</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="sav">
+                                <div class="choice-content">
+                                    <input type="radio" name="subject" value="Le service après-vente" id="sav"/>
+                                    <span>Le service après-vente</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="autre">
+                                <div class="choice-content">
+                                    <input type="radio" name="subject" value="Une autre demande" id="autre"/>
+                                    <span>Une autre demande</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="grid12-3 choice-edit">
+                            <a class="modify" href="#"><span class="ic ic-edit"></span>modifier</a>
+                        </div>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="grid12-12 choice-pads choice-quote">
+                        <h2 class="legend">Vous êtes intéressé par : </h2>
+                        <div class="choice-container grid12-4">
+                            <label for="produit-catalogue">
+                                <div class="choice-content">
+                                    <input type="radio" name="quote-product" value="un produit du catalogue" id="produit-catalogue"/>
+                                    <img src="<?php echo $mediaURL.'wysiwyg/weissaltima2016/logo.png'; ?>" />
+                                    <span>un produit du catalogue</span>
+
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="perso-ruban">
+                                <div class="choice-content">
+                                    <input type="radio" name="quote-product" value="la personnalisation du ruban" id="perso-ruban"/>
+                                    <img src="<?php echo $mediaURL.'wysiwyg/weissaltima2016/ruban.jpg'; ?>" />
+                                    <span>
+                                        la personnalisation du ruban recto/verso
+                                        <span class="detail-choice">Minimum 500 mètres</span>
+                                    </span>
+
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="perso-fourreau">
+                                <div class="choice-content">
+                                    <input type="radio" name="quote-product" value="la personnalisation du fourreau" id="perso-fourreau"/>
+                                    <img src="<?php echo $mediaURL.'wysiwyg/weissaltima2016/carte_postale.jpg'; ?>" />
+                                    <span>
+                                        la personnalisation du fourreau (coffret/ballotin)
+                                        <span class="detail-choice">Minimum 200 fourreaux</span>
+                                    </span>
+
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="perso-bagues">
+                                <div class="choice-content">
+                                    <input type="radio" name="quote-product" value="la personnalisation des bagues" id="perso-bagues"/>
+                                    <img src="<?php echo $mediaURL.'wysiwyg/weissaltima2016/bague_napo.jpg'; ?>" />
+                                    <span>
+                                        la personnalisation des bagues (napolitain/chocothèque)
+                                        <span class="detail-choice">Minimum : 500 chocothèques<br />Minimum: 5000 napolitains</span>
+                                    </span>
+
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="perso-logo">
+                                <div class="choice-content">
+                                    <input type="radio" name="quote-product" value="la personnalisation du décor du bonbon palet" id="perso-logo"/>
+                                    <img src="<?php echo $mediaURL.'wysiwyg/weissaltima2016/perso-logo.jpg'; ?>" />
+                                    <span>
+                                        la personnalisation du décor du Palet Or Noir/Lait
+                                        <span class="detail-choice">Minimum 20 000 transferts/ 260kg</span>
+                                    </span>
+
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="choice-container grid12-4">
+                            <label for="perso-boite-logo">
+                                <div class="choice-content">
+                                    <input type="radio" name="quote-product" value="la personnalisation de boîtes" id="perso-boite-logo"/>
+                                    <img src="<?php echo $mediaURL.'wysiwyg/weissaltima2016/enveloppe_3_napo.jpg'; ?>" />
+                                    <span>
+                                        la personnalisation de la carte et/ou sticker de l'enveloppe
+                                        <span class="detail-choice">Minimum 200 cartes/stickers</span>
+                                    </span>
+
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="budget-container">
+                        <label for="budget"><?php echo Mage::helper('contacts')->__('Votre budget par cadeau') ?></label>
+                        <div class="input-box">
+                            <input name="budget" id="budget" title="<?php echo Mage::helper('contacts')->__('Votre budget maximum') ?>" value="" class="input-text" type="text" />
+                            <p>Merci de nous indiquer votre budget en précisant le montant unitaire prévu par cadeau</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="company" class="required"><?php echo Mage::helper('contacts')->__('Société') ?></label>
+                        <div class="input-box">
+                            <input name="company" id="company" title="<?php echo Mage::helper('contacts')->__('Société') ?>" value="" class="required-entry input-text" type="text" />
+                        </div>
+                    </li>
+                    <li style="display: none;">
+                        <label for="rs"><?php echo Mage::helper('contacts')->__('Raison Sociale') ?></label>
+                        <div class="input-box">
+                            <input name="rs" id="rs" title="<?php echo Mage::helper('contacts')->__('Raison Sociale') ?>" value="" class="input-text" type="text" />
+                        </div>
+                    </li>
+                    <li style="display: none;">
+                        <label for="coord"><?php echo Mage::helper('contacts')->__('Coordonnées du contact dans l\'entreprise') ?></label>
+                        <div class="input-box">
+                            <input name="coord" id="coord" title="<?php echo Mage::helper('contacts')->__('Coordonnées du contact dans l\'entreprise') ?>" value="" class="input-text" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <label for="civility"><?php echo Mage::helper('contacts')->__('Civilité') ?></label>
+                        <div class="input-box">
+                            <select name="civility" id="civility">
+                                <option value="-"><?php echo Mage::helper('contacts')->__('Civilité') ?></option>
+                                <option value="M.">M.</option>
+                                <option value="Mme">Mme</option>
+                            </select>
+
+                        </div>
+                    </li>
+                    <li>
+                        <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Nom et prénom') ?></label>
+                        <div class="input-box">
+                            <input name="name" id="name" title="<?php echo Mage::helper('contacts')->__('Nom et prénom') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <label for="telephone" class="required"><?php echo Mage::helper('contacts')->__('Telephone') ?> </label>
+                        <div class="input-box">
+                            <input name="telephone" id="telephone" title="<?php echo Mage::helper('contacts')->__('Telephone') ?>" value="" class="required-entry input-text" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+                        <div class="input-box">
+                            <input name="email" id="email" title="<?php echo Mage::helper('contacts')->__('Email') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
+                        </div>
+                    </li>
+
+
+                    <li class="wide message-container">
+                        <label for="comment" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Comment') ?></label>
+                        <div class="input-box">
+                            <textarea name="comment" id="comment" title="<?php echo Mage::helper('contacts')->__('Comment') ?>" class="required-entry input-text" cols="5" rows="3"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="buttons-set">
+                <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
+                <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+                <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+            </div>
+        </form>
+    </div>
+    <div class="grid12-3">
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('block_footer_column2')->toHtml();?>
+
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+        var contactForm = new VarienForm('contactForm', true);
+
+        /*
+               Behaviors
+         */
+        //default
+        function setSubjectActivated(id) {
+
+            if(id !== '') {
+                jQuery('.choice-subject').find('label').removeClass('chosen');
+                var $active_input = jQuery('.choice-subject').find('input:checked');
+                if($active_input.length == 0) {
+                    $active_input = jQuery('#'+id);
+                }
+                $active_input.closest('label').addClass('chosen');
+                jQuery('.choice-subject').find('.choice-container').hide();
+                $active_input.closest('.choice-container').show();
+                jQuery('.message-container').show();
+
+                jQuery('.choice-subject').find('.choice-edit').show();
+                jQuery('.choice-subject').find('.choice-edit').unbind('click').on('click', function (evt){
+                    evt.preventDefault();
+                    setSubjectActivated('');
+                });
+            } else {
+                jQuery('.choice-subject').find('label').removeClass('chosen');
+                jQuery('.choice-subject').find('.choice-container').show();
+                jQuery('.choice-subject').find('.choice-edit').hide();
+                jQuery('.message-container').hide();
+                jQuery('.choice-subject').find('input').prop('checked',false);
+                jQuery('.choice-quote').find('input').prop('checked',false);
+            }
+            switch(id) {
+                case 'demande-devis':
+                    jQuery('.choice-quote').slideDown();
+                    jQuery('.budget-container').show();
+                    jQuery('.budget-container').find('label').addClass('required');
+                    jQuery('.budget-container').find('.input-text').addClass('required-entry');
+                    break;
+                default:
+                    jQuery('.choice-quote').hide();
+                    jQuery('.budget-container').hide();
+                    jQuery('.budget-container').find('label').removeClass('required');
+                    jQuery('.budget-container').find('.input-text').removeClass('required-entry');
+                    jQuery('.choice-subject').find('input').prop('checked',false);
+                    jQuery('.choice-quote').find('input').prop('checked',false);
+                    setQuoteActivated('');
+                    break;
+            }
+
+        }
+
+        function setQuoteActivated(id) {
+            jQuery('.choice-quote').find('label').removeClass('chosen');
+            var $active_input = jQuery('.choice-quote').find('input:checked');
+            if($active_input.length == 0) {
+                var $active_input = jQuery('#'+id);
+            }
+            $active_input.closest('label').addClass('chosen');
+        }
+
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+
+        jQuery('.choice-quote, .choice-edit, .budget-container, .message-container').hide();
+        jQuery('.choice-subject').find('input').on('click', function (evt) {
+            var $this = jQuery(this);
+            setSubjectActivated($this.attr('id'));
+        });
+        jQuery('.choice-quote').find('input').on('click', function (evt) {
+            var $this = jQuery(this);
+            setQuoteActivated($this.attr('id'));
+        });
+
+        var urlVars = getUrlVars();
+        if(urlVars['subject'] !== undefined) {
+            setSubjectActivated(urlVars['subject']);
+        }
+        if(urlVars['subject'] !== undefined && urlVars['quote'] !== undefined) {
+            setQuoteActivated(urlVars['quote']);
+        }
+
+        //]]>
+    </script>
+</div>
+

@@ -1,0 +1,277 @@
+<style>
+    .quote-pdf-printer-container {width: 600px; height: 700px; border: 1px solid #000000; padding: 10px; font-family: 'LinLibertine'; background-color: #FFFFFF;}
+</style>
+<?php
+$messages = array();
+
+// -- control image format --
+$image = Mage::getStoreConfig('sales/identity/logo');
+if ($image) {
+    $image = Mage::getBaseUrl('media') . '/sales/store/logo/' . $image;
+    $sizes = getimagesize($image);
+    if ($sizes['mime'] == 'image/png') {
+        $messages [] = 'Only non-interlaced images are currently supported. Please change your store logo format to JPEG in section Sales -> Invoice and Packing Slip Design -> Logo for PDF Print-outs (200x50)';
+    }
+}
+?>
+<?php if (count($messages)) { ?>
+    <div id="messages">
+        <ul class="messages">
+            <li class="error-msg">
+                <ul>
+                    <?php
+                    foreach ($messages as $message) {
+                        echo '<li><span>' . $message . '</span></li>';
+                    }
+                    ?>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<?php } ?>
+<div class="quote-pdf-printer-container">
+    <?php
+    $logoText = '';
+    $addressText = '';
+
+    $image = Mage::getStoreConfig('sales/identity/logo');
+    if ($image) {
+        $image = Mage::getBaseUrl('media') . '/sales/store/logo/' . $image;
+        $sizes = getimagesize($image);
+        $width = $sizes[0];
+        if ($width > 300) {
+            $width = 300;
+        }
+        if ($sizes['mime'] !== 'image/png') {
+            $logoText = '<img id="quote-pdf-printer-logo" src="' . $image . '" width="' . $width . '" />';
+        }
+    }
+    $address = Mage::getStoreConfig('sales/identity/address', $store);
+    if ($address) {
+        $addressText = '<span id="quotepdfprinter-address" style="font-size: '.(Mage::getStoreConfig('quotepdfprinter/layout/address_font_size') ? Mage::getStoreConfig('quotepdfprinter/layout/address_font_size') : 12).'px; color: #'.(Mage::getStoreConfig('quotepdfprinter/layout/address_color') ? str_replace('#','',Mage::getStoreConfig('quotepdfprinter/layout/address_color')) : '000000').'">'.nl2br($address).'</span>';
+    }
+    ?>
+    <table>
+        <tr>
+            <td id="quote-pdf-printer-header-left" style="width: 300px;">
+                <?php
+                if (!Mage::getStoreConfig('quotepdfprinter/layout/logo_address_position') || Mage::getStoreConfig('quotepdfprinter/layout/logo_address_position') == 'L') {
+                    echo $logoText;
+                }
+                else {
+                    echo $addressText;
+                }
+                ?>
+            </td>
+            <td id="quote-pdf-printer-header-right" style="text-align: right; width: 300px;">
+                <?php
+                if (!Mage::getStoreConfig('quotepdfprinter/layout/logo_address_position') || Mage::getStoreConfig('quotepdfprinter/layout/logo_address_position') == 'L') {
+                    echo $addressText;
+                }
+                else {
+                    echo $logoText;
+                }
+                ?>
+            </td>
+        </tr>
+    </table>
+    <table style="margin-bottom: 20px;">
+        <tr>
+            <td id="quotepdfprinter-quote-block" style="width: 670px; background-color: #<?php echo (Mage::getStoreConfig('quotepdfprinter/layout/quote_background_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/quote_background_color')) : '737373')?>; border: 1px solid #<?php echo (Mage::getStoreConfig('quotepdfprinter/layout/quote_border_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/quote_border_color')) : '808080')?>; color: #<?php echo (Mage::getStoreConfig('quotepdfprinter/layout/quote_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/quote_color')) : 'FFFFFF')?>; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; font-size: <?php echo (Mage::getStoreConfig('quotepdfprinter/layout/quote_font_size') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/quote_font_size')) : 12)?>px">
+                <div>
+                    <?php echo $this->__('Quote #'); ?> <span id="quote-pdf-printer-label"><?php echo Mage::helper('quotepdfprinter')->generateLabel(0); ?></span>
+                </div>
+                <div>
+                    <?php echo $this->__('Quote Date'); ?>: <?php echo Mage::helper('core')->formatDate(date('Y-m-d H:i:s'), 'medium', false); ?>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; border-collapse:collapse;">
+        <tr id="quotepdfprinter-cart-header-block" style="background-color: #<?php echo (Mage::getStoreConfig('quotepdfprinter/layout/cart_header_background_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/cart_header_background_color')) : 'EDEBEB')?>; border: 1px solid #<?php echo (Mage::getStoreConfig('quotepdfprinter/layout/cart_header_border_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/cart_header_border_color')) : '8B8B8B')?>; width: 580px; color: #<?php echo (Mage::getStoreConfig('quotepdfprinter/layout/cart_header_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/cart_header_color')) : '000000')?>; font-size: <?php echo (Mage::getStoreConfig('quotepdfprinter/layout/cart_header_font_size') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/cart_header_font_size')) : 12)?>px">
+            <th style="width: 105px;"></th>
+            <th style="font-weight: normal; width:200px;"><?php echo $this->__('Product Name'); ?></th>
+            <th style="font-weight: normal;"><?php echo $this->__('SKU'); ?></th>
+            <th style="font-weight: normal;"><?php echo $this->__('Unit Price'); ?></th>
+            <th style="font-weight: normal; width: 20px;"><?php echo $this->__('Qty'); ?></th>
+            <th style="font-weight: normal; text-align: right; padding-right: 5px; width: 100px;"><?php echo $this->__('Subtotal'); ?></th>
+        </tr>
+        <?php
+        $productCollection = Mage::getModel('catalog/product')->getCollection()->addAttributeToSelect('*');
+        $productCollection->getSelect()->order('rand()');
+        $productCollection->setPageSize(3);
+        if (count($productCollection)) {
+            $total = 0;
+            foreach ($productCollection as $product) {
+                echo '<tr class="cart-content-item-row" style="font-size: '.(Mage::getStoreConfig('quotepdfprinter/layout/cart_font_size') ? Mage::getStoreConfig('quotepdfprinter/layout/cart_font_size') : 12).'px; color: #'.(Mage::getStoreConfig('quotepdfprinter/layout/cart_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/cart_color')) : '000000').'">';
+                try {
+                    $path = Mage::helper('catalog/image')->init($product, 'thumbnail')->resize(100)->__toString();
+                    echo '<td style="padding-top: 5px; height: 105px;"><img src="' . $path . '" /></td>';
+                } catch (Exception $e) {
+                    echo '<td style="padding-top: 5px; height: 105px;"></td>';
+                }
+                echo '<td style="padding-top: 5px;">' . $product->getName() . '</td>';
+                echo '<td style="padding-top: 5px;">' . $product->getSku() . '</td>';
+                echo '<td style="padding-top: 5px;">' . Mage::helper('core')->currency($product->getPrice(), true, false) . '</td>';
+                $qty = rand(1, 10);
+                echo '<td style="padding-top: 5px;">' . $qty . '</td>';
+                $total += $qty * $product->getPrice();
+                echo '<td style="text-align: right; padding-right: 5px; padding-top: 5px;">' . Mage::helper('core')->currency(($qty * $product->getPrice()), true, false) . '</td>';
+                echo '</tr>';
+            }
+            echo '<tr id="quotepdfprinter-subtotal" style="color: #'.(Mage::getStoreConfig('quotepdfprinter/layout/total_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/total_color')) : '000000').'">';
+            echo '<td class="quotepdfprinter-subtotal-text" colspan="5" style="text-align: right; font-weight: bold; font-size:'.(Mage::getStoreConfig('quotepdfprinter/layout/subtotal_font_size') ? Mage::getStoreConfig('quotepdfprinter/layout/subtotal_font_size') : 12).'px">'.$this->__('Subtotal').':</td>';
+            echo '<td class="quotepdfprinter-subtotal-text" style="text-align: right; padding-right: 5px; font-weight: bold; font-size:'.(Mage::getStoreConfig('quotepdfprinter/layout/subtotal_font_size') ? Mage::getStoreConfig('quotepdfprinter/layout/subtotal_font_size') : 12).'px;">' . Mage::helper('core')->currency($total, true, false) . '</td>';
+            echo '</tr>';
+
+            echo '<tr id="quotepdfprinter-total" style="color: #'.(Mage::getStoreConfig('quotepdfprinter/layout/total_color') ? str_replace('#','', Mage::getStoreConfig('quotepdfprinter/layout/total_color')) : '000000').'">';
+            echo '<td class="quotepdfprinter-total-text" colspan="5" style="text-align: right; font-weight: bold; font-size:'.(Mage::getStoreConfig('quotepdfprinter/layout/total_font_size') ? Mage::getStoreConfig('quotepdfprinter/layout/total_font_size') : 14).'px;">'.$this->__('Grand Total').':</td>';
+            echo '<td class="quotepdfprinter-total-text" style="text-align: right; padding-right: 5px; font-weight: bold; font-size:'.(Mage::getStoreConfig('quotepdfprinter/layout/total_font_size') ? Mage::getStoreConfig('quotepdfprinter/layout/total_font_size') : 14).'px;">' . Mage::helper('core')->currency($total, true, false) . '</td>';
+            echo '</tr>';
+        }
+        ?>
+    </table>
+    <p style="text-align: center; margin-top: 20px;" id="terms-and-conditions-block">
+        <?php echo Mage::getStoreConfig('quotepdfprinter/frontend_parameters/terms_and_conditions'); ?>
+    </p>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        // -- Quote number value --
+        jQuery('#quotepdfprinter_parameters_quote_label, #quotepdfprinter_parameters_quote_sequence').change(function() {
+            jQuery('#quote-pdf-printer-label').html(jQuery('#quotepdfprinter_parameters_quote_label').val().replace('#', jQuery('#quotepdfprinter_parameters_quote_sequence').val()));
+        });
+        
+        // -- Header --        
+        jQuery('#quotepdfprinter_layout_logo_address_position').change(function () {
+            var tmp = jQuery('#quote-pdf-printer-header-left').html();
+            jQuery('#quote-pdf-printer-header-left').html(jQuery('#quote-pdf-printer-header-right').html());
+            jQuery('#quote-pdf-printer-header-right').html(tmp);
+        })
+        jQuery('#quotepdfprinter_layout_address_font_size').change(function () {
+            var size = jQuery('#quotepdfprinter_layout_address_font_size').val();
+            if (isNaN(size)) {
+                size = 12;
+            }
+            jQuery('#quotepdfprinter-address').css('font-size',size+'px');
+        });
+        jQuery('#quotepdfprinter_layout_address_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_address_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '000000';
+            }
+            jQuery('#quotepdfprinter-address').css('color','#'+color);
+        });
+        
+        // -- Quote block --
+        jQuery('#quotepdfprinter_layout_quote_border_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_quote_border_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '808080';
+            }
+            jQuery('#quotepdfprinter-quote-block').css('border-color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_quote_background_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_quote_background_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '737373';
+            }
+            jQuery('#quotepdfprinter-quote-block').css('background-color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_quote_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_quote_color').val().replace('#','');
+            if (color.length != 6) {
+                color = 'FFFFFF';
+            }
+            jQuery('#quotepdfprinter-quote-block').css('color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_quote_font_size').change(function () {
+            var size = jQuery('#quotepdfprinter_layout_quote_font_size').val().replace('#','');
+            if (isNaN(size)) {
+                size = 12;
+            }
+            jQuery('#quotepdfprinter-quote-block').css('font-size',size+'px');
+        })
+        
+        // -- Cart header --
+        jQuery('#quotepdfprinter_layout_cart_header_border_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_cart_header_border_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '8B8B8B';
+            }
+            jQuery('#quotepdfprinter-cart-header-block').css('border-color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_cart_header_background_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_cart_header_background_color').val().replace('#','');
+            if (color.length != 6) {
+                color = 'EDEBEB';
+            }
+            jQuery('#quotepdfprinter-cart-header-block').css('background-color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_cart_header_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_cart_header_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '000000';
+            }
+            jQuery('#quotepdfprinter-cart-header-block').css('color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_cart_header_font_size').change(function () {
+            var size = jQuery('#quotepdfprinter_layout_cart_header_font_size').val().replace('#','');
+            if (isNaN(size)) {
+                size = 12;
+            }
+            jQuery('#quotepdfprinter-cart-header-block').css('font-size',size+'px');
+        })
+        
+        // -- Cart content --
+        jQuery('#quotepdfprinter_layout_cart_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_cart_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '000000';
+            }
+            jQuery('.cart-content-item-row').css('color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_cart_font_size').change(function () {
+            var size = jQuery('#quotepdfprinter_layout_cart_font_size').val().replace('#','');
+            if (isNaN(size)) {
+                size = 12;
+            }
+            jQuery('.cart-content-item-row').css('font-size',size+'px');
+        })
+        
+        // -- Total block --
+        jQuery('#quotepdfprinter_layout_total_color').change(function () {
+            var color = jQuery('#quotepdfprinter_layout_total_color').val().replace('#','');
+            if (color.length != 6) {
+                color = '000000';
+            }
+            jQuery('#quotepdfprinter-subtotal').css('color','#'+color);
+            jQuery('#quotepdfprinter-total').css('color','#'+color);
+        })
+        jQuery('#quotepdfprinter_layout_subtotal_font_size').change(function () {
+            var size = jQuery('#quotepdfprinter_layout_subtotal_font_size').val().replace('#','');
+            if (isNaN(size)) {
+                size = 12;
+            }
+            jQuery('.quotepdfprinter-subtotal-text').css('font-size',size+'px');
+        })
+        jQuery('#quotepdfprinter_layout_total_font_size').change(function () {
+            var size = jQuery('#quotepdfprinter_layout_total_font_size').val().replace('#','');
+            if (isNaN(size)) {
+                size = 14;
+            }
+            jQuery('.quotepdfprinter-total-text').css('font-size',size+'px');
+        })
+        
+        // -- Terms And Conditions --
+        jQuery('#quotepdfprinter_frontend_parameters_terms_and_conditions').change(function () {
+            var terms = jQuery('#quotepdfprinter_frontend_parameters_terms_and_conditions').val();
+            jQuery('#terms-and-conditions-block').html(nl2br(terms));
+        })
+    })
+    
+    function nl2br (str, is_xhtml) {
+    var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+}
+</script>

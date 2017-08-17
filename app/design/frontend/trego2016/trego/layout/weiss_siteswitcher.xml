@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/weiss-siteswitcher.css</name></action>
+        </reference>
+        <reference name="after_body_start">
+            <block type="weiss_siteswitcher/switcher" name="weiss.siteswitcher.overheader" template="siteswitcher/overheader.phtml" />
+        </reference>
+        <reference name="before_body_end">
+            <block type="weiss_siteswitcher/switcher" name="weiss.siteswitcher.subfooter" template="siteswitcher/subfooter.phtml">
+                <action method="setIsVisible"><is_visible>1</is_visible></action>
+            </block>
+        </reference>
+    </default>
+</layout>

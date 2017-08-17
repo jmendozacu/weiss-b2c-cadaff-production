@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Weiss_Customcron>
+            <version>1.0</version>
+        </Weiss_Customcron>
+    </modules>
+    <crontab>
+        <jobs>
+            <custom_cron_task>
+                <schedule>
+                    <!-- Run this job each hour -->
+                    <cron_expr>10 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>customcron/customcron::customcrontask</model>
+                </run>
+            </custom_cron_task>
+        </jobs>
+    </crontab>
+    <global>
+        <models>
+            <customcron>
+                <class>Weiss_Customcron_Model</class>
+            </customcron>
+        </models>
+    </global>
+</config>

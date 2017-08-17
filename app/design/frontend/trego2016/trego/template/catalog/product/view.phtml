@@ -1,0 +1,417 @@
+﻿<?php $_helper = $this->helper('catalog/output'); ?>
+<?php $_product = $this->getProduct(); ?>
+<?php $storeId = Mage::app()->getStore()->getId(); ?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(
+    <?php echo $this->getJsonConfig() ?>);
+
+</script>
+<div id="messages_product_view">
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+</div>
+
+<div class="product-view">
+    <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"
+        <?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+	
+        <div class="product-essential">
+            <div class="product-img-box">
+                <?php echo $this->getChildHtml('media') ?>
+            </div>
+            <div class="product-shop">
+                <div class="no-display">
+                    <input type="hidden" name="product" value="
+                        <?php echo $_product->getId() ?>" />
+                        <input type="hidden" name="related_product" id="related-products-field" value="" />
+                    </div>
+                    <div class="product-name">
+                        <h1>
+                            <?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>
+                        </h1>
+                    </div>
+                    <?php echo $this->getChildHtml('alert_urls') ?>
+                    <?php // echo $this->getChildHtml('product_type_data') ?>
+					<p>
+						<span class="attr-label"><?php echo $this->__('Ref: ') ?></span><span class="attr-value"><?php echo $_product->getSku() ?></span>
+					</p>
+                    <p>
+                        <span class="attr-label"><?php echo $this->__('Weight:') ?></span>
+                        <span class="attr-value">
+                            <?php echo sprintf('%.3f', $_product->getWeight()); ?> Kg
+                        </span>
+                    </p>
+				<?php if(strlen($_product->getWidth()) > 0  || strlen($_product->getHeight()) > 0  || strlen($_product->getDepth()) > 0 ):  ?>
+					<?php
+						$unit = 'cm';
+						$width =  $_product->getWidth();
+						$height = $_product->getHeight();
+						$depth = $_product->getDepth();
+					if( strlen($width > 0) && strlen($height) > 0 ){$width.= 'X';}
+					if( strlen($height > 0) && strlen($depth) > 0 ){$height.= 'X';}
+					?>
+					<p>
+						<span class="attr-label"><?php echo $this->__('Dimension : '); ?></span>
+						<span class="attr-value">
+							<?php echo $width.$height.$depth." ". $unit;?>
+						</span>
+					</p>
+				<?php endif; ?>
+
+                    <?php if ($this->canEmailToFriend()): ?>
+                    <p class="email-friend">
+                        <a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a>
+                    </p>
+                    <?php  endif; ?>
+                    <?php
+                     
+			$summaryData = Mage::getModel('review/review_summary')
+				    ->setStoreId($storeId)
+				    ->load($_product->getId());
+			$reviews_count = intval($summaryData["reviews_count"]);
+		    ?>
+                    <!--        Link to review form        -->
+                    <?php 
+                    
+                        $reviews_link_text = '';
+                        if($reviews_count == 0){
+                           $reviews_link_text =  $this->__('Soyez le premier à donner votre avis !');
+                        }elseif ($reviews_count == 1) {
+                            $reviews_link_text =  $this->__("Lire l'avis");
+                        }else{
+                            $reviews_link_text =  $this->__("Lire les %s avis",$reviews_count);
+                        }
+                    ?>
+                    <a href="#full-reviews-with-form" class="link-to-review-form"><?php echo  $reviews_link_text; ?></a><br />
+                    <?php echo $this->getTierPriceHtml() ?>
+					<!--		Product review(Rating)		-->
+                    <?php  echo $this->getReviewsSummaryHtml($_product, false, true)?>
+					<!--	Display Key Features attribute if exists	-->
+					<?php if(strlen($_product->getKeyfeatures()) > 0) : ?>
+						<?php
+						$key_features_text = $_product->getKeyfeatures();
+						$key_features_array = explode("\n", $key_features_text) ;
+						?>
+						<div class="key-features-container">
+							<ul>
+                                                            <?php
+								foreach( $key_features_array as $line) {
+									echo "<li><span class='key-features-bullet'></span>$line</li>";
+								}
+                                                            ?>
+							</ul>
+						</div>
+					<?php endif; ?>
+				<a href="<?php if($_product->getData('ballotin') == '1'): ?>#ballotin-details <?php else: ?>#product-descriprion <?php endif; ?>" class="link-to-description"><?php echo $this->__('En savoir plus'); ?></a>
+					<?php echo $this->getPriceHtml($_product) ?>
+                    <?php if ($_product->isAvailable()): ?>
+                    <p class="availability in-stock">
+                    	<span class="in-stock-label"></span><span class="in-stock-text"><?php echo $this->__('In Stock') ?></span>
+                    </p>
+                    <?php else: ?>
+                    <p class="availability out-of-stock">
+						<span class="in-stock-label"></span>
+                        <span class="in-stock-text">
+                            <?php echo $this->__('Out of Stock') ?>
+                        </span>
+                    </p>
+                    <?php endif; ?>
+                    <?php echo $this->getChildHtml('extrahint') ?>
+                    <?php echo $this->getChildHtml('other');?>
+<!--                    <h1><?php // echo $_product->getData('ballotin') ?></h1>-->
+                    
+                    <?php if (!$_product->isSaleable()): ?>
+                    <div class="add-to-box">
+                        <?php   echo $this->getChildHtml('addto') ?>
+                    </div>
+                    <?php else: //if (!$this->hasOptions()):?>
+
+                    <div class="add-to-box <?php if($_product->getData('ballotin') == '1'): ?>ballotin-box<?php endif; ?>">
+			<?php if($_product->getData('ballotin') == '1'): ?>
+                            <a class="ballotin-link" href="#product-options-wrapper"><?php echo $this->__('Je choisis mes chocolats'); ?></a>
+			<?php endif; ?>
+                        <?php if($_product->getData('ballotin') != '1'): ?>
+                            <?php if($_product->isSaleable()): ?>
+                                <?php    echo $this->getChildHtml('addtocart') ?>
+                            <?php endif; ?>
+                            <?php  echo  $this->getChildHtml('addto') ?>
+                        <?php endif; ?>
+                    </div>
+
+                    <?php echo $this->getChildHtml('extra_buttons') ?>
+                    <?php endif; ?>
+                    <?php if($_SERVER['REMOTE_ADDR'] == '193.108.197.230'): ?>
+                    <?php else: ?>
+                    <?php endif; ?>
+                </div>
+                <div class="clear"></div>
+				<!-- Display Ballotin Product description -->
+			<?php if($_product->getData('ballotin') == '1'): ?>
+                                <div class="ballotion-details" id="ballotin-details">
+					<h2><?php echo $this->__('Composez votre ballotin'); ?></h2>
+					<p><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></p>
+				</div>
+			<?php endif; ?>
+                <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+                <?php endif;?>
+                <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+                <?php endif;?>
+            </form>
+            <div class="clearer"></div>
+            	<?php if($_product->getData('ballotin') == '1'): ?>
+		<div class="ballotin-extra col2-set ">
+			<div class="ballotin-price-extra col-1">
+				<?php echo $this->getPriceHtml($_product) ?>
+			</div>
+
+			<div class="add-to-box add-to-box-ballotin col-2">
+                            <div class='ballotin-add-to-cart-msg'>
+                                <p><?php echo $this->__('Veuillez choisir au moins un chocolat.'); ?></p>
+                            </div>
+				<?php if($_product->isSaleable()): ?>
+					<?php   echo $this->getChildHtml('addtocart') ?>
+				<?php endif; ?>
+				<?php   echo $this->getChildHtml('addto') ?>
+			</div>
+		</div>
+
+	<?php endif; ?>
+            <?php if(Mage::getStoreConfig('ajaxcart/addtocart/enableproduct')): ?>
+            <script type="text/javascript">
+			//<![CDATA[
+				var productAddToCartForm = new VarienForm('product_addtocart_form');
+				productAddToCartForm.submit = function(button, url) {
+					if (this.validator.validate()) {
+						var form = this.form;
+						var oldUrl = form.action;
+
+						if (url) {
+						   form.action = url;
+						}
+						var e = null;
+						if (!url) {
+							url = jQuery('#product_addtocart_form').attr('action');
+						}
+						url = url.replace("checkout/cart","ajaxcart/index"); // New Code
+						var data = jQuery('#product_addtocart_form').serialize();
+						data += '&isAjax=1';
+						jQuery('#loading-mask').show();
+						try {
+							jQuery.ajax({
+								url : url,
+								dataType : 'json',
+								type : 'post',
+								data : data,
+								success : function(data) {
+									jQuery('#loading-mask').hide();
+									if(data.status == 'ERROR'){
+										alert(data.message);
+									}else{
+										if(jQuery('.footer-menu .links')){
+											jQuery('.footer-menu .links').replaceWith(data.toplink);
+										}
+										if(jQuery('.mini-cart-layer')){
+											jQuery('.mini-cart-layer').replaceWith(data.minicart);
+										}
+										jQuery('#after-loading-success-message').show();
+									}
+								}
+							});
+						} catch (e) {
+						}                
+						this.form.action = oldUrl;
+						if (e) {
+							throw e;
+						}
+					}
+				}.bind(productAddToCartForm);
+			//]]>
+            </script>
+            <?php else : ?>
+            <script type="text/javascript">
+			//<![CDATA[
+				var productAddToCartForm = new VarienForm('product_addtocart_form');
+				productAddToCartForm.submit = function(button, url) {
+					if (this.validator.validate()) {
+						var form = this.form;
+						var oldUrl = form.action;
+
+						if (url) {
+						   form.action = url;
+						}
+						var e = null;
+						try {
+							this.form.submit();
+						} catch (e) {
+						}
+						this.form.action = oldUrl;
+						if (e) {
+							throw e;
+						}
+
+						if (button && button != 'undefined') {
+							button.disabled = true;
+						}
+					}
+				}.bind(productAddToCartForm);
+
+				productAddToCartForm.submitLight = function(button, url){
+					if(this.validator) {
+						var nv = Validation.methods;
+						delete Validation.methods['required-entry'];
+						delete Validation.methods['validate-one-required'];
+						delete Validation.methods['validate-one-required-by-name'];
+						// Remove custom datetime validators
+						for (var methodName in Validation.methods) {
+							if (methodName.match(/^validate-datetime-.*/i)) {
+								delete Validation.methods[methodName];
+							}
+						}
+
+						if (this.validator.validate()) {
+							if (url) {
+								this.form.action = url;
+							}
+							this.form.submit();
+						}
+						Object.extend(Validation.methods, nv);
+					}
+				}.bind(productAddToCartForm);
+			//]]>
+            </script>
+            <?php endif;?>
+            <script type="text/javascript">
+			//<![CDATA[
+				productAddToCartForm.submitLight = function(button, url){
+					if(this.validator) {
+						var nv = Validation.methods;
+						delete Validation.methods['required-entry'];
+						delete Validation.methods['validate-one-required'];
+						delete Validation.methods['validate-one-required-by-name'];
+						// Remove custom datetime validators
+						for (var methodName in Validation.methods) {
+							if (methodName.match(/^validate-datetime-.*/i)) {
+								delete Validation.methods[methodName];
+							}
+						}
+
+						if (this.validator.validate()) {
+							if (url) {
+								this.form.action = url;
+							}
+							this.form.submit();
+						}
+						Object.extend(Validation.methods, nv);
+					}
+				}.bind(productAddToCartForm);
+			//]]>
+            </script>
+            <!--rajout Lr-->
+
+
+			<!--  Product Reinsurance	-->
+			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('reinsurance_4')->toHtml() ?>
+
+			<!--  Accordion	-->
+	<?php if($_product->getData('ballotin') != '1'): ?>
+	<div class="product-collateral akordeon">
+		<?php if ($_product->getDescription()):?>
+			<div class="short-description akordeon-item" id="product-descriprion">
+				<div class="akordeon-item-head">
+					<div class="akordeon-item-head-container">
+						<div class="akordeon-heading">
+							<h2 class="akordeon-heading">
+								<?php echo $this->__('Description') ?>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="akordeon-item-body">
+					<div class="akordeon-item-content">
+						<?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?>
+					</div>
+				</div>
+			</div>
+		<?php endif;?>
+		<?php if($_product->getData('ballotin') != '1'): ?>
+			<?php
+                        if(count($this->getChildGroup('detailed_info', 'getChildHtml'))) {
+                            foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+					<?php   echo $html; ?>
+			<?php endforeach;?>
+                        <?php
+                        }
+                        ?>
+			<?php  echo $this->getChildHtml('product_additional_data');?>
+			<?php   echo $this->getChildHtml('upsell_products') ?>
+		<?php endif; ?>
+	</div>
+	<?php endif; ?>           
+            <?php echo $this->getChildHtml('catalog.product.related') ?>
+            </div>
+			<!-- 	Product Reviews    -->
+                        <div class="product-page-review-container" id="full-reviews-with-form">
+				<h2><?php echo $this->__('Ils ont croqué'); ?></h2>
+				<p><?php echo $this->__('et témoignent'); ?></p>
+				<?php   echo $this->getChildHtml('reviews') ?>
+				<div class="clear"></div>
+
+				<!-- Display review form -->
+				<div class="product-reviews-buttons-container">
+					<?php if($reviews_count > 0 ): ?>
+                                            
+						<button class="reviews-button-1"><?php echo $this->__('voir tous les avis'); ?></button>
+                                            
+						<button class="reviews-button-2"><?php echo $this->__('laisser un avis'); ?></button>
+					<?php else: ?>
+						<button class="reviews-button-3"><?php echo $this->__("laisser un avis"); ?></button>
+					<?php endif; ?>
+				</div>
+                <div id="reviewform">
+					<div class="reviews-form-container <?php if($reviews_count > 0 ): ?>show-reviews-form<?php endif; ?> <?php if($reviews_count == 0 ):  ?>hidden-form-reviews<?php endif; ?>">
+						<?php echo $this->getChildHtml('review_form'); ?>
+					</div>
+                </div>
+			</div>
+
+            <script type="text/javascript">
+			jQuery(document).ready(function(){
+				var priceKilo = "<?php echo sprintf('%.2f', $_product->getPrixKilo()); ?>";
+
+				jQuery('.product-essential .regular-price').append('<span>('+priceKilo+'€ / kg)</span>');
+
+				jQuery('.akordeon.product-collateral').akordeon({ buttons: true, toggle: true });
+				// var pdt_photo = document.getElementsByClassName('thumb_1')[0].getElementsByTagName('img').image.src;
+			});
+		
+            </script>
+        </div>
+
+    </form>
+
+<?php //  if(Mage::getModel('core/variable')->loadByCode('zanox')->getValue('plain') == 'on'): ?>
+	<!-- End of Product Page Mastertag Code -->
+	<!-- Display image with text(reviews number under the form ) -->
+	<div class="review-numbers-caption">
+		<?php $baseURL = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?>
+		<img class="review-form-img-lg" src="<?php echo $baseURL . 'frontend/trego2016/trego/images/review-under-form.jpg';  ?>" alt="">
+                <img class="review-form-img-mob" src="<?php echo $baseURL . 'frontend/trego2016/trego/images/mob-under-review.png';  ?>" alt="">
+		<?php if($reviews_count > 0):  ?>                
+                <p class="reviews-caption-text">
+                    <span class="reviews-under-form-small-img">
+                        <img  src="<?php echo $baseURL . 'frontend/trego2016/trego/images/review-under-form-logo.png';  ?>" alt="">
+                    </span>
+                    <?php echo $this->__('Donnez votre avis et recevez <span>30 pépites</span> dans votre compte !') ?>
+                </p>
+		<?php else: ?>                
+                <p class="reviews-caption-text">
+                    <span class="reviews-under-form-small-img">
+                        <img  src="<?php echo $baseURL . 'frontend/trego2016/trego/images/review-under-form-logo.png';  ?>" alt="">
+                    </span>                            
+                            <?php echo $this->__('Soyez le premier à donner votre avis et recevez <span>30 pépites</span> dans votre compte !') ?>
+                </p>
+		<?php endif; ?>
+	</div>
+<?php // endif; ?>
+

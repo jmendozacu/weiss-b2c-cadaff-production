@@ -1,0 +1,9 @@
+.pki
+/la-maison/wp-content/uploads/
+/la-maison/wp-config.php
+/la-maison/wp-content/cache/
+/la-maison/wp-content/wfcache/
+/app/etc/local.xml
+/var/*
+/media/css/*
+/media/js/*

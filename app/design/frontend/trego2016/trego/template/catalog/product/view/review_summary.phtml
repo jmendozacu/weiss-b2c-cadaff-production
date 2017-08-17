@@ -1,0 +1,49 @@
+<div class="akordeon-item">
+    <div class="akordeon-item-head">
+        <div class="akordeon-item-head-container">
+            <div class="akordeon-heading">
+                <?php echo $this->__('Comments') ?>
+            </div>
+        </div>
+    </div>
+    <div class="akordeon-item-body">
+        <div class="akordeon-item-content">
+            <button type="button" title="<?php echo $this->__('Write Review') ?>" class="button btn-write" onclick="window.location.href='<?php echo Mage::getUrl('review/product/list', array('id'=> $this->getProductId())); ?>#review-form'"><span><span><?php echo $this->__('Write Review') ?></span></span></button>
+            <?php $_items = $this->getReviewsCollection()->getItems();?>
+            <div class="box-collateral box-reviews" id="customer-reviews">
+                <?php $reviewCounter = 0; ?>
+                <?php if (count($_items)):?>
+                    <dl>
+                    <?php foreach ($_items as $_review):?>
+                        <?php $reviewCounter++;  ?>
+                        <div class="one-review-container <?php if($reviewCounter > 2):?> hide-review <?php endif; ?>">
+                            <dt class="review-title">
+                                <a href="<?php echo $this->getReviewUrl($_review->getId()) ?>"><?php echo $this->htmlEscape($_review->getTitle()) ?></a>
+                                <?php
+                                    $_votes = $_review->getRatingVotes();
+                                    $_percent = 0;
+                                    if (count($_votes)){
+                                        foreach ($_votes as $_vote){
+                                            $_percent += $_vote->getPercent();
+                                        }
+                                        $_percent = $_percent / count($_votes);
+                                    }
+                                ?>
+                                <div class="rating-box">
+                                    <div class="rating" style="width:<?php echo $_percent ?>%;"></div>
+                                </div>
+
+                            </dt>
+                            <dd class="reviews-content-text">
+                                <?php echo nl2br($this->htmlEscape($_review->getDetail())) ?>
+                            </dd>
+                            <span><span class="created-by"><?php echo $this->__('Par '); ?></span><?php echo $this->htmlEscape($_review->getNickname()) ?></span>
+                            <small class="date"><span class="created-at"><?php echo $this->__('le '); ?></span><?php echo Mage::getModel('core/date')->date('j.m.Y' , strtotime($_review->getCreatedAt())) ?></small>
+                        </div>
+                    <?php endforeach; ?>
+                    </dl>
+                <?php endif;?>
+            </div>
+        </div>
+    </div>
+</div>

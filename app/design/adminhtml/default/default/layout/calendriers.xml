@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+	<calendriers_calendriers_index>
+		<reference name="head">
+			<action method="setTitle" translate="title"><title>Ajout de calendriers</title></action>
+			<action method="addJs"><script>trego/jquery/jquery-1.9.1.min.js</script></action>
+			<action method="addJs"><script>trego/jquery/jquery-noconflict.js</script></action>
+			<action method="addJs"><script>cienum/calendriers.js</script></action>
+		</reference>
+		<reference name="content">
+            <block type="calendriers/calendriers" name="calendriers" template="calendriers/index.phtml" />
+        </reference>
+	</calendriers_calendriers_index>
+</layout>

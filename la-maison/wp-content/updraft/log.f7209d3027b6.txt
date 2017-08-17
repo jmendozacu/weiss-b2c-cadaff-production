@@ -1,0 +1,1261 @@
+0000.000 (0) Opened log file at time: Mon, 14 Aug 2017 10:09:21 +0000 on http://www.chocolat-weiss.fr/la-maison
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.5 WP: 4.7.5 PHP: 5.5.37 (fpm-fcgi, Linux weissweb.cienum.fr 2.6.32-431.5.1.el6.x86_64 #1 SMP Wed Feb 12 00:41:43 UTC 2014 x86_64) MySQL: 5.5.34 WPLANG: fr_FR Server: Apache/2.2.15 (CentOS) safe_mode: 0 max_execution_time: 900 memory_limit: 1000M (used: 19.4M | 20M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 91997.4 MB
+0000.004 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.005 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.009 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1502618830, seconds_ago=86531)
+0000.011 (0) Set semaphore last lock (fd) time to 2017-08-14 10:09:21
+0000.012 (0) Semaphore lock (fd) complete
+0000.014 (0) Backup run: resumption=0, nonce=f7209d3027b6, begun at=1502705361 (0s ago), job type=backup
+0000.016 (0) Scheduling a resumption (1) after 300 seconds (1502705661) in case this run gets aborted
+0000.025 (0) Checking if we have a zip executable available
+0000.026 (0) Creation of backups of directories: beginning
+0000.029 (0) Beginning creation of dump of plugins (split every: 500 MB)
+0000.190 (0) Total entities for the zip file: 824 directories, 6083 files (0 skipped as non-modified), 64.4 MB
+0000.220 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.232 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.244 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.257 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.271 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.272 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.4 MB, 6083 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.968 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 600 files added (on-disk size: 2392.9 KB)
+0000.983 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 700 files added (on-disk size: 2392.9 KB)
+0000.999 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 800 files added (on-disk size: 2392.9 KB)
+0001.016 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 900 files added (on-disk size: 2392.9 KB)
+0001.033 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1000 files added (on-disk size: 2392.9 KB)
+0001.035 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (15.8 MB, 6083 files batched, 501 (1002) added so far); re-opening (prior size: 2392.9 KB)
+0002.475 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1100 files added (on-disk size: 6869.9 KB)
+0002.495 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1200 files added (on-disk size: 6869.9 KB)
+0002.612 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1300 files added (on-disk size: 6869.9 KB)
+0002.636 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1400 files added (on-disk size: 6869.9 KB)
+0002.658 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1500 files added (on-disk size: 6869.9 KB)
+0002.660 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 6083 files batched, 501 (1503) added so far); re-opening (prior size: 6869.9 KB)
+0002.910 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1600 files added (on-disk size: 7550 KB)
+0002.929 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1700 files added (on-disk size: 7550 KB)
+0002.950 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1800 files added (on-disk size: 7550 KB)
+0002.971 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 1900 files added (on-disk size: 7550 KB)
+0002.994 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2000 files added (on-disk size: 7550 KB)
+0002.995 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.8 MB, 6083 files batched, 501 (2004) added so far); re-opening (prior size: 7550 KB)
+0003.735 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2100 files added (on-disk size: 9456 KB)
+0003.758 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2200 files added (on-disk size: 9456 KB)
+0003.780 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2300 files added (on-disk size: 9456 KB)
+0003.803 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2400 files added (on-disk size: 9456 KB)
+0003.828 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2500 files added (on-disk size: 9456 KB)
+0003.830 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.9 MB, 6083 files batched, 501 (2505) added so far); re-opening (prior size: 9456 KB)
+0003.994 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2600 files added (on-disk size: 9901.5 KB)
+0004.017 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2700 files added (on-disk size: 9901.5 KB)
+0004.040 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2800 files added (on-disk size: 9901.5 KB)
+0004.064 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 2900 files added (on-disk size: 9901.5 KB)
+0004.089 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3000 files added (on-disk size: 9901.5 KB)
+0004.091 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.2 MB, 6083 files batched, 501 (3006) added so far); re-opening (prior size: 9901.5 KB)
+0004.716 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3100 files added (on-disk size: 12185.5 KB)
+0004.742 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3200 files added (on-disk size: 12185.5 KB)
+0004.768 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3300 files added (on-disk size: 12185.5 KB)
+0004.796 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3400 files added (on-disk size: 12185.5 KB)
+0004.826 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3500 files added (on-disk size: 12185.5 KB)
+0004.829 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 6083 files batched, 501 (3507) added so far); re-opening (prior size: 12185.5 KB)
+0005.020 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3600 files added (on-disk size: 13588.7 KB)
+0005.067 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3700 files added (on-disk size: 13588.7 KB)
+0005.112 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3800 files added (on-disk size: 13588.7 KB)
+0005.154 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 3900 files added (on-disk size: 13588.7 KB)
+0005.199 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4000 files added (on-disk size: 13588.7 KB)
+0005.203 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1 MB, 6083 files batched, 501 (4008) added so far); re-opening (prior size: 13588.7 KB)
+0005.407 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4100 files added (on-disk size: 14728.7 KB)
+0005.442 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4200 files added (on-disk size: 14728.7 KB)
+0005.475 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4300 files added (on-disk size: 14728.7 KB)
+0005.509 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4400 files added (on-disk size: 14728.7 KB)
+0005.552 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4500 files added (on-disk size: 14728.7 KB)
+0005.556 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.8 MB, 6083 files batched, 501 (4509) added so far); re-opening (prior size: 14728.7 KB)
+0005.940 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4600 files added (on-disk size: 17041.6 KB)
+0006.038 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4700 files added (on-disk size: 17041.6 KB)
+0006.082 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4800 files added (on-disk size: 17041.6 KB)
+0006.121 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 4900 files added (on-disk size: 17041.6 KB)
+0006.167 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5000 files added (on-disk size: 17041.6 KB)
+0006.174 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.2 MB, 6083 files batched, 501 (5010) added so far); re-opening (prior size: 17041.6 KB)
+0006.570 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5100 files added (on-disk size: 18623.2 KB)
+0006.604 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5200 files added (on-disk size: 18623.2 KB)
+0006.639 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5300 files added (on-disk size: 18623.2 KB)
+0006.673 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5400 files added (on-disk size: 18623.2 KB)
+0006.718 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5500 files added (on-disk size: 18623.2 KB)
+0006.724 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.3 MB, 6083 files batched, 501 (5511) added so far); re-opening (prior size: 18623.2 KB)
+0007.647 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5600 files added (on-disk size: 20910.6 KB)
+0007.725 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5700 files added (on-disk size: 20910.6 KB)
+0007.761 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5800 files added (on-disk size: 20910.6 KB)
+0007.812 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 5900 files added (on-disk size: 20910.6 KB)
+0007.857 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip.tmp: 6000 files added (on-disk size: 20910.6 KB)
+0007.865 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7 MB, 6083 files batched, 501 (6012) added so far); re-opening (prior size: 20910.6 KB)
+0010.449 (0) Created plugins zip (0) - 24509.3 KB in 10.4 s (2352.3 KB/s) (sha1: 15d25b8305e211777481d6b9364a239ed71ed900, sha256: 3e236967a99d3242c7ee2aab523c7a33a41e72bc8e8f3df2824af162c9c4f151)
+0010.452 (0) Beginning creation of dump of themes (split every: 500 MB)
+0010.467 (0) Total entities for the zip file: 60 directories, 615 files (0 skipped as non-modified), 22.1 MB
+0010.472 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.479 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.486 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0010.493 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0010.502 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0010.503 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (16.8 MB, 615 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0011.546 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip.tmp: 600 files added (on-disk size: 10694.5 KB)
+0012.231 (0) Created themes zip (0) - 13310.4 KB in 1.8 s (7484.8 KB/s) (sha1: dd210ed9bb52f393d50546f8b4b3f2d75e401915, sha256: 936248b14d0d80a6b930f21a24b8d4e23e84a567ceb93f347cbf268d77224382)
+0012.234 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0012.235 (0) Looking for candidates to back up in: /var/www/html/www.chocolat-weiss.fr/www/la-maison/wp-content/uploads
+0012.235 (0) finding files: 2017: adding to list (1)
+0012.236 (0) finding files: 2015: adding to list (2)
+0012.237 (0) finding files: 2016: adding to list (3)
+0012.237 (0) finding files: 2014: adding to list (4)
+0012.238 (0) finding files: wpcf7_uploads: adding to list (5)
+0012.239 (0) Beginning creation of dump of uploads (split every: 500 MB)
+0012.267 (0) Total entities for the zip file: 38 directories, 1303 files (0 skipped as non-modified), 71.1 MB
+0012.273 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0012.279 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0012.288 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0012.301 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0012.315 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0012.316 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (16.9 MB, 1303 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0013.018 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 600 files added (on-disk size: 16764 KB)
+0013.028 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 700 files added (on-disk size: 16764 KB)
+0013.038 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 800 files added (on-disk size: 16764 KB)
+0013.049 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 900 files added (on-disk size: 16764 KB)
+0013.050 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.2 MB, 1303 files batched, 403 (904) added so far); re-opening (prior size: 16764 KB)
+0014.255 (0) A useful amount of data was added after this amount of zip processing: 1.8 s (normalised: 1.8 s, rate: 14483.9 KB/s)
+0014.256 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.784441947937, normalised_time=1.7674740113385, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=88989370)
+0014.270 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 1000 files added (on-disk size: 41033.9 KB)
+0014.283 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 1100 files added (on-disk size: 41033.9 KB)
+0014.296 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 1200 files added (on-disk size: 41033.9 KB)
+0014.310 (0) Zip: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip.tmp: 1300 files added (on-disk size: 41033.9 KB)
+0017.032 (0) Created uploads zip (0) - 68418.7 KB in 4.8 s (14280.4 KB/s) (sha1: e759c3305afa0493b8e09caba1feb52eae599e5e, sha256: 20772ddc2cec871b80e0559e5f58a0c0136cf869a365734f79b40881d0b75e02)
+0017.035 (0) Beginning backup of other directories found in the content directory (index: 0)
+0017.036 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups
+0017.036 (0) Looking for candidates to back up in: /var/www/html/www.chocolat-weiss.fr/www/la-maison/wp-content
+0017.037 (0) finding files: themes: skipping: this is the themes directory
+0017.038 (0) finding files: ewww: adding to list (1)
+0017.039 (0) finding files: plugins: skipping: this is the plugins directory
+0017.039 (0) finding files: advanced-cache.php: adding to list (2)
+0017.040 (0) finding files: index.php: adding to list (3)
+0017.041 (0) finding files: wp-cache-config.php: adding to list (4)
+0017.042 (0) finding files: languages: adding to list (5)
+0017.042 (0) finding files: upgrade: skipping: excluded by options
+0017.043 (0) finding files: uploads: skipping: this is the uploads directory
+0017.044 (0) finding files: wflogs: adding to list (6)
+0017.044 (0) finding files: cache: skipping: excluded by options
+0017.045 (0) finding files: updraft: skipping: this is the updraft directory
+0017.049 (0) Total entities for the zip file: 5 directories, 64 files (0 skipped as non-modified), 8.7 MB
+0018.496 (0) Created others zip (0) - 3145.6 KB in 1.4 s (2169.5 KB/s) (sha1: 7d2a872a0d7cb1e78af3de08e9186056b0647f95, sha256: 5c28b3f1af1e92ab8d921a272e36b3bb70ec487e64d717e989059696f972b5ec)
+0018.501 (0) Saving backup status to database (elements: 8)
+0018.502 (0) Beginning creation of database dump (WordPress DB)
+0018.504 (0) Testing: /usr/bin/mysqldump
+0018.519 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1090 bytes total)
+0018.522 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0018.616 (0) Table wp_options: Total expected rows (approximate): 594
+0018.691 (0) Table wp_options: Total rows added: 590 in 0.07 seconds
+0018.693 (0) Table wp_options: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_options.table.gz - 221.3 KB)
+0018.699 (0) Table wp_users: Total expected rows (approximate): 7
+0018.701 (0) Table wp_users: Total rows added: 7 in 0.00 seconds
+0018.702 (0) Table wp_users: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_users.table.gz - 1 KB)
+0018.707 (0) Table wp_usermeta: Total expected rows (approximate): 155
+0018.711 (0) Table wp_usermeta: Total rows added: 155 in 0.00 seconds
+0018.712 (0) Table wp_usermeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_usermeta.table.gz - 4.5 KB)
+0018.716 (0) Table wp_commentmeta: Total expected rows (approximate): 103
+0018.720 (0) Table wp_commentmeta: Total rows added: 103 in 0.00 seconds
+0018.721 (0) Table wp_commentmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_commentmeta.table.gz - 5.9 KB)
+0018.725 (0) Table wp_comments: Total expected rows (approximate): 36
+0018.730 (0) Table wp_comments: Total rows added: 36 in 0.00 seconds
+0018.731 (0) Table wp_comments: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_comments.table.gz - 6.1 KB)
+0018.736 (0) Table wp_links: Total expected rows (approximate): 0
+0018.738 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0018.738 (0) Table wp_links: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_links.table.gz - 0.4 KB)
+0018.742 (0) Table wp_postmeta: Total expected rows (approximate): 8168
+0018.810 (0) Table wp_postmeta: binary mysqldump finished (writes: 33) in 0.07 seconds
+0018.812 (0) Table wp_postmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_postmeta.table.gz - 112.4 KB)
+0018.816 (0) Table wp_posts: Total expected rows (approximate): 4028
+0019.550 (0) Table wp_posts: Total rows added: 4028 in 0.73 seconds
+0019.552 (0) Table wp_posts: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_posts.table.gz - 824.3 KB)
+0019.557 (0) Table wp_signups: Total expected rows (approximate): 0
+0019.559 (0) Table wp_signups: Total rows added: 0 in 0.00 seconds
+0019.560 (0) Table wp_signups: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_signups.table.gz - 0.4 KB)
+0019.564 (0) Table wp_term_relationships: Total expected rows (approximate): 328
+0019.569 (0) Table wp_term_relationships: Total rows added: 328 in 0.00 seconds
+0019.570 (0) Table wp_term_relationships: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_term_relationships.table.gz - 1.2 KB)
+0019.574 (0) Table wp_term_taxonomy: Total expected rows (approximate): 49
+0019.576 (0) Table wp_term_taxonomy: Total rows added: 49 in 0.00 seconds
+0019.577 (0) Table wp_term_taxonomy: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_term_taxonomy.table.gz - 0.9 KB)
+0019.582 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0019.583 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0019.584 (0) Table wp_termmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_termmeta.table.gz - 0.4 KB)
+0019.588 (0) Table wp_terms: Total expected rows (approximate): 49
+0019.591 (0) Table wp_terms: Total rows added: 49 in 0.00 seconds
+0019.592 (0) Table wp_terms: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_terms.table.gz - 1.2 KB)
+0019.594 (0) Skipping table (lacks our prefix (wp_)): admin_assert
+0019.594 (0) Skipping table (lacks our prefix (wp_)): admin_role
+0019.595 (0) Skipping table (lacks our prefix (wp_)): admin_rule
+0019.596 (0) Skipping table (lacks our prefix (wp_)): admin_user
+0019.596 (0) Skipping table (lacks our prefix (wp_)): adminnotification_inbox
+0019.597 (0) Skipping table (lacks our prefix (wp_)): api2_acl_attribute
+0019.598 (0) Skipping table (lacks our prefix (wp_)): api2_acl_role
+0019.599 (0) Skipping table (lacks our prefix (wp_)): api2_acl_rule
+0019.599 (0) Skipping table (lacks our prefix (wp_)): api2_acl_user
+0019.600 (0) Skipping table (lacks our prefix (wp_)): api_assert
+0019.601 (0) Skipping table (lacks our prefix (wp_)): api_role
+0019.602 (0) Skipping table (lacks our prefix (wp_)): api_rule
+0019.603 (0) Skipping table (lacks our prefix (wp_)): api_session
+0019.603 (0) Skipping table (lacks our prefix (wp_)): api_user
+0019.604 (0) Skipping table (lacks our prefix (wp_)): cache_blockhtml_config
+0019.605 (0) Skipping table (lacks our prefix (wp_)): cache_blockhtml_learning
+0019.606 (0) Skipping table (lacks our prefix (wp_)): cache_fullpage_config
+0019.606 (0) Skipping table (lacks our prefix (wp_)): captcha_log
+0019.607 (0) Skipping table (lacks our prefix (wp_)): catalog_category_anc_categs_index_idx
+0019.608 (0) Skipping table (lacks our prefix (wp_)): catalog_category_anc_categs_index_tmp
+0019.608 (0) Skipping table (lacks our prefix (wp_)): catalog_category_anc_products_index_idx
+0019.609 (0) Skipping table (lacks our prefix (wp_)): catalog_category_anc_products_index_tmp
+0019.610 (0) Skipping table (lacks our prefix (wp_)): catalog_category_entity
+0019.611 (0) Skipping table (lacks our prefix (wp_)): catalog_category_entity_datetime
+0019.611 (0) Skipping table (lacks our prefix (wp_)): catalog_category_entity_decimal
+0019.612 (0) Skipping table (lacks our prefix (wp_)): catalog_category_entity_int
+0019.613 (0) Skipping table (lacks our prefix (wp_)): catalog_category_entity_text
+0019.614 (0) Skipping table (lacks our prefix (wp_)): catalog_category_entity_varchar
+0019.614 (0) Skipping table (lacks our prefix (wp_)): catalog_category_flat_store_1
+0019.615 (0) Skipping table (lacks our prefix (wp_)): catalog_category_flat_store_2
+0019.616 (0) Skipping table (lacks our prefix (wp_)): catalog_category_flat_store_3
+0019.617 (0) Skipping table (lacks our prefix (wp_)): catalog_category_flat_store_4
+0019.617 (0) Skipping table (lacks our prefix (wp_)): catalog_category_product
+0019.618 (0) Skipping table (lacks our prefix (wp_)): catalog_category_product_index
+0019.619 (0) Skipping table (lacks our prefix (wp_)): catalog_category_product_index_enbl_idx
+0019.620 (0) Skipping table (lacks our prefix (wp_)): catalog_category_product_index_enbl_tmp
+0019.620 (0) Skipping table (lacks our prefix (wp_)): catalog_category_product_index_idx
+0019.621 (0) Skipping table (lacks our prefix (wp_)): catalog_category_product_index_tmp
+0019.622 (0) Skipping table (lacks our prefix (wp_)): catalog_compare_item
+0019.622 (0) Skipping table (lacks our prefix (wp_)): catalog_eav_attribute
+0019.623 (0) Skipping table (lacks our prefix (wp_)): catalog_product_bundle_option
+0019.624 (0) Skipping table (lacks our prefix (wp_)): catalog_product_bundle_option_value
+0019.625 (0) Skipping table (lacks our prefix (wp_)): catalog_product_bundle_price_index
+0019.625 (0) Skipping table (lacks our prefix (wp_)): catalog_product_bundle_selection
+0019.626 (0) Skipping table (lacks our prefix (wp_)): catalog_product_bundle_selection_price
+0019.627 (0) Skipping table (lacks our prefix (wp_)): catalog_product_bundle_stock_index
+0019.627 (0) Skipping table (lacks our prefix (wp_)): catalog_product_enabled_index
+0019.628 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity
+0019.629 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_datetime
+0019.630 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_decimal
+0019.630 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_gallery
+0019.631 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_group_price
+0019.632 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_int
+0019.633 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_media_gallery
+0019.633 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_media_gallery_value
+0019.634 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_text
+0019.635 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_tier_price
+0019.636 (0) Skipping table (lacks our prefix (wp_)): catalog_product_entity_varchar
+0019.636 (0) Skipping table (lacks our prefix (wp_)): catalog_product_flat_1
+0019.637 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_eav
+0019.638 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_eav_decimal
+0019.639 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_eav_decimal_idx
+0019.639 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_eav_decimal_tmp
+0019.640 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_eav_idx
+0019.641 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_eav_tmp
+0019.641 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_group_price
+0019.642 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price
+0019.643 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_bundle_idx
+0019.644 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_bundle_opt_idx
+0019.644 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_bundle_opt_tmp
+0019.645 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_bundle_sel_idx
+0019.646 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_bundle_sel_tmp
+0019.646 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_bundle_tmp
+0019.647 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_cfg_opt_agr_idx
+0019.648 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_cfg_opt_agr_tmp
+0019.649 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_cfg_opt_idx
+0019.649 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_cfg_opt_tmp
+0019.650 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_downlod_idx
+0019.651 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_downlod_tmp
+0019.651 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_final_idx
+0019.652 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_final_tmp
+0019.653 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_idx
+0019.654 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_opt_agr_idx
+0019.654 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_opt_agr_tmp
+0019.655 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_opt_idx
+0019.656 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_opt_tmp
+0019.657 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_price_tmp
+0019.657 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_tier_price
+0019.658 (0) Skipping table (lacks our prefix (wp_)): catalog_product_index_website
+0019.659 (0) Skipping table (lacks our prefix (wp_)): catalog_product_link
+0019.659 (0) Skipping table (lacks our prefix (wp_)): catalog_product_link_attribute
+0019.660 (0) Skipping table (lacks our prefix (wp_)): catalog_product_link_attribute_decimal
+0019.661 (0) Skipping table (lacks our prefix (wp_)): catalog_product_link_attribute_int
+0019.662 (0) Skipping table (lacks our prefix (wp_)): catalog_product_link_attribute_varchar
+0019.662 (0) Skipping table (lacks our prefix (wp_)): catalog_product_link_type
+0019.663 (0) Skipping table (lacks our prefix (wp_)): catalog_product_option
+0019.664 (0) Skipping table (lacks our prefix (wp_)): catalog_product_option_price
+0019.664 (0) Skipping table (lacks our prefix (wp_)): catalog_product_option_title
+0019.665 (0) Skipping table (lacks our prefix (wp_)): catalog_product_option_type_price
+0019.666 (0) Skipping table (lacks our prefix (wp_)): catalog_product_option_type_title
+0019.667 (0) Skipping table (lacks our prefix (wp_)): catalog_product_option_type_value
+0019.667 (0) Skipping table (lacks our prefix (wp_)): catalog_product_relation
+0019.668 (0) Skipping table (lacks our prefix (wp_)): catalog_product_super_attribute
+0019.669 (0) Skipping table (lacks our prefix (wp_)): catalog_product_super_attribute_label
+0019.670 (0) Skipping table (lacks our prefix (wp_)): catalog_product_super_attribute_pricing
+0019.670 (0) Skipping table (lacks our prefix (wp_)): catalog_product_super_link
+0019.671 (0) Skipping table (lacks our prefix (wp_)): catalog_product_website
+0019.672 (0) Skipping table (lacks our prefix (wp_)): cataloginventory_stock
+0019.672 (0) Skipping table (lacks our prefix (wp_)): cataloginventory_stock_item
+0019.673 (0) Skipping table (lacks our prefix (wp_)): cataloginventory_stock_status
+0019.674 (0) Skipping table (lacks our prefix (wp_)): cataloginventory_stock_status_idx
+0019.675 (0) Skipping table (lacks our prefix (wp_)): cataloginventory_stock_status_tmp
+0019.675 (0) Skipping table (lacks our prefix (wp_)): catalogrule
+0019.676 (0) Skipping table (lacks our prefix (wp_)): catalogrule_affected_product
+0019.677 (0) Skipping table (lacks our prefix (wp_)): catalogrule_customer_group
+0019.677 (0) Skipping table (lacks our prefix (wp_)): catalogrule_group_website
+0019.678 (0) Skipping table (lacks our prefix (wp_)): catalogrule_product
+0019.679 (0) Skipping table (lacks our prefix (wp_)): catalogrule_product_price
+0019.680 (0) Skipping table (lacks our prefix (wp_)): catalogrule_website
+0019.680 (0) Skipping table (lacks our prefix (wp_)): catalogsearch_fulltext
+0019.681 (0) Skipping table (lacks our prefix (wp_)): catalogsearch_query
+0019.682 (0) Skipping table (lacks our prefix (wp_)): catalogsearch_result
+0019.683 (0) Skipping table (lacks our prefix (wp_)): checkout_agreement
+0019.683 (0) Skipping table (lacks our prefix (wp_)): checkout_agreement_store
+0019.684 (0) Skipping table (lacks our prefix (wp_)): ci_chocolat
+0019.685 (0) Skipping table (lacks our prefix (wp_)): cms_block
+0019.685 (0) Skipping table (lacks our prefix (wp_)): cms_block_store
+0019.686 (0) Skipping table (lacks our prefix (wp_)): cms_page
+0019.687 (0) Skipping table (lacks our prefix (wp_)): cms_page_store
+0019.688 (0) Skipping table (lacks our prefix (wp_)): core_cache
+0019.688 (0) Skipping table (lacks our prefix (wp_)): core_cache_option
+0019.689 (0) Skipping table (lacks our prefix (wp_)): core_cache_tag
+0019.690 (0) Skipping table (lacks our prefix (wp_)): core_config_data
+0019.691 (0) Skipping table (lacks our prefix (wp_)): core_directory_storage
+0019.691 (0) Skipping table (lacks our prefix (wp_)): core_email_template
+0019.692 (0) Skipping table (lacks our prefix (wp_)): core_flag
+0019.693 (0) Skipping table (lacks our prefix (wp_)): core_layout_link
+0019.693 (0) Skipping table (lacks our prefix (wp_)): core_layout_update
+0019.694 (0) Skipping table (lacks our prefix (wp_)): core_resource
+0019.695 (0) Skipping table (lacks our prefix (wp_)): core_session
+0019.696 (0) Skipping table (lacks our prefix (wp_)): core_store
+0019.696 (0) Skipping table (lacks our prefix (wp_)): core_store_group
+0019.697 (0) Skipping table (lacks our prefix (wp_)): core_translate
+0019.698 (0) Skipping table (lacks our prefix (wp_)): core_url_rewrite
+0019.698 (0) Skipping table (lacks our prefix (wp_)): core_variable
+0019.699 (0) Skipping table (lacks our prefix (wp_)): core_variable_value
+0019.700 (0) Skipping table (lacks our prefix (wp_)): core_website
+0019.701 (0) Skipping table (lacks our prefix (wp_)): coupon_aggregated
+0019.701 (0) Skipping table (lacks our prefix (wp_)): coupon_aggregated_order
+0019.702 (0) Skipping table (lacks our prefix (wp_)): coupon_aggregated_updated
+0019.703 (0) Skipping table (lacks our prefix (wp_)): cron_schedule
+0019.704 (0) Skipping table (lacks our prefix (wp_)): customer_address_entity
+0019.704 (0) Skipping table (lacks our prefix (wp_)): customer_address_entity_datetime
+0019.705 (0) Skipping table (lacks our prefix (wp_)): customer_address_entity_decimal
+0019.706 (0) Skipping table (lacks our prefix (wp_)): customer_address_entity_int
+0019.706 (0) Skipping table (lacks our prefix (wp_)): customer_address_entity_text
+0019.707 (0) Skipping table (lacks our prefix (wp_)): customer_address_entity_varchar
+0019.708 (0) Skipping table (lacks our prefix (wp_)): customer_eav_attribute
+0019.709 (0) Skipping table (lacks our prefix (wp_)): customer_eav_attribute_website
+0019.710 (0) Skipping table (lacks our prefix (wp_)): customer_entity
+0019.710 (0) Skipping table (lacks our prefix (wp_)): customer_entity_datetime
+0019.711 (0) Skipping table (lacks our prefix (wp_)): customer_entity_decimal
+0019.712 (0) Skipping table (lacks our prefix (wp_)): customer_entity_int
+0019.713 (0) Skipping table (lacks our prefix (wp_)): customer_entity_text
+0019.714 (0) Skipping table (lacks our prefix (wp_)): customer_entity_varchar
+0019.714 (0) Skipping table (lacks our prefix (wp_)): customer_form_attribute
+0019.715 (0) Skipping table (lacks our prefix (wp_)): customer_group
+0019.716 (0) Skipping table (lacks our prefix (wp_)): dataflow_batch
+0019.716 (0) Skipping table (lacks our prefix (wp_)): dataflow_batch_export
+0019.717 (0) Skipping table (lacks our prefix (wp_)): dataflow_batch_import
+0019.718 (0) Skipping table (lacks our prefix (wp_)): dataflow_import_data
+0019.719 (0) Skipping table (lacks our prefix (wp_)): dataflow_profile
+0019.719 (0) Skipping table (lacks our prefix (wp_)): dataflow_profile_history
+0019.720 (0) Skipping table (lacks our prefix (wp_)): dataflow_session
+0019.721 (0) Skipping table (lacks our prefix (wp_)): design_change
+0019.721 (0) Skipping table (lacks our prefix (wp_)): directory_country
+0019.722 (0) Skipping table (lacks our prefix (wp_)): directory_country_format
+0019.723 (0) Skipping table (lacks our prefix (wp_)): directory_country_region
+0019.723 (0) Skipping table (lacks our prefix (wp_)): directory_country_region_name
+0019.724 (0) Skipping table (lacks our prefix (wp_)): directory_currency_rate
+0019.725 (0) Skipping table (lacks our prefix (wp_)): downloadable_link
+0019.726 (0) Skipping table (lacks our prefix (wp_)): downloadable_link_price
+0019.727 (0) Skipping table (lacks our prefix (wp_)): downloadable_link_purchased
+0019.727 (0) Skipping table (lacks our prefix (wp_)): downloadable_link_purchased_item
+0019.728 (0) Skipping table (lacks our prefix (wp_)): downloadable_link_title
+0019.729 (0) Skipping table (lacks our prefix (wp_)): downloadable_sample
+0019.729 (0) Skipping table (lacks our prefix (wp_)): downloadable_sample_title
+0019.730 (0) Skipping table (lacks our prefix (wp_)): eav_attribute
+0019.731 (0) Skipping table (lacks our prefix (wp_)): eav_attribute_group
+0019.732 (0) Skipping table (lacks our prefix (wp_)): eav_attribute_label
+0019.732 (0) Skipping table (lacks our prefix (wp_)): eav_attribute_option
+0019.733 (0) Skipping table (lacks our prefix (wp_)): eav_attribute_option_value
+0019.734 (0) Skipping table (lacks our prefix (wp_)): eav_attribute_set
+0019.734 (0) Skipping table (lacks our prefix (wp_)): eav_entity
+0019.735 (0) Skipping table (lacks our prefix (wp_)): eav_entity_attribute
+0019.736 (0) Skipping table (lacks our prefix (wp_)): eav_entity_datetime
+0019.736 (0) Skipping table (lacks our prefix (wp_)): eav_entity_decimal
+0019.737 (0) Skipping table (lacks our prefix (wp_)): eav_entity_int
+0019.738 (0) Skipping table (lacks our prefix (wp_)): eav_entity_store
+0019.739 (0) Skipping table (lacks our prefix (wp_)): eav_entity_text
+0019.739 (0) Skipping table (lacks our prefix (wp_)): eav_entity_type
+0019.740 (0) Skipping table (lacks our prefix (wp_)): eav_entity_varchar
+0019.741 (0) Skipping table (lacks our prefix (wp_)): eav_form_element
+0019.741 (0) Skipping table (lacks our prefix (wp_)): eav_form_fieldset
+0019.742 (0) Skipping table (lacks our prefix (wp_)): eav_form_fieldset_label
+0019.743 (0) Skipping table (lacks our prefix (wp_)): eav_form_type
+0019.744 (0) Skipping table (lacks our prefix (wp_)): eav_form_type_entity
+0019.744 (0) Skipping table (lacks our prefix (wp_)): extension_conflict
+0019.745 (0) Skipping table (lacks our prefix (wp_)): gift_message
+0019.746 (0) Skipping table (lacks our prefix (wp_)): importexport_importdata
+0019.746 (0) Skipping table (lacks our prefix (wp_)): index_event
+0019.747 (0) Skipping table (lacks our prefix (wp_)): index_process
+0019.748 (0) Skipping table (lacks our prefix (wp_)): index_process_event
+0019.748 (0) Skipping table (lacks our prefix (wp_)): log_customer
+0019.749 (0) Skipping table (lacks our prefix (wp_)): log_quote
+0019.750 (0) Skipping table (lacks our prefix (wp_)): log_summary
+0019.751 (0) Skipping table (lacks our prefix (wp_)): log_summary_type
+0019.751 (0) Skipping table (lacks our prefix (wp_)): log_url
+0019.752 (0) Skipping table (lacks our prefix (wp_)): log_url_info
+0019.753 (0) Skipping table (lacks our prefix (wp_)): log_visitor
+0019.754 (0) Skipping table (lacks our prefix (wp_)): log_visitor_info
+0019.754 (0) Skipping table (lacks our prefix (wp_)): log_visitor_online
+0019.755 (0) Skipping table (lacks our prefix (wp_)): magenotification
+0019.756 (0) Skipping table (lacks our prefix (wp_)): magenotification_extension_feedback
+0019.757 (0) Skipping table (lacks our prefix (wp_)): magenotification_extension_feedbackmessage
+0019.758 (0) Skipping table (lacks our prefix (wp_)): magenotification_license
+0019.758 (0) Skipping table (lacks our prefix (wp_)): magenotification_log
+0019.759 (0) Skipping table (lacks our prefix (wp_)): newsletter_problem
+0019.760 (0) Skipping table (lacks our prefix (wp_)): newsletter_queue
+0019.761 (0) Skipping table (lacks our prefix (wp_)): newsletter_queue_link
+0019.762 (0) Skipping table (lacks our prefix (wp_)): newsletter_queue_store_link
+0019.762 (0) Skipping table (lacks our prefix (wp_)): newsletter_subscriber
+0019.763 (0) Skipping table (lacks our prefix (wp_)): newsletter_template
+0019.764 (0) Skipping table (lacks our prefix (wp_)): oauth_consumer
+0019.765 (0) Skipping table (lacks our prefix (wp_)): oauth_nonce
+0019.765 (0) Skipping table (lacks our prefix (wp_)): oauth_token
+0019.766 (0) Skipping table (lacks our prefix (wp_)): optionextended_option
+0019.767 (0) Skipping table (lacks our prefix (wp_)): optionextended_option_note
+0019.768 (0) Skipping table (lacks our prefix (wp_)): optionextended_product_template
+0019.768 (0) Skipping table (lacks our prefix (wp_)): optionextended_template
+0019.769 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_option
+0019.770 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_option_note
+0019.770 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_option_price
+0019.771 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_option_title
+0019.772 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_value
+0019.773 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_value_description
+0019.773 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_value_price
+0019.774 (0) Skipping table (lacks our prefix (wp_)): optionextended_template_value_title
+0019.775 (0) Skipping table (lacks our prefix (wp_)): optionextended_value
+0019.775 (0) Skipping table (lacks our prefix (wp_)): optionextended_value_description
+0019.776 (0) Skipping table (lacks our prefix (wp_)): paypal_cert
+0019.777 (0) Skipping table (lacks our prefix (wp_)): paypal_payment_transaction
+0019.777 (0) Skipping table (lacks our prefix (wp_)): paypal_settlement_report
+0019.778 (0) Skipping table (lacks our prefix (wp_)): paypal_settlement_report_row
+0019.779 (0) Skipping table (lacks our prefix (wp_)): permission_block
+0019.780 (0) Skipping table (lacks our prefix (wp_)): permission_variable
+0019.780 (0) Skipping table (lacks our prefix (wp_)): persistent_session
+0019.781 (0) Skipping table (lacks our prefix (wp_)): poll
+0019.782 (0) Skipping table (lacks our prefix (wp_)): poll_answer
+0019.782 (0) Skipping table (lacks our prefix (wp_)): poll_store
+0019.783 (0) Skipping table (lacks our prefix (wp_)): poll_vote
+0019.784 (0) Skipping table (lacks our prefix (wp_)): product_alert_price
+0019.784 (0) Skipping table (lacks our prefix (wp_)): product_alert_stock
+0019.785 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_catalog_item
+0019.786 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_catalog_product
+0019.787 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_catalog_rule
+0019.787 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_quote
+0019.788 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_sale
+0019.789 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_shopping_cart_item
+0019.790 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_shopping_cart_quote
+0019.790 (0) Skipping table (lacks our prefix (wp_)): promotionalgift_shopping_cart_rule
+0019.791 (0) Skipping table (lacks our prefix (wp_)): quote_pdf
+0019.792 (0) Skipping table (lacks our prefix (wp_)): rating
+0019.793 (0) Skipping table (lacks our prefix (wp_)): rating_entity
+0019.793 (0) Skipping table (lacks our prefix (wp_)): rating_option
+0019.794 (0) Skipping table (lacks our prefix (wp_)): rating_option_vote
+0019.795 (0) Skipping table (lacks our prefix (wp_)): rating_option_vote_aggregated
+0019.795 (0) Skipping table (lacks our prefix (wp_)): rating_store
+0019.796 (0) Skipping table (lacks our prefix (wp_)): rating_title
+0019.797 (0) Skipping table (lacks our prefix (wp_)): report_compared_product_index
+0019.798 (0) Skipping table (lacks our prefix (wp_)): report_event
+0019.798 (0) Skipping table (lacks our prefix (wp_)): report_event_types
+0019.799 (0) Skipping table (lacks our prefix (wp_)): report_viewed_product_aggregated_daily
+0019.800 (0) Skipping table (lacks our prefix (wp_)): report_viewed_product_aggregated_monthly
+0019.801 (0) Skipping table (lacks our prefix (wp_)): report_viewed_product_aggregated_yearly
+0019.801 (0) Skipping table (lacks our prefix (wp_)): report_viewed_product_index
+0019.802 (0) Skipping table (lacks our prefix (wp_)): review
+0019.803 (0) Skipping table (lacks our prefix (wp_)): review_detail
+0019.803 (0) Skipping table (lacks our prefix (wp_)): review_entity
+0019.804 (0) Skipping table (lacks our prefix (wp_)): review_entity_summary
+0019.805 (0) Skipping table (lacks our prefix (wp_)): review_status
+0019.806 (0) Skipping table (lacks our prefix (wp_)): review_store
+0019.806 (0) Skipping table (lacks our prefix (wp_)): rewards_catalogrule_label
+0019.807 (0) Skipping table (lacks our prefix (wp_)): rewards_catalogrule_product
+0019.808 (0) Skipping table (lacks our prefix (wp_)): rewards_currency
+0019.809 (0) Skipping table (lacks our prefix (wp_)): rewards_customer
+0019.809 (0) Skipping table (lacks our prefix (wp_)): rewards_customer_index_points
+0019.810 (0) Skipping table (lacks our prefix (wp_)): rewards_importer
+0019.811 (0) Skipping table (lacks our prefix (wp_)): rewards_milestone_rule
+0019.811 (0) Skipping table (lacks our prefix (wp_)): rewards_milestone_rule_log
+0019.812 (0) Skipping table (lacks our prefix (wp_)): rewards_special
+0019.813 (0) Skipping table (lacks our prefix (wp_)): rewards_store_currency
+0019.814 (0) Skipping table (lacks our prefix (wp_)): rewards_transfer
+0019.814 (0) Skipping table (lacks our prefix (wp_)): rewards_transfer_reference
+0019.815 (0) Skipping table (lacks our prefix (wp_)): rewardsref_referral
+0019.816 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_customer
+0019.817 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_facebook_like
+0019.817 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_facebook_share
+0019.818 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_google_plusone
+0019.819 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_pinterest_pin
+0019.820 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_purchase_share
+0019.820 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_referral_share
+0019.821 (0) Skipping table (lacks our prefix (wp_)): rewardssocial_twitter_tweet
+0019.822 (0) Skipping table (lacks our prefix (wp_)): sales_bestsellers_aggregated_daily
+0019.822 (0) Skipping table (lacks our prefix (wp_)): sales_bestsellers_aggregated_monthly
+0019.823 (0) Skipping table (lacks our prefix (wp_)): sales_bestsellers_aggregated_yearly
+0019.824 (0) Skipping table (lacks our prefix (wp_)): sales_billing_agreement
+0019.824 (0) Skipping table (lacks our prefix (wp_)): sales_billing_agreement_order
+0019.825 (0) Skipping table (lacks our prefix (wp_)): sales_flat_creditmemo
+0019.826 (0) Skipping table (lacks our prefix (wp_)): sales_flat_creditmemo_comment
+0019.827 (0) Skipping table (lacks our prefix (wp_)): sales_flat_creditmemo_grid
+0019.827 (0) Skipping table (lacks our prefix (wp_)): sales_flat_creditmemo_item
+0019.828 (0) Skipping table (lacks our prefix (wp_)): sales_flat_invoice
+0019.829 (0) Skipping table (lacks our prefix (wp_)): sales_flat_invoice_comment
+0019.829 (0) Skipping table (lacks our prefix (wp_)): sales_flat_invoice_grid
+0019.830 (0) Skipping table (lacks our prefix (wp_)): sales_flat_invoice_item
+0019.831 (0) Skipping table (lacks our prefix (wp_)): sales_flat_order
+0019.832 (0) Skipping table (lacks our prefix (wp_)): sales_flat_order_address
+0019.832 (0) Skipping table (lacks our prefix (wp_)): sales_flat_order_grid
+0019.833 (0) Skipping table (lacks our prefix (wp_)): sales_flat_order_item
+0019.834 (0) Skipping table (lacks our prefix (wp_)): sales_flat_order_payment
+0019.834 (0) Skipping table (lacks our prefix (wp_)): sales_flat_order_status_history
+0019.835 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote
+0019.836 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote_address
+0019.837 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote_address_item
+0019.837 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote_item
+0019.838 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote_item_option
+0019.839 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote_payment
+0019.839 (0) Skipping table (lacks our prefix (wp_)): sales_flat_quote_shipping_rate
+0019.840 (0) Skipping table (lacks our prefix (wp_)): sales_flat_shipment
+0019.841 (0) Skipping table (lacks our prefix (wp_)): sales_flat_shipment_comment
+0019.841 (0) Skipping table (lacks our prefix (wp_)): sales_flat_shipment_grid
+0019.842 (0) Skipping table (lacks our prefix (wp_)): sales_flat_shipment_item
+0019.843 (0) Skipping table (lacks our prefix (wp_)): sales_flat_shipment_track
+0019.844 (0) Skipping table (lacks our prefix (wp_)): sales_invoiced_aggregated
+0019.844 (0) Skipping table (lacks our prefix (wp_)): sales_invoiced_aggregated_order
+0019.845 (0) Skipping table (lacks our prefix (wp_)): sales_order_aggregated_created
+0019.846 (0) Skipping table (lacks our prefix (wp_)): sales_order_aggregated_updated
+0019.846 (0) Skipping table (lacks our prefix (wp_)): sales_order_status
+0019.847 (0) Skipping table (lacks our prefix (wp_)): sales_order_status_label
+0019.848 (0) Skipping table (lacks our prefix (wp_)): sales_order_status_state
+0019.849 (0) Skipping table (lacks our prefix (wp_)): sales_order_tax
+0019.849 (0) Skipping table (lacks our prefix (wp_)): sales_order_tax_item
+0019.850 (0) Skipping table (lacks our prefix (wp_)): sales_payment_transaction
+0019.851 (0) Skipping table (lacks our prefix (wp_)): sales_recurring_profile
+0019.852 (0) Skipping table (lacks our prefix (wp_)): sales_recurring_profile_order
+0019.853 (0) Skipping table (lacks our prefix (wp_)): sales_refunded_aggregated
+0019.853 (0) Skipping table (lacks our prefix (wp_)): sales_refunded_aggregated_order
+0019.854 (0) Skipping table (lacks our prefix (wp_)): sales_shipping_aggregated
+0019.855 (0) Skipping table (lacks our prefix (wp_)): sales_shipping_aggregated_order
+0019.855 (0) Skipping table (lacks our prefix (wp_)): salesrule
+0019.856 (0) Skipping table (lacks our prefix (wp_)): salesrule_coupon
+0019.857 (0) Skipping table (lacks our prefix (wp_)): salesrule_coupon_usage
+0019.858 (0) Skipping table (lacks our prefix (wp_)): salesrule_customer
+0019.858 (0) Skipping table (lacks our prefix (wp_)): salesrule_customer_group
+0019.859 (0) Skipping table (lacks our prefix (wp_)): salesrule_label
+0019.860 (0) Skipping table (lacks our prefix (wp_)): salesrule_product_attribute
+0019.861 (0) Skipping table (lacks our prefix (wp_)): salesrule_website
+0019.861 (0) Skipping table (lacks our prefix (wp_)): sendfriend_log
+0019.862 (0) Skipping table (lacks our prefix (wp_)): shipping_tablerate
+0019.863 (0) Skipping table (lacks our prefix (wp_)): sitemap
+0019.863 (0) Skipping table (lacks our prefix (wp_)): storepickup_holiday
+0019.864 (0) Skipping table (lacks our prefix (wp_)): storepickup_image
+0019.865 (0) Skipping table (lacks our prefix (wp_)): storepickup_location
+0019.866 (0) Skipping table (lacks our prefix (wp_)): storepickup_message
+0019.866 (0) Skipping table (lacks our prefix (wp_)): storepickup_order
+0019.867 (0) Skipping table (lacks our prefix (wp_)): storepickup_specialday
+0019.868 (0) Skipping table (lacks our prefix (wp_)): storepickup_store
+0019.869 (0) Skipping table (lacks our prefix (wp_)): storepickup_store_value
+0019.869 (0) Skipping table (lacks our prefix (wp_)): storepickup_tag
+0019.870 (0) Skipping table (lacks our prefix (wp_)): tag
+0019.871 (0) Skipping table (lacks our prefix (wp_)): tag_properties
+0019.871 (0) Skipping table (lacks our prefix (wp_)): tag_relation
+0019.872 (0) Skipping table (lacks our prefix (wp_)): tag_summary
+0019.873 (0) Skipping table (lacks our prefix (wp_)): tax_calculation
+0019.874 (0) Skipping table (lacks our prefix (wp_)): tax_calculation_rate
+0019.874 (0) Skipping table (lacks our prefix (wp_)): tax_calculation_rate_title
+0019.875 (0) Skipping table (lacks our prefix (wp_)): tax_calculation_rule
+0019.876 (0) Skipping table (lacks our prefix (wp_)): tax_class
+0019.876 (0) Skipping table (lacks our prefix (wp_)): tax_order_aggregated_created
+0019.877 (0) Skipping table (lacks our prefix (wp_)): tax_order_aggregated_updated
+0019.878 (0) Skipping table (lacks our prefix (wp_)): trego_blog
+0019.879 (0) Skipping table (lacks our prefix (wp_)): trego_blog_cat
+0019.879 (0) Skipping table (lacks our prefix (wp_)): trego_blog_cat_store
+0019.880 (0) Skipping table (lacks our prefix (wp_)): trego_blog_comment
+0019.881 (0) Skipping table (lacks our prefix (wp_)): trego_blog_post_cat
+0019.881 (0) Skipping table (lacks our prefix (wp_)): trego_blog_store
+0019.882 (0) Skipping table (lacks our prefix (wp_)): trego_blog_tags
+0019.883 (0) Skipping table (lacks our prefix (wp_)): weee_discount
+0019.884 (0) Skipping table (lacks our prefix (wp_)): weee_tax
+0019.884 (0) Skipping table (lacks our prefix (wp_)): widget
+0019.885 (0) Skipping table (lacks our prefix (wp_)): widget_instance
+0019.886 (0) Skipping table (lacks our prefix (wp_)): widget_instance_page
+0019.886 (0) Skipping table (lacks our prefix (wp_)): widget_instance_page_layout
+0019.887 (0) Skipping table (lacks our prefix (wp_)): wishlist
+0019.888 (0) Skipping table (lacks our prefix (wp_)): wishlist_item
+0019.889 (0) Skipping table (lacks our prefix (wp_)): wishlist_item_option
+0019.889 (0) Skipping table (lacks our prefix (wp_)): wordpress_association
+0019.890 (0) Skipping table (lacks our prefix (wp_)): wordpress_association_type
+0019.894 (0) Table wp_2_commentmeta: Total expected rows (approximate): 0
+0019.896 (0) Table wp_2_commentmeta: Total rows added: 0 in 0.00 seconds
+0019.896 (0) Table wp_2_commentmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_commentmeta.table.gz - 0.3 KB)
+0019.901 (0) Table wp_2_comments: Total expected rows (approximate): 1
+0019.903 (0) Table wp_2_comments: Total rows added: 1 in 0.00 seconds
+0019.904 (0) Table wp_2_comments: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_comments.table.gz - 0.7 KB)
+0019.908 (0) Table wp_2_links: Total expected rows (approximate): 0
+0019.910 (0) Table wp_2_links: Total rows added: 0 in 0.00 seconds
+0019.911 (0) Table wp_2_links: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_links.table.gz - 0.4 KB)
+0019.915 (0) Table wp_2_options: Total expected rows (approximate): 133
+0019.920 (0) Table wp_2_options: Total rows added: 133 in 0.00 seconds
+0019.921 (0) Table wp_2_options: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_options.table.gz - 7.8 KB)
+0019.926 (0) Table wp_2_postmeta: Total expected rows (approximate): 17
+0019.928 (0) Table wp_2_postmeta: Total rows added: 17 in 0.00 seconds
+0019.929 (0) Table wp_2_postmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_postmeta.table.gz - 1 KB)
+0019.933 (0) Table wp_2_posts: Total expected rows (approximate): 18
+0019.937 (0) Table wp_2_posts: Total rows added: 18 in 0.00 seconds
+0019.938 (0) Table wp_2_posts: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_posts.table.gz - 2.1 KB)
+0019.942 (0) Table wp_2_term_relationships: Total expected rows (approximate): 15
+0019.944 (0) Table wp_2_term_relationships: Total rows added: 15 in 0.00 seconds
+0019.945 (0) Table wp_2_term_relationships: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_term_relationships.table.gz - 0.4 KB)
+0019.949 (0) Table wp_2_term_taxonomy: Total expected rows (approximate): 15
+0019.951 (0) Table wp_2_term_taxonomy: Total rows added: 15 in 0.00 seconds
+0019.952 (0) Table wp_2_term_taxonomy: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_term_taxonomy.table.gz - 0.6 KB)
+0019.957 (0) Table wp_2_terms: Total expected rows (approximate): 15
+0019.959 (0) Table wp_2_terms: Total rows added: 15 in 0.00 seconds
+0019.959 (0) Table wp_2_terms: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_terms.table.gz - 0.5 KB)
+0019.964 (0) Table wp_cf7dbplugin_st: Total expected rows (approximate): 1656
+0019.983 (0) Table wp_cf7dbplugin_st: Total rows added: 1656 in 0.02 seconds
+0019.984 (0) Table wp_cf7dbplugin_st: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_cf7dbplugin_st.table.gz - 11.3 KB)
+0019.989 (0) Table wp_cf7dbplugin_submits: Total expected rows (approximate): 10632
+0020.745 (0) Binary mysqldump: error (code: 3)
+0030.598 (0) Table wp_cf7dbplugin_submits: Total rows added: 10632 in 9.85 seconds
+0030.599 (0) Table wp_cf7dbplugin_submits: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_cf7dbplugin_submits.table.gz - 148425.8 KB)
+0030.604 (0) Table wp_ewwwio_images: Total expected rows (approximate): 0
+0030.606 (0) Table wp_ewwwio_images: Total rows added: 0 in 0.00 seconds
+0030.606 (0) Table wp_ewwwio_images: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_ewwwio_images.table.gz - 0.4 KB)
+0030.611 (0) Table wp_icl_cms_nav_cache: Total expected rows (approximate): 0
+0030.612 (0) Table wp_icl_cms_nav_cache: Total rows added: 0 in 0.00 seconds
+0030.613 (0) Table wp_icl_cms_nav_cache: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_cms_nav_cache.table.gz - 0.3 KB)
+0030.618 (0) Table wp_icl_content_status: Total expected rows (approximate): 0
+0030.621 (0) Table wp_icl_content_status: Total rows added: 0 in 0.00 seconds
+0030.622 (0) Table wp_icl_content_status: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_content_status.table.gz - 0.3 KB)
+0030.627 (0) Table wp_icl_core_status: Total expected rows (approximate): 0
+0030.628 (0) Table wp_icl_core_status: Total rows added: 0 in 0.00 seconds
+0030.629 (0) Table wp_icl_core_status: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_core_status.table.gz - 0.3 KB)
+0030.634 (0) Table wp_icl_flags: Total expected rows (approximate): 63
+0030.637 (0) Table wp_icl_flags: Total rows added: 63 in 0.00 seconds
+0030.638 (0) Table wp_icl_flags: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_flags.table.gz - 0.9 KB)
+0030.642 (0) Table wp_icl_languages: Total expected rows (approximate): 63
+0030.646 (0) Table wp_icl_languages: Total rows added: 63 in 0.00 seconds
+0030.647 (0) Table wp_icl_languages: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_languages.table.gz - 1.5 KB)
+0030.653 (0) Table wp_icl_languages_translations: Total expected rows (approximate): 4255
+0030.740 (0) Table wp_icl_languages_translations: Total rows added: 3969 in 0.09 seconds
+0030.741 (0) Table wp_icl_languages_translations: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_languages_translations.table.gz - 33.1 KB)
+0030.746 (0) Table wp_icl_locale_map: Total expected rows (approximate): 2
+0030.748 (0) Table wp_icl_locale_map: Total rows added: 2 in 0.00 seconds
+0030.749 (0) Table wp_icl_locale_map: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_locale_map.table.gz - 0.3 KB)
+0030.753 (0) Table wp_icl_message_status: Total expected rows (approximate): 0
+0030.755 (0) Table wp_icl_message_status: Total rows added: 0 in 0.00 seconds
+0030.756 (0) Table wp_icl_message_status: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_message_status.table.gz - 0.4 KB)
+0030.760 (0) Table wp_icl_node: Total expected rows (approximate): 0
+0030.762 (0) Table wp_icl_node: Total rows added: 0 in 0.00 seconds
+0030.763 (0) Table wp_icl_node: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_node.table.gz - 0.3 KB)
+0030.767 (0) Table wp_icl_reminders: Total expected rows (approximate): 0
+0030.769 (0) Table wp_icl_reminders: Total rows added: 0 in 0.00 seconds
+0030.770 (0) Table wp_icl_reminders: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_reminders.table.gz - 0.3 KB)
+0030.774 (0) Table wp_icl_string_packages: Total expected rows (approximate): 0
+0030.776 (0) Table wp_icl_string_packages: Total rows added: 0 in 0.00 seconds
+0030.777 (0) Table wp_icl_string_packages: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_packages.table.gz - 0.3 KB)
+0030.782 (0) Table wp_icl_string_positions: Total expected rows (approximate): 558
+0030.793 (0) Table wp_icl_string_positions: Total rows added: 509 in 0.01 seconds
+0030.794 (0) Table wp_icl_string_positions: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_positions.table.gz - 5.9 KB)
+0030.799 (0) Table wp_icl_string_status: Total expected rows (approximate): 0
+0030.801 (0) Table wp_icl_string_status: Total rows added: 0 in 0.00 seconds
+0030.802 (0) Table wp_icl_string_status: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_status.table.gz - 0.4 KB)
+0030.806 (0) Table wp_icl_string_translations: Total expected rows (approximate): 207
+0030.818 (0) Table wp_icl_string_translations: Total rows added: 257 in 0.01 seconds
+0030.819 (0) Table wp_icl_string_translations: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_translations.table.gz - 5.2 KB)
+0030.824 (0) Table wp_icl_strings: Total expected rows (approximate): 623
+0030.855 (0) Table wp_icl_strings: Total rows added: 598 in 0.03 seconds
+0030.857 (0) Table wp_icl_strings: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_strings.table.gz - 31.6 KB)
+0030.861 (0) Table wp_icl_translate: Total expected rows (approximate): 325
+0030.902 (0) Table wp_icl_translate: Total rows added: 513 in 0.04 seconds
+0030.903 (0) Table wp_icl_translate: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translate.table.gz - 97.5 KB)
+0030.908 (0) Table wp_icl_translate_job: Total expected rows (approximate): 72
+0030.913 (0) Table wp_icl_translate_job: Total rows added: 72 in 0.00 seconds
+0030.914 (0) Table wp_icl_translate_job: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translate_job.table.gz - 0.7 KB)
+0030.920 (0) Table wp_icl_translation_batches: Total expected rows (approximate): 6
+0030.922 (0) Table wp_icl_translation_batches: Total rows added: 6 in 0.00 seconds
+0030.923 (0) Table wp_icl_translation_batches: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translation_batches.table.gz - 0.5 KB)
+0030.929 (0) Table wp_icl_translation_status: Total expected rows (approximate): 82
+0030.948 (0) Table wp_icl_translation_status: Total rows added: 72 in 0.02 seconds
+0030.950 (0) Table wp_icl_translation_status: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translation_status.table.gz - 77.9 KB)
+0030.956 (0) Table wp_icl_translations: Total expected rows (approximate): 1114
+0030.994 (0) Table wp_icl_translations: Total rows added: 1374 in 0.04 seconds
+0030.995 (0) Table wp_icl_translations: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translations.table.gz - 12.3 KB)
+0030.999 (0) Table wp_revslider_css: Total expected rows (approximate): 47
+0031.002 (0) Table wp_revslider_css: Total rows added: 47 in 0.00 seconds
+0031.006 (0) Table wp_revslider_css: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_css.table.gz - 1.8 KB)
+0031.010 (0) Table wp_revslider_layer_animations: Total expected rows (approximate): 0
+0031.012 (0) Table wp_revslider_layer_animations: Total rows added: 0 in 0.00 seconds
+0031.013 (0) Table wp_revslider_layer_animations: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_layer_animations.table.gz - 0.3 KB)
+0031.018 (0) Table wp_revslider_settings: Total expected rows (approximate): 1
+0031.034 (0) Table wp_revslider_settings: Total rows added: 1 in 0.00 seconds
+0031.036 (0) Table wp_revslider_settings: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_settings.table.gz - 0.3 KB)
+0031.040 (0) Table wp_revslider_sliders: Total expected rows (approximate): 0
+0031.042 (0) Table wp_revslider_sliders: Total rows added: 0 in 0.00 seconds
+0031.043 (0) Table wp_revslider_sliders: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_sliders.table.gz - 0.3 KB)
+0031.047 (0) Table wp_revslider_slides: Total expected rows (approximate): 0
+0031.049 (0) Table wp_revslider_slides: Total rows added: 0 in 0.00 seconds
+0031.050 (0) Table wp_revslider_slides: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_slides.table.gz - 0.3 KB)
+0031.055 (0) Table wp_revslider_static_slides: Total expected rows (approximate): 0
+0031.056 (0) Table wp_revslider_static_slides: Total rows added: 0 in 0.00 seconds
+0031.057 (0) Table wp_revslider_static_slides: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_static_slides.table.gz - 0.3 KB)
+0031.062 (0) Table wp_sl_setting: Total expected rows (approximate): 2
+0031.064 (0) Table wp_sl_setting: Total rows added: 2 in 0.00 seconds
+0031.064 (0) Table wp_sl_setting: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_sl_setting.table.gz - 0.4 KB)
+0031.069 (0) Table wp_sl_tag: Total expected rows (approximate): 0
+0031.070 (0) Table wp_sl_tag: Total rows added: 0 in 0.00 seconds
+0031.071 (0) Table wp_sl_tag: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_sl_tag.table.gz - 0.3 KB)
+0031.076 (0) Table wp_store_locator: Total expected rows (approximate): 0
+0031.078 (0) Table wp_store_locator: Total rows added: 0 in 0.00 seconds
+0031.079 (0) Table wp_store_locator: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_store_locator.table.gz - 0.4 KB)
+0031.084 (0) Table wp_wfBadLeechers: Total expected rows (approximate): 0
+0031.085 (0) Table wp_wfBadLeechers: Total rows added: 0 in 0.00 seconds
+0031.086 (0) Table wp_wfBadLeechers: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBadLeechers.table.gz - 0.3 KB)
+0031.091 (0) Table wp_wfBlockedIPLog: Total expected rows (approximate): 589
+0031.103 (0) Table wp_wfBlockedIPLog: Total rows added: 589 in 0.01 seconds
+0031.104 (0) Table wp_wfBlockedIPLog: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBlockedIPLog.table.gz - 4.1 KB)
+0031.109 (0) Table wp_wfBlocks: Total expected rows (approximate): 0
+0031.110 (0) Table wp_wfBlocks: Total rows added: 0 in 0.00 seconds
+0031.111 (0) Table wp_wfBlocks: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBlocks.table.gz - 0.4 KB)
+0031.116 (0) Table wp_wfBlocksAdv: Total expected rows (approximate): 0
+0031.118 (0) Table wp_wfBlocksAdv: Total rows added: 0 in 0.00 seconds
+0031.119 (0) Table wp_wfBlocksAdv: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBlocksAdv.table.gz - 0.3 KB)
+0031.123 (0) Table wp_wfConfig: Total expected rows (approximate): 169
+0031.129 (0) Table wp_wfConfig: Total rows added: 169 in 0.01 seconds
+0031.131 (0) Table wp_wfConfig: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfConfig.table.gz - 10.1 KB)
+0031.136 (0) Table wp_wfCrawlers: Total expected rows (approximate): 45
+0031.139 (0) Table wp_wfCrawlers: Total rows added: 45 in 0.00 seconds
+0031.140 (0) Table wp_wfCrawlers: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfCrawlers.table.gz - 1.1 KB)
+0031.144 (0) Table wp_wfFileMods: Total expected rows (approximate): 7017
+0031.360 (0) Table wp_wfFileMods: Total rows added: 7017 in 0.21 seconds
+0031.361 (0) Table wp_wfFileMods: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfFileMods.table.gz - 313 KB)
+0031.366 (0) Table wp_wfHits: Total expected rows (approximate): 1665
+0031.457 (0) Table wp_wfHits: Total rows added: 1665 in 0.09 seconds
+0031.464 (0) Table wp_wfHits: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfHits.table.gz - 56.3 KB)
+0031.469 (0) Table wp_wfHoover: Total expected rows (approximate): 0
+0031.471 (0) Table wp_wfHoover: Total rows added: 0 in 0.00 seconds
+0031.471 (0) Table wp_wfHoover: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfHoover.table.gz - 0.3 KB)
+0031.476 (0) Table wp_wfIssues: Total expected rows (approximate): 4
+0031.488 (0) Table wp_wfIssues: Total rows added: 4 in 0.01 seconds
+0031.489 (0) Table wp_wfIssues: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfIssues.table.gz - 1.8 KB)
+0031.494 (0) Table wp_wfKnownFileList: Total expected rows (approximate): 6445
+0031.608 (0) Table wp_wfKnownFileList: Total rows added: 7017 in 0.11 seconds
+0031.609 (0) Table wp_wfKnownFileList: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfKnownFileList.table.gz - 68.6 KB)
+0031.614 (0) Table wp_wfLeechers: Total expected rows (approximate): 304
+0031.620 (0) Table wp_wfLeechers: Total rows added: 304 in 0.00 seconds
+0031.621 (0) Table wp_wfLeechers: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLeechers.table.gz - 2.5 KB)
+0031.635 (0) Table wp_wfLockedOut: Total expected rows (approximate): 1
+0031.640 (0) Table wp_wfLockedOut: Total rows added: 1 in 0.00 seconds
+0031.641 (0) Table wp_wfLockedOut: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLockedOut.table.gz - 0.4 KB)
+0031.645 (0) Table wp_wfLocs: Total expected rows (approximate): 53
+0031.650 (0) Table wp_wfLocs: Total rows added: 53 in 0.00 seconds
+0031.651 (0) Table wp_wfLocs: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLocs.table.gz - 2.1 KB)
+0031.656 (0) Table wp_wfLogins: Total expected rows (approximate): 476
+0031.687 (0) Table wp_wfLogins: Total rows added: 476 in 0.03 seconds
+0031.688 (0) Table wp_wfLogins: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLogins.table.gz - 10 KB)
+0031.693 (0) Table wp_wfNet404s: Total expected rows (approximate): 0
+0031.695 (0) Table wp_wfNet404s: Total rows added: 0 in 0.00 seconds
+0031.696 (0) Table wp_wfNet404s: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfNet404s.table.gz - 0.3 KB)
+0031.700 (0) Table wp_wfNotifications: Total expected rows (approximate): 7
+0031.702 (0) Table wp_wfNotifications: Total rows added: 7 in 0.00 seconds
+0031.703 (0) Table wp_wfNotifications: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfNotifications.table.gz - 2.1 KB)
+0031.708 (0) Table wp_wfReverseCache: Total expected rows (approximate): 23
+0031.710 (0) Table wp_wfReverseCache: Total rows added: 23 in 0.00 seconds
+0031.711 (0) Table wp_wfReverseCache: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfReverseCache.table.gz - 0.7 KB)
+0031.715 (0) Table wp_wfSNIPCache: Total expected rows (approximate): 0
+0031.717 (0) Table wp_wfSNIPCache: Total rows added: 0 in 0.00 seconds
+0031.718 (0) Table wp_wfSNIPCache: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfSNIPCache.table.gz - 0.4 KB)
+0031.722 (0) Table wp_wfScanners: Total expected rows (approximate): 81
+0031.725 (0) Table wp_wfScanners: Total rows added: 81 in 0.00 seconds
+0031.726 (0) Table wp_wfScanners: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfScanners.table.gz - 1 KB)
+0031.731 (0) Table wp_wfStatus: Total expected rows (approximate): 1504
+0031.768 (0) Table wp_wfStatus: Total rows added: 1504 in 0.04 seconds
+0031.769 (0) Table wp_wfStatus: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfStatus.table.gz - 25.4 KB)
+0031.774 (0) Table wp_wfThrottleLog: Total expected rows (approximate): 0
+0031.776 (0) Table wp_wfThrottleLog: Total rows added: 0 in 0.00 seconds
+0031.777 (0) Table wp_wfThrottleLog: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfThrottleLog.table.gz - 0.3 KB)
+0031.781 (0) Table wp_wfVulnScanners: Total expected rows (approximate): 0
+0031.783 (0) Table wp_wfVulnScanners: Total rows added: 0 in 0.00 seconds
+0031.786 (0) Table wp_wfVulnScanners: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfVulnScanners.table.gz - 0.3 KB)
+0031.791 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0031.792 (0) Table wp_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0031.793 (0) Table wp_woocommerce_attribute_taxonomies: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_attribute_taxonomies.table.gz - 0.3 KB)
+0031.798 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0031.800 (0) Table wp_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0031.801 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_downloadable_product_permissions.table.gz - 0.4 KB)
+0031.807 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 0
+0031.809 (0) Table wp_woocommerce_order_itemmeta: Total rows added: 0 in 0.00 seconds
+0031.811 (0) Table wp_woocommerce_order_itemmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_order_itemmeta.table.gz - 0.3 KB)
+0031.817 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 0
+0031.820 (0) Table wp_woocommerce_order_items: Total rows added: 0 in 0.00 seconds
+0031.821 (0) Table wp_woocommerce_order_items: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_order_items.table.gz - 0.3 KB)
+0031.828 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0031.830 (0) Table wp_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0031.831 (0) Table wp_woocommerce_tax_rate_locations: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_tax_rate_locations.table.gz - 0.3 KB)
+0031.835 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0031.837 (0) Table wp_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0031.838 (0) Table wp_woocommerce_tax_rates: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_tax_rates.table.gz - 0.4 KB)
+0031.842 (0) Table wp_woocommerce_termmeta: Total expected rows (approximate): 0
+0031.844 (0) Table wp_woocommerce_termmeta: Total rows added: 0 in 0.00 seconds
+0031.845 (0) Table wp_woocommerce_termmeta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_termmeta.table.gz - 0.3 KB)
+0031.849 (0) Table wp_yith_wcwl: Total expected rows (approximate): 0
+0031.851 (0) Table wp_yith_wcwl: Total rows added: 0 in 0.00 seconds
+0031.852 (0) Table wp_yith_wcwl: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yith_wcwl.table.gz - 0.3 KB)
+0031.856 (0) Table wp_yith_wcwl_lists: Total expected rows (approximate): 0
+0031.858 (0) Table wp_yith_wcwl_lists: Total rows added: 0 in 0.00 seconds
+0031.859 (0) Table wp_yith_wcwl_lists: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yith_wcwl_lists.table.gz - 0.4 KB)
+0031.863 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 78
+0031.866 (0) Table wp_yoast_seo_links: Total rows added: 78 in 0.00 seconds
+0031.867 (0) Table wp_yoast_seo_links: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yoast_seo_links.table.gz - 1.4 KB)
+0031.871 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 25
+0031.873 (0) Table wp_yoast_seo_meta: Total rows added: 25 in 0.00 seconds
+0031.874 (0) Table wp_yoast_seo_meta: finishing file (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yoast_seo_meta.table.gz - 0.5 KB)
+0031.876 (0) Skipping table (lacks our prefix (wp_)): xmlconnect_application
+0031.876 (0) Skipping table (lacks our prefix (wp_)): xmlconnect_config_data
+0031.877 (0) Skipping table (lacks our prefix (wp_)): xmlconnect_history
+0031.878 (0) Skipping table (lacks our prefix (wp_)): xmlconnect_images
+0031.878 (0) Skipping table (lacks our prefix (wp_)): xmlconnect_notification_template
+0031.879 (0) Skipping table (lacks our prefix (wp_)): xmlconnect_queue
+0031.880 (0) Skipping table (lacks our prefix (wp_)): xtcore_config_data
+0031.880 (0) Skipping table (lacks our prefix (wp_)): xtento_orderexport_destination
+0031.881 (0) Skipping table (lacks our prefix (wp_)): xtento_orderexport_log
+0031.882 (0) Skipping table (lacks our prefix (wp_)): xtento_orderexport_profile
+0031.883 (0) Skipping table (lacks our prefix (wp_)): xtento_orderexport_profile_history
+0031.883 (0) Skipping table (lacks our prefix (wp_)): xtento_trackingimport_log
+0031.884 (0) Skipping table (lacks our prefix (wp_)): xtento_trackingimport_profile
+0031.885 (0) Skipping table (lacks our prefix (wp_)): xtento_trackingimport_source
+0031.887 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_options.table.gz (1/511): adding to final database dump
+0031.927 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_users.table.gz (2/511): adding to final database dump
+0031.937 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_usermeta.table.gz (3/511): adding to final database dump
+0031.940 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_commentmeta.table.gz (4/511): adding to final database dump
+0031.943 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_comments.table.gz (5/511): adding to final database dump
+0031.944 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_links.table.gz (6/511): adding to final database dump
+0031.945 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_postmeta.table.gz (7/511): adding to final database dump
+0031.978 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_posts.table.gz (8/511): adding to final database dump
+0032.285 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_signups.table.gz (9/511): adding to final database dump
+0032.287 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_term_relationships.table.gz (10/511): adding to final database dump
+0032.290 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_term_taxonomy.table.gz (11/511): adding to final database dump
+0032.291 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_termmeta.table.gz (12/511): adding to final database dump
+0032.292 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_terms.table.gz (13/511): adding to final database dump
+0032.294 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_commentmeta.table.gz (14/511): adding to final database dump
+0032.295 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_comments.table.gz (15/511): adding to final database dump
+0032.296 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_links.table.gz (16/511): adding to final database dump
+0032.297 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_options.table.gz (17/511): adding to final database dump
+0032.300 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_postmeta.table.gz (18/511): adding to final database dump
+0032.301 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_posts.table.gz (19/511): adding to final database dump
+0032.302 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_term_relationships.table.gz (20/511): adding to final database dump
+0032.303 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_term_taxonomy.table.gz (21/511): adding to final database dump
+0032.305 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_2_terms.table.gz (22/511): adding to final database dump
+0032.306 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_cf7dbplugin_st.table.gz (23/511): adding to final database dump
+0032.316 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_cf7dbplugin_submits.table.gz (24/511): adding to final database dump
+0042.102 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_ewwwio_images.table.gz (25/511): adding to final database dump
+0042.105 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_cms_nav_cache.table.gz (26/511): adding to final database dump
+0042.106 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_content_status.table.gz (27/511): adding to final database dump
+0042.108 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_core_status.table.gz (28/511): adding to final database dump
+0042.111 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_flags.table.gz (29/511): adding to final database dump
+0042.113 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_languages.table.gz (30/511): adding to final database dump
+0042.115 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_languages_translations.table.gz (31/511): adding to final database dump
+0042.155 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_locale_map.table.gz (32/511): adding to final database dump
+0042.157 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_message_status.table.gz (33/511): adding to final database dump
+0042.163 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_node.table.gz (34/511): adding to final database dump
+0042.164 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_reminders.table.gz (35/511): adding to final database dump
+0042.165 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_packages.table.gz (36/511): adding to final database dump
+0042.166 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_positions.table.gz (37/511): adding to final database dump
+0042.171 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_status.table.gz (38/511): adding to final database dump
+0042.176 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_string_translations.table.gz (39/511): adding to final database dump
+0042.182 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_strings.table.gz (40/511): adding to final database dump
+0042.205 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translate.table.gz (41/511): adding to final database dump
+0042.244 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translate_job.table.gz (42/511): adding to final database dump
+0042.246 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translation_batches.table.gz (43/511): adding to final database dump
+0042.247 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translation_status.table.gz (44/511): adding to final database dump
+0042.263 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_icl_translations.table.gz (45/511): adding to final database dump
+0042.276 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_css.table.gz (46/511): adding to final database dump
+0042.278 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_layer_animations.table.gz (47/511): adding to final database dump
+0042.279 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_settings.table.gz (48/511): adding to final database dump
+0042.280 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_sliders.table.gz (49/511): adding to final database dump
+0042.282 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_slides.table.gz (50/511): adding to final database dump
+0042.283 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_revslider_static_slides.table.gz (51/511): adding to final database dump
+0042.316 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_sl_setting.table.gz (52/511): adding to final database dump
+0042.318 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_sl_tag.table.gz (53/511): adding to final database dump
+0042.320 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_store_locator.table.gz (54/511): adding to final database dump
+0042.322 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBadLeechers.table.gz (55/511): adding to final database dump
+0042.323 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBlockedIPLog.table.gz (56/511): adding to final database dump
+0042.330 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBlocks.table.gz (57/511): adding to final database dump
+0042.331 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfBlocksAdv.table.gz (58/511): adding to final database dump
+0042.333 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfConfig.table.gz (59/511): adding to final database dump
+0042.337 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfCrawlers.table.gz (60/511): adding to final database dump
+0042.339 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfFileMods.table.gz (61/511): adding to final database dump
+0042.454 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfHits.table.gz (62/511): adding to final database dump
+0042.486 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfHoover.table.gz (63/511): adding to final database dump
+0042.488 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfIssues.table.gz (64/511): adding to final database dump
+0042.490 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfKnownFileList.table.gz (65/511): adding to final database dump
+0042.566 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLeechers.table.gz (66/511): adding to final database dump
+0042.570 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLockedOut.table.gz (67/511): adding to final database dump
+0042.571 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLocs.table.gz (68/511): adding to final database dump
+0042.575 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfLogins.table.gz (69/511): adding to final database dump
+0042.583 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfNet404s.table.gz (70/511): adding to final database dump
+0042.585 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfNotifications.table.gz (71/511): adding to final database dump
+0042.588 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfReverseCache.table.gz (72/511): adding to final database dump
+0042.598 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfSNIPCache.table.gz (73/511): adding to final database dump
+0042.600 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfScanners.table.gz (74/511): adding to final database dump
+0042.602 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfStatus.table.gz (75/511): adding to final database dump
+0042.622 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfThrottleLog.table.gz (76/511): adding to final database dump
+0042.624 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_wfVulnScanners.table.gz (77/511): adding to final database dump
+0042.625 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_attribute_taxonomies.table.gz (78/511): adding to final database dump
+0042.626 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (79/511): adding to final database dump
+0042.627 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_order_itemmeta.table.gz (80/511): adding to final database dump
+0042.628 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_order_items.table.gz (81/511): adding to final database dump
+0042.629 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_tax_rate_locations.table.gz (82/511): adding to final database dump
+0042.631 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_tax_rates.table.gz (83/511): adding to final database dump
+0042.632 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_woocommerce_termmeta.table.gz (84/511): adding to final database dump
+0042.633 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yith_wcwl.table.gz (85/511): adding to final database dump
+0042.634 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yith_wcwl_lists.table.gz (86/511): adding to final database dump
+0042.636 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yoast_seo_links.table.gz (87/511): adding to final database dump
+0042.637 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db-table-wp_yoast_seo_meta.table.gz (88/511): adding to final database dump
+0042.645 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz: finished writing out complete database file (150384 KB)
+0044.936 (0) Total database tables backed up: 88 (backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz, size: 154005162, sha256)
+0044.941 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0044.942 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0044.943 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0044.943 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-others.zip: others: This file has not yet been successfully uploaded: will queue
+0044.944 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz: db: This file has not yet been successfully uploaded: will queue
+0044.945 (0) Saving backup history. Total backup size: 253.7 MB
+0044.947 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0044.949 (0) Cloud backup selection (1/1): googledrive (last)
+0044.950 (0) Beginning dispatch of backup to remote (googledrive)
+0044.953 (0) Google Drive: requesting access token: client_id=701598345214-kddgkgvd7ubm98hcopn85lqigkkjj8ft.apps.googleusercontent.com
+0045.049 (0) Google Drive: successfully obtained access token
+0046.809 (0) Google Drive quota usage: used=7897 MB, total=15360 MB, available=7463 MB
+0046.810 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip: Attempting to upload to Google Drive (into folder id: 0B0n1MgR0xJ4ud01SS1VwODhmSFE)
+0047.733 (0) Googledrive chunked upload: 4.2 % uploaded (1048576)
+0048.698 (0) Googledrive chunked upload: 8.4 % uploaded (2097152)
+0050.090 (0) Googledrive chunked upload: 12.5 % uploaded (3145728)
+0050.477 (0) Googledrive chunked upload: 16.7 % uploaded (4194304)
+0050.765 (0) Googledrive chunked upload: 20.9 % uploaded (5242880)
+0051.016 (0) Googledrive chunked upload: 25.1 % uploaded (6291456)
+0051.276 (0) Googledrive chunked upload: 29.2 % uploaded (7340032)
+0051.538 (0) Googledrive chunked upload: 33.4 % uploaded (8388608)
+0051.812 (0) Googledrive chunked upload: 37.6 % uploaded (9437184)
+0052.098 (0) Googledrive chunked upload: 41.8 % uploaded (10485760)
+0052.370 (0) Googledrive chunked upload: 46 % uploaded (11534336)
+0052.619 (0) Googledrive chunked upload: 50.1 % uploaded (12582912)
+0052.861 (0) Googledrive chunked upload: 54.3 % uploaded (13631488)
+0053.105 (0) Googledrive chunked upload: 58.5 % uploaded (14680064)
+0053.364 (0) Googledrive chunked upload: 62.7 % uploaded (15728640)
+0053.631 (0) Googledrive chunked upload: 66.8 % uploaded (16777216)
+0053.884 (0) Googledrive chunked upload: 71 % uploaded (17825792)
+0054.131 (0) Googledrive chunked upload: 75.2 % uploaded (18874368)
+0054.373 (0) Googledrive chunked upload: 79.4 % uploaded (19922944)
+0054.613 (0) Googledrive chunked upload: 83.6 % uploaded (20971520)
+0054.879 (0) Googledrive chunked upload: 87.7 % uploaded (22020096)
+0055.154 (0) Googledrive chunked upload: 91.9 % uploaded (23068672)
+0055.399 (0) Googledrive chunked upload: 96.1 % uploaded (24117248)
+0056.959 (0) Googledrive chunked upload: 100 % uploaded (24117248)
+0056.962 (0) OK: Archive backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip uploaded to Google Drive in 10.15 seconds
+0056.963 (0) Recording as successfully uploaded: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip (44f9a5f6eff6d589a3378fc3067ab0e2)
+0056.976 (0) Deleting local file: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-plugins.zip: OK
+0057.289 (0) Google Drive quota usage: used=7920.9 MB, total=15360 MB, available=7439.1 MB
+0057.290 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip: Attempting to upload to Google Drive (into folder id: 0B0n1MgR0xJ4ud01SS1VwODhmSFE)
+0057.766 (0) Googledrive chunked upload: 7.7 % uploaded (1048576)
+0057.997 (0) Googledrive chunked upload: 15.4 % uploaded (2097152)
+0058.227 (0) Googledrive chunked upload: 23.1 % uploaded (3145728)
+0058.441 (0) Googledrive chunked upload: 30.8 % uploaded (4194304)
+0058.686 (0) Googledrive chunked upload: 38.5 % uploaded (5242880)
+0058.931 (0) Googledrive chunked upload: 46.2 % uploaded (6291456)
+0059.144 (0) Googledrive chunked upload: 53.9 % uploaded (7340032)
+0059.374 (0) Googledrive chunked upload: 61.5 % uploaded (8388608)
+0059.599 (0) Googledrive chunked upload: 69.2 % uploaded (9437184)
+0059.843 (0) Googledrive chunked upload: 76.9 % uploaded (10485760)
+0060.100 (0) Googledrive chunked upload: 84.6 % uploaded (11534336)
+0060.341 (0) Googledrive chunked upload: 92.3 % uploaded (12582912)
+0061.514 (0) Googledrive chunked upload: 100 % uploaded (12582912)
+0061.520 (0) OK: Archive backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip uploaded to Google Drive in 4.23 seconds
+0061.522 (0) Recording as successfully uploaded: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip (2870d55ebf3e0d275fad4faf5b07753c)
+0061.527 (0) Deleting local file: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-themes.zip: OK
+0061.954 (0) Google Drive quota usage: used=7933.9 MB, total=15360 MB, available=7426.1 MB
+0061.955 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip: Attempting to upload to Google Drive (into folder id: 0B0n1MgR0xJ4ud01SS1VwODhmSFE)
+0062.470 (0) Googledrive chunked upload: 1.5 % uploaded (1048576)
+0062.723 (0) Googledrive chunked upload: 3 % uploaded (2097152)
+0062.964 (0) Googledrive chunked upload: 4.5 % uploaded (3145728)
+0063.181 (0) Googledrive chunked upload: 6 % uploaded (4194304)
+0063.420 (0) Googledrive chunked upload: 7.5 % uploaded (5242880)
+0063.631 (0) Googledrive chunked upload: 9 % uploaded (6291456)
+0063.845 (0) Googledrive chunked upload: 10.5 % uploaded (7340032)
+0064.058 (0) Googledrive chunked upload: 12 % uploaded (8388608)
+0064.265 (0) Googledrive chunked upload: 13.5 % uploaded (9437184)
+0064.511 (0) Googledrive chunked upload: 15 % uploaded (10485760)
+0064.768 (0) Googledrive chunked upload: 16.5 % uploaded (11534336)
+0064.978 (0) Googledrive chunked upload: 18 % uploaded (12582912)
+0065.203 (0) Googledrive chunked upload: 19.5 % uploaded (13631488)
+0065.421 (0) Googledrive chunked upload: 21 % uploaded (14680064)
+0065.719 (0) Googledrive chunked upload: 22.5 % uploaded (15728640)
+0065.916 (0) Googledrive chunked upload: 23.9 % uploaded (16777216)
+0066.158 (0) Googledrive chunked upload: 25.4 % uploaded (17825792)
+0066.387 (0) Googledrive chunked upload: 26.9 % uploaded (18874368)
+0066.600 (0) Googledrive chunked upload: 28.4 % uploaded (19922944)
+0066.821 (0) Googledrive chunked upload: 29.9 % uploaded (20971520)
+0067.017 (0) Googledrive chunked upload: 31.4 % uploaded (22020096)
+0067.241 (0) Googledrive chunked upload: 32.9 % uploaded (23068672)
+0067.465 (0) Googledrive chunked upload: 34.4 % uploaded (24117248)
+0067.713 (0) Googledrive chunked upload: 35.9 % uploaded (25165824)
+0067.928 (0) Googledrive chunked upload: 37.4 % uploaded (26214400)
+0068.138 (0) Googledrive chunked upload: 38.9 % uploaded (27262976)
+0068.379 (0) Googledrive chunked upload: 40.4 % uploaded (28311552)
+0068.609 (0) Googledrive chunked upload: 41.9 % uploaded (29360128)
+0068.831 (0) Googledrive chunked upload: 43.4 % uploaded (30408704)
+0069.066 (0) Googledrive chunked upload: 44.9 % uploaded (31457280)
+0069.286 (0) Googledrive chunked upload: 46.4 % uploaded (32505856)
+0069.483 (0) Googledrive chunked upload: 47.9 % uploaded (33554432)
+0069.714 (0) Googledrive chunked upload: 49.4 % uploaded (34603008)
+0069.943 (0) Googledrive chunked upload: 50.9 % uploaded (35651584)
+0070.177 (0) Googledrive chunked upload: 52.4 % uploaded (36700160)
+0070.403 (0) Googledrive chunked upload: 53.9 % uploaded (37748736)
+0070.632 (0) Googledrive chunked upload: 55.4 % uploaded (38797312)
+0070.837 (0) Googledrive chunked upload: 56.9 % uploaded (39845888)
+0071.066 (0) Googledrive chunked upload: 58.4 % uploaded (40894464)
+0071.687 (0) Googledrive chunked upload: 59.9 % uploaded (41943040)
+0073.152 (0) Googledrive chunked upload: 61.4 % uploaded (42991616)
+0074.532 (0) Googledrive chunked upload: 62.9 % uploaded (44040192)
+0075.430 (0) Googledrive chunked upload: 64.4 % uploaded (45088768)
+0076.975 (0) Googledrive chunked upload: 65.9 % uploaded (46137344)
+0077.680 (0) Googledrive chunked upload: 67.4 % uploaded (47185920)
+0078.126 (0) Googledrive chunked upload: 68.8 % uploaded (48234496)
+0078.404 (0) Googledrive chunked upload: 70.3 % uploaded (49283072)
+0078.697 (0) Googledrive chunked upload: 71.8 % uploaded (50331648)
+0078.959 (0) Googledrive chunked upload: 73.3 % uploaded (51380224)
+0079.202 (0) Googledrive chunked upload: 74.8 % uploaded (52428800)
+0079.463 (0) Googledrive chunked upload: 76.3 % uploaded (53477376)
+0079.700 (0) Googledrive chunked upload: 77.8 % uploaded (54525952)
+0079.934 (0) Googledrive chunked upload: 79.3 % uploaded (55574528)
+0080.197 (0) Googledrive chunked upload: 80.8 % uploaded (56623104)
+0080.460 (0) Googledrive chunked upload: 82.3 % uploaded (57671680)
+0080.699 (0) Googledrive chunked upload: 83.8 % uploaded (58720256)
+0080.944 (0) Googledrive chunked upload: 85.3 % uploaded (59768832)
+0081.227 (0) Googledrive chunked upload: 86.8 % uploaded (60817408)
+0081.470 (0) Googledrive chunked upload: 88.3 % uploaded (61865984)
+0081.734 (0) Googledrive chunked upload: 89.8 % uploaded (62914560)
+0082.056 (0) Googledrive chunked upload: 91.3 % uploaded (63963136)
+0082.278 (0) Googledrive chunked upload: 92.8 % uploaded (65011712)
+0082.516 (0) Googledrive chunked upload: 94.3 % uploaded (66060288)
+0082.824 (0) Googledrive chunked upload: 95.8 % uploaded (67108864)
+0083.078 (0) Googledrive chunked upload: 97.3 % uploaded (68157440)
+0083.358 (0) Googledrive chunked upload: 98.8 % uploaded (69206016)
+0093.308 (0) Googledrive chunked upload: 100 % uploaded (69206016)
+0093.311 (0) OK: Archive backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip uploaded to Google Drive in 31.35 seconds
+0093.313 (0) Recording as successfully uploaded: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip (5d653a5de2f79329575a93c8986a4d29)
+0093.330 (0) Deleting local file: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-uploads.zip: OK
+0093.644 (0) Google Drive quota usage: used=8000.7 MB, total=15360 MB, available=7359.3 MB
+0093.645 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-others.zip: Attempting to upload to Google Drive (into folder id: 0B0n1MgR0xJ4ud01SS1VwODhmSFE)
+0094.141 (0) Googledrive chunked upload: 32.6 % uploaded (1048576)
+0094.366 (0) Googledrive chunked upload: 65.1 % uploaded (2097152)
+0094.607 (0) Googledrive chunked upload: 97.7 % uploaded (3145728)
+0095.596 (0) Googledrive chunked upload: 100 % uploaded (3145728)
+0095.599 (0) OK: Archive backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-others.zip uploaded to Google Drive in 1.95 seconds
+0095.601 (0) Recording as successfully uploaded: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-others.zip (2df58f52c0742d840f6795e3c53b78f5)
+0095.606 (0) Deleting local file: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-others.zip: OK
+0095.922 (0) Google Drive quota usage: used=8003.8 MB, total=15360 MB, available=7356.2 MB
+0095.923 (0) backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz: Attempting to upload to Google Drive (into folder id: 0B0n1MgR0xJ4ud01SS1VwODhmSFE)
+0096.444 (0) Googledrive chunked upload: 0.7 % uploaded (1048576)
+0096.692 (0) Googledrive chunked upload: 1.4 % uploaded (2097152)
+0096.915 (0) Googledrive chunked upload: 2 % uploaded (3145728)
+0097.169 (0) Googledrive chunked upload: 2.7 % uploaded (4194304)
+0097.398 (0) Googledrive chunked upload: 3.4 % uploaded (5242880)
+0097.689 (0) Googledrive chunked upload: 4.1 % uploaded (6291456)
+0097.913 (0) Googledrive chunked upload: 4.8 % uploaded (7340032)
+0098.141 (0) Googledrive chunked upload: 5.4 % uploaded (8388608)
+0098.416 (0) Googledrive chunked upload: 6.1 % uploaded (9437184)
+0098.645 (0) Googledrive chunked upload: 6.8 % uploaded (10485760)
+0098.878 (0) Googledrive chunked upload: 7.5 % uploaded (11534336)
+0099.122 (0) Googledrive chunked upload: 8.2 % uploaded (12582912)
+0099.359 (0) Googledrive chunked upload: 8.9 % uploaded (13631488)
+0099.585 (0) Googledrive chunked upload: 9.5 % uploaded (14680064)
+0099.814 (0) Googledrive chunked upload: 10.2 % uploaded (15728640)
+0100.046 (0) Googledrive chunked upload: 10.9 % uploaded (16777216)
+0100.340 (0) Googledrive chunked upload: 11.6 % uploaded (17825792)
+0100.579 (0) Googledrive chunked upload: 12.3 % uploaded (18874368)
+0100.823 (0) Googledrive chunked upload: 12.9 % uploaded (19922944)
+0101.053 (0) Googledrive chunked upload: 13.6 % uploaded (20971520)
+0101.335 (0) Googledrive chunked upload: 14.3 % uploaded (22020096)
+0101.582 (0) Googledrive chunked upload: 15 % uploaded (23068672)
+0101.822 (0) Googledrive chunked upload: 15.7 % uploaded (24117248)
+0102.079 (0) Googledrive chunked upload: 16.3 % uploaded (25165824)
+0102.374 (0) Googledrive chunked upload: 17 % uploaded (26214400)
+0102.604 (0) Googledrive chunked upload: 17.7 % uploaded (27262976)
+0102.830 (0) Googledrive chunked upload: 18.4 % uploaded (28311552)
+0103.052 (0) Googledrive chunked upload: 19.1 % uploaded (29360128)
+0103.277 (0) Googledrive chunked upload: 19.7 % uploaded (30408704)
+0103.510 (0) Googledrive chunked upload: 20.4 % uploaded (31457280)
+0103.749 (0) Googledrive chunked upload: 21.1 % uploaded (32505856)
+0103.986 (0) Googledrive chunked upload: 21.8 % uploaded (33554432)
+0104.242 (0) Googledrive chunked upload: 22.5 % uploaded (34603008)
+0104.460 (0) Googledrive chunked upload: 23.1 % uploaded (35651584)
+0104.698 (0) Googledrive chunked upload: 23.8 % uploaded (36700160)
+0104.934 (0) Googledrive chunked upload: 24.5 % uploaded (37748736)
+0105.193 (0) Googledrive chunked upload: 25.2 % uploaded (38797312)
+0105.439 (0) Googledrive chunked upload: 25.9 % uploaded (39845888)
+0105.661 (0) Googledrive chunked upload: 26.6 % uploaded (40894464)
+0105.901 (0) Googledrive chunked upload: 27.2 % uploaded (41943040)
+0106.142 (0) Googledrive chunked upload: 27.9 % uploaded (42991616)
+0106.409 (0) Googledrive chunked upload: 28.6 % uploaded (44040192)
+0106.622 (0) Googledrive chunked upload: 29.3 % uploaded (45088768)
+0106.846 (0) Googledrive chunked upload: 30 % uploaded (46137344)
+0107.085 (0) Googledrive chunked upload: 30.6 % uploaded (47185920)
+0107.320 (0) Googledrive chunked upload: 31.3 % uploaded (48234496)
+0107.540 (0) Googledrive chunked upload: 32 % uploaded (49283072)
+0107.864 (0) Googledrive chunked upload: 32.7 % uploaded (50331648)
+0108.779 (0) Googledrive chunked upload: 33.4 % uploaded (51380224)
+0110.235 (0) Googledrive chunked upload: 34 % uploaded (52428800)
+0111.742 (0) Googledrive chunked upload: 34.7 % uploaded (53477376)
+0112.135 (0) Googledrive chunked upload: 35.4 % uploaded (54525952)
+0112.438 (0) Googledrive chunked upload: 36.1 % uploaded (55574528)
+0112.720 (0) Googledrive chunked upload: 36.8 % uploaded (56623104)
+0112.985 (0) Googledrive chunked upload: 37.4 % uploaded (57671680)
+0113.278 (0) Googledrive chunked upload: 38.1 % uploaded (58720256)
+0113.526 (0) Googledrive chunked upload: 38.8 % uploaded (59768832)
+0113.782 (0) Googledrive chunked upload: 39.5 % uploaded (60817408)
+0114.031 (0) Googledrive chunked upload: 40.2 % uploaded (61865984)
+0114.286 (0) Googledrive chunked upload: 40.9 % uploaded (62914560)
+0114.537 (0) Googledrive chunked upload: 41.5 % uploaded (63963136)
+0114.769 (0) Googledrive chunked upload: 42.2 % uploaded (65011712)
+0115.009 (0) Googledrive chunked upload: 42.9 % uploaded (66060288)
+0115.257 (0) Googledrive chunked upload: 43.6 % uploaded (67108864)
+0115.502 (0) Googledrive chunked upload: 44.3 % uploaded (68157440)
+0115.749 (0) Googledrive chunked upload: 44.9 % uploaded (69206016)
+0115.990 (0) Googledrive chunked upload: 45.6 % uploaded (70254592)
+0116.257 (0) Googledrive chunked upload: 46.3 % uploaded (71303168)
+0116.500 (0) Googledrive chunked upload: 47 % uploaded (72351744)
+0116.794 (0) Googledrive chunked upload: 47.7 % uploaded (73400320)
+0117.041 (0) Googledrive chunked upload: 48.3 % uploaded (74448896)
+0117.339 (0) Googledrive chunked upload: 49 % uploaded (75497472)
+0117.603 (0) Googledrive chunked upload: 49.7 % uploaded (76546048)
+0117.848 (0) Googledrive chunked upload: 50.4 % uploaded (77594624)
+0118.105 (0) Googledrive chunked upload: 51.1 % uploaded (78643200)
+0118.368 (0) Googledrive chunked upload: 51.7 % uploaded (79691776)
+0118.621 (0) Googledrive chunked upload: 52.4 % uploaded (80740352)
+0118.869 (0) Googledrive chunked upload: 53.1 % uploaded (81788928)
+0119.115 (0) Googledrive chunked upload: 53.8 % uploaded (82837504)
+0119.360 (0) Googledrive chunked upload: 54.5 % uploaded (83886080)
+0119.602 (0) Googledrive chunked upload: 55.2 % uploaded (84934656)
+0119.840 (0) Googledrive chunked upload: 55.8 % uploaded (85983232)
+0120.110 (0) Googledrive chunked upload: 56.5 % uploaded (87031808)
+0120.335 (0) Googledrive chunked upload: 57.2 % uploaded (88080384)
+0120.590 (0) Googledrive chunked upload: 57.9 % uploaded (89128960)
+0120.845 (0) Googledrive chunked upload: 58.6 % uploaded (90177536)
+0121.142 (0) Googledrive chunked upload: 59.2 % uploaded (91226112)
+0121.497 (0) Googledrive chunked upload: 59.9 % uploaded (92274688)
+0121.731 (0) Googledrive chunked upload: 60.6 % uploaded (93323264)
+0121.967 (0) Googledrive chunked upload: 61.3 % uploaded (94371840)
+0122.271 (0) Googledrive chunked upload: 62 % uploaded (95420416)
+0122.514 (0) Googledrive chunked upload: 62.6 % uploaded (96468992)
+0122.771 (0) Googledrive chunked upload: 63.3 % uploaded (97517568)
+0123.180 (0) Googledrive chunked upload: 64 % uploaded (98566144)
+0123.398 (0) Googledrive chunked upload: 64.7 % uploaded (99614720)
+0123.621 (0) Googledrive chunked upload: 65.4 % uploaded (100663296)
+0123.843 (0) Googledrive chunked upload: 66 % uploaded (101711872)
+0124.109 (0) Googledrive chunked upload: 66.7 % uploaded (102760448)
+0124.322 (0) Googledrive chunked upload: 67.4 % uploaded (103809024)
+0124.542 (0) Googledrive chunked upload: 68.1 % uploaded (104857600)
+0124.766 (0) Googledrive chunked upload: 68.8 % uploaded (105906176)
+0124.998 (0) Googledrive chunked upload: 69.4 % uploaded (106954752)
+0125.215 (0) Googledrive chunked upload: 70.1 % uploaded (108003328)
+0125.439 (0) Googledrive chunked upload: 70.8 % uploaded (109051904)
+0125.658 (0) Googledrive chunked upload: 71.5 % uploaded (110100480)
+0125.895 (0) Googledrive chunked upload: 72.2 % uploaded (111149056)
+0126.122 (0) Googledrive chunked upload: 72.9 % uploaded (112197632)
+0126.353 (0) Googledrive chunked upload: 73.5 % uploaded (113246208)
+0126.650 (0) Googledrive chunked upload: 74.2 % uploaded (114294784)
+0126.867 (0) Googledrive chunked upload: 74.9 % uploaded (115343360)
+0127.162 (0) Googledrive chunked upload: 75.6 % uploaded (116391936)
+0127.394 (0) Googledrive chunked upload: 76.3 % uploaded (117440512)
+0127.659 (0) Googledrive chunked upload: 76.9 % uploaded (118489088)
+0127.878 (0) Googledrive chunked upload: 77.6 % uploaded (119537664)
+0128.130 (0) Googledrive chunked upload: 78.3 % uploaded (120586240)
+0128.348 (0) Googledrive chunked upload: 79 % uploaded (121634816)
+0128.572 (0) Googledrive chunked upload: 79.7 % uploaded (122683392)
+0128.796 (0) Googledrive chunked upload: 80.3 % uploaded (123731968)
+0129.019 (0) Googledrive chunked upload: 81 % uploaded (124780544)
+0129.238 (0) Googledrive chunked upload: 81.7 % uploaded (125829120)
+0129.474 (0) Googledrive chunked upload: 82.4 % uploaded (126877696)
+0129.685 (0) Googledrive chunked upload: 83.1 % uploaded (127926272)
+0129.906 (0) Googledrive chunked upload: 83.7 % uploaded (128974848)
+0130.145 (0) Googledrive chunked upload: 84.4 % uploaded (130023424)
+0130.357 (0) Googledrive chunked upload: 85.1 % uploaded (131072000)
+0130.601 (0) Googledrive chunked upload: 85.8 % uploaded (132120576)
+0132.105 (0) Googledrive chunked upload: 86.5 % uploaded (133169152)
+0133.927 (0) Googledrive chunked upload: 87.2 % uploaded (134217728)
+0135.759 (0) Googledrive chunked upload: 87.8 % uploaded (135266304)
+0137.281 (0) Googledrive chunked upload: 88.5 % uploaded (136314880)
+0138.383 (0) Googledrive chunked upload: 89.2 % uploaded (137363456)
+0138.791 (0) Googledrive chunked upload: 89.9 % uploaded (138412032)
+0139.100 (0) Googledrive chunked upload: 90.6 % uploaded (139460608)
+0139.360 (0) Googledrive chunked upload: 91.2 % uploaded (140509184)
+0139.618 (0) Googledrive chunked upload: 91.9 % uploaded (141557760)
+0139.869 (0) Googledrive chunked upload: 92.6 % uploaded (142606336)
+0140.113 (0) Googledrive chunked upload: 93.3 % uploaded (143654912)
+0140.363 (0) Googledrive chunked upload: 94 % uploaded (144703488)
+0140.604 (0) Googledrive chunked upload: 94.6 % uploaded (145752064)
+0140.850 (0) Googledrive chunked upload: 95.3 % uploaded (146800640)
+0141.098 (0) Googledrive chunked upload: 96 % uploaded (147849216)
+0141.388 (0) Googledrive chunked upload: 96.7 % uploaded (148897792)
+0141.670 (0) Googledrive chunked upload: 97.4 % uploaded (149946368)
+0141.926 (0) Googledrive chunked upload: 98 % uploaded (150994944)
+0142.177 (0) Googledrive chunked upload: 98.7 % uploaded (152043520)
+0142.437 (0) Googledrive chunked upload: 99.4 % uploaded (153092096)
+0143.588 (0) Googledrive chunked upload: 100 % uploaded (153092096)
+0143.591 (0) OK: Archive backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz uploaded to Google Drive in 47.67 seconds
+0143.592 (0) Recording as successfully uploaded: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz (b8edc4a220fc2b01d975caf280e10d56)
+0143.623 (0) Deleting local file: backup_2017-08-14-1109_Offrir_des_chocolats_Weiss_f7209d3027b6-db.gz: OK
+0143.626 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0143.627 (0) Number of backup sets in history: 3; groups (db): 1
+0143.628 (0) Examining (for databases) backup set with group_id=0, nonce=f7209d3027b6, datestamp=1502705361 (Aug 14 2017 10:09:21)
+0143.629 (0) This backup set is the backup set just made, so will not be deleted.
+0143.630 (0) Examining (for databases) backup set with group_id=0, nonce=1fda36d0b729, datestamp=1502618830 (Aug 13 2017 10:07:10)
+0143.630 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0143.631 (0) Examining (for databases) backup set with group_id=0, nonce=834acf93d607, datestamp=1502532463 (Aug 12 2017 10:07:43)
+0143.632 (0) 1502532463: db: this set includes a database (backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-db.gz); db count is now 2
+0143.633 (0) 1502532463: db: over retain limit (2); will delete this database
+0143.634 (0) Delete file: backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-db.gz, service=googledrive
+0150.933 (0) backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-db.gz: Deletion successful
+0150.939 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0150.939 (0) Number of backup sets in history: 3; groups (files): 1
+0150.940 (0) Examining (for files) backup set with nonce=f7209d3027b6, datestamp=1502705361 (Aug 14 2017 10:09:21)
+0150.941 (0) This backup set is the backup set just made, so will not be deleted.
+0150.941 (0) This backup set is the backup set just made, so will not be deleted.
+0150.942 (0) This backup set is the backup set just made, so will not be deleted.
+0150.942 (0) This backup set is the backup set just made, so will not be deleted.
+0150.942 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.943 (0) Examining (for files) backup set with nonce=1fda36d0b729, datestamp=1502618830 (Aug 13 2017 10:07:10)
+0150.944 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.945 (0) Examining (for files) backup set with nonce=834acf93d607, datestamp=1502532463 (Aug 12 2017 10:07:43)
+0150.945 (0) plugins: over retain limit (2); will delete this file entity
+0150.946 (0) themes: over retain limit (2); will delete this file entity
+0150.947 (0) uploads: over retain limit (2); will delete this file entity
+0150.947 (0) others: over retain limit (2); will delete this file entity
+0150.948 (0) Delete file: backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-plugins.zip, service=googledrive
+0150.949 (0) Delete file: backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-themes.zip, service=googledrive
+0150.950 (0) Delete file: backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-uploads.zip, service=googledrive
+0150.951 (0) Delete file: backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-others.zip, service=googledrive
+0154.279 (0) backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-others.zip: Deletion successful
+0155.196 (0) backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-uploads.zip: Deletion successful
+0155.936 (0) backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-themes.zip: Deletion successful
+0156.543 (0) backup_2017-08-12-1107_Offrir_des_chocolats_Weiss_834acf93d607-plugins.zip: Deletion successful
+0156.548 (0) This backup set is now empty; will remove from history
+0156.549 (0) Deleting log file (log.834acf93d607.txt)
+0156.550 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0156.553 (0) Resume backup (f7209d3027b6, 0): finish run
+0156.555 (0) Decremented the semaphore (fd) by 1
+0156.556 (0) Semaphore (fd) unlocked
+0156.556 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0156.559 (0) The backup apparently succeeded and is now complete
+0156.561 (0) Fetching RSS news feed
+0156.651 (0) Fetched RSS news feed; result is a: SimplePie
+0156.718 (0) Sending email ('Fichiers et base de données (Sauvegarde complète)') report (attachments: 0, size: 0 KB) to: laure...
+0156.756 (0) La sauvegarde a réussie. Elle est maintenant terminée.

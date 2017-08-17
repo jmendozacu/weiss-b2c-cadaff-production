@@ -1,0 +1,82 @@
+<meta http-equiv="Content-Type" content="<?php echo $this->getContentType() ?>" />
+<title><?php echo $this->getTitle() ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="description" content="<?php echo htmlspecialchars($this->getDescription()) ?>" />
+<meta name="keywords" content="<?php echo htmlspecialchars($this->getKeywords()) ?>" />
+<meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
+
+<!-- Add this tpo implement Social sharing -->
+<?php $product = Mage::registry('current_product');
+if ($product): ?>
+    <meta property="og:title" content="<?php echo $product->getName(); ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="<?php echo $this->helper('catalog/product')->getProductUrl($product); ?>" />
+    <meta property="og:image" content="<?php echo $this->helper('catalog/image')->init($product, 'image')->resize(300, 300); ?>" />
+    <meta property="og:description" content="<?php echo strip_tags($product->getShortDescription()); ?>" />
+    <meta property="og:site_name" content="<?php echo Mage::app()->getStore()->getName() ?>" />
+<?php endif; ?>
+
+
+<link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = '<?php echo $this->helper('core/js')->getJsUrl('blank.html') ?>';
+    var BLANK_IMG = '<?php echo $this->helper('core/js')->getJsUrl('spacer.gif') ?>';
+//]]>
+</script>
+<![endif]-->
+<?php echo $this->getCssJsHtml() ?>
+<?php echo $this->getChildHtml() ?>
+<?php echo $this->helper('core/js')->getTranslatorScript() ?>
+<?php echo $this->getIncludes() ?>
+<script type="text/javascript">
+/*
+    jQuery(document).ready(function(){
+        jQuery("select").each(function(){
+            jQuery(this).selectbox();
+        });
+    });
+*/
+    var addEvent =  window.attachEvent||window.addEventListener;
+    addEvent("load", function(){
+        // Set a timeout...
+        setTimeout(function(){
+            // Hide the address bar!
+            window.scrollTo(0, 1);
+        }, 0);
+    });
+</script>
+<!--[if lt IE 10]>
+<script type="text/javascript">    
+    jQuery(function($){
+        $.Placeholder.init();
+    });
+</script>
+<![endif]-->
+
+
+<!-- google tag manager -->
+
+<script>
+    tagmanager_event=function(event_name,event_data){
+        try{
+            for (parameter in event_data) {
+                var eventParam = {};
+                eventParam[event_name + '_' + parameter]=event_data[parameter];
+                window.dataLayer.push(eventParam);
+            }
+            window.dataLayer.push({event:event_name});
+            //  console.log({eventData:event_data,event:event_name});
+        } catch(e){
+        }};
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCJ26C');</script>
+
+

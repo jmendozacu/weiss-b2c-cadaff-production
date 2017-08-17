@@ -1,0 +1,6 @@
+<p>
+<?php echo $this->getMethod()->getTitle(); ?>
+<?php if ($this->getMethod()->getRib()): ?>
+                <br /><?php echo nl2br($this->getMethod()->getRib()) ?>
+<?php endif; ?>
+</p>

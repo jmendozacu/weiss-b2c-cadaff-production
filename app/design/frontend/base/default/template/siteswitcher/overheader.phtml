@@ -1,0 +1,53 @@
+<?php
+/**
+ * Weiss SiteSwitcher overheader switcher template file
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Jérôme Carrot <jecar@smile.fr>
+ * @copyright  Smile 2015
+ * @var        $this Weiss_SiteSwitcher_Block_Switcher
+ */
+?>
+
+<?php if ($this->isVisible()): ?>
+
+    <div id="site-switcher" class="site-switcher-container site-switcher-header">
+        <div class="container">
+            <div class="inner-container">
+
+                <div class="title left">
+                    <span class="weiss-arrow"></span>
+                    <h1><?php echo $this->getTitle() ?></h1>
+                </div>
+
+                <ul class="right right-list">
+                    <li class="cms-link">
+                        <div class="inner">
+                            <a href="<?php echo $this->getCmsLinkPageUrl() ?>" title="<?php echo $this->getCmsLinkLabel() ?>">
+                                <?php echo $this->getCmsLinkLabel() ?>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="switcher">
+                        <div class="inner">
+                        <span class="hide-below-640">
+                            <?php echo $this->getSelectorLabel() ?>
+                        </span>
+                            <select class="site-switcher-selector">
+                                <?php foreach ($this->getSelectorOptions() as $option): ?>
+                                    <option value="<?php echo $option['value'] ?>">
+                                        <?php echo $option['label'] ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+<?php endif; ?>

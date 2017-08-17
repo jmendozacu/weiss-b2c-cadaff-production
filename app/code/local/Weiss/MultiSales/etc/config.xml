@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config>
+    <global>
+        <models>
+            <salesrule>
+                <rewrite>
+                    <validator>Weiss_MultiSales_Model_Validator</validator>
+                </rewrite>
+            </salesrule>
+        </models>
+    </global>
+</config>

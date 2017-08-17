@@ -1,0 +1,50 @@
+<?php
+/**
+ * Weiss SiteSwitcher subfooter switcher template file
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Jérôme Carrot <jecar@smile.fr>
+ * @copyright  Smile 2015
+ * @var        $this Weiss_SiteSwitcher_Block_Switcher
+ */
+?>
+
+<div id="site-switcher" class="site-switcher-container site-switcher-footer">
+    <div class="container">
+        <div class="inner-container">
+
+            <div class="footer-text left">
+                <?php echo $this->getFooterText() ?>
+            </div>
+
+            <div class="right-selector right">
+                <span class="hide-below-640">
+                    <?php echo $this->getSelectorLabel() ?>
+                </span>
+                <select class="site-switcher-selector">
+                    <?php foreach ($this->getSelectorOptions() as $option): ?>
+                        <option value="<?php echo $option['value'] ?>">
+                            <?php echo $option['label'] ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+    document.observe('dom:loaded', function() {
+        $$('.site-switcher-selector').each(function(select) {
+            select.observe('change', function(event) {
+                setLocation(event.element().value);
+            })
+        });
+    });
+
+//]]>
+</script>

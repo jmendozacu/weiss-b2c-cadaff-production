@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+     <default>
+	<reference name="head">
+		<action method="addItem" ><type>skin_css</type><name>css/multicoupons/multicoupons.css</name></action>
+	</reference>	  
+  </default>
+   <checkout_cart_index>
+   	 <reference name="checkout.cart.coupon">
+            <action method="setTemplate" ><template>multicoupons/multicoupons.phtml</template></action>
+        </reference>
+   </checkout_cart_index>
+    
+</layout> 

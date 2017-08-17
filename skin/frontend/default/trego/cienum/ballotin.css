@@ -1,0 +1,7 @@
+.etabs { margin: 0; padding: 0;border-bottom: 1px solid #d9d9d9}
+.tab { display: inline-block; zoom:1; *display:inline; background: #C4BCD1; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; color:#fff;text-transform:uppercase; }
+.tab a:hover { background: #C4B2D6; }
+.tab.active { background: #2f3538;  position: relative;  }
+.tab-container {margin: 5px 0 10px 0; border-bottom: 1px solid #d9d9d9}
+dd.optionextended-wide-grid  div.input-box ul.options-list {padding-left:55px;}

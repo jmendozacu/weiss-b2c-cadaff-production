@@ -1,0 +1,87 @@
+<?php 
+	$cals = $this->getConfig();
+	$days = $this->getDays();
+?>
+<div class="entry-edit">
+	<form id="edit_calendriers" name="edit_calendriers" method="post" action="<?php echo $this->getUrl('*/*/saveCalendriers') ?>">
+		<input type="hidden" name="form_key" value="<?php echo Mage::getSingleton('core/session')->getFormKey(); ?>" />
+		<h3><?php echo $this->__('Jours fériés'); ?></h3>
+		<fieldset>
+			<span><?php echo $this->__('Ajouter les jours fériés au format dd-mm (ex: 01-05 pour le 1<sup>er</sup> mai)') ?></span>
+			<div class="jours-feries">
+				<?php 
+					foreach($cals['feries'] as $ferie)
+					{
+						echo '<div style="width:100%">
+								<input type="text" name="feries[]" value="'.implode('-', array_reverse(explode('-', $ferie))).'" style="margin-bottom:5px"/>
+								<button style="padding:0!important" class="scalable delete deleteFerie" onclick="jQuery(this).closest(\'div\').remove();" type="button"><span></span></button>
+							</div>';
+					}
+				?>
+			</div>
+			<button id="addFerie" type="button"><?php echo $this->__('Ajouter un jour férié') ?></button>
+		</fieldset>
+		<h3><?php echo $this->__('Modes de livraison'); ?></h3>
+			<?php
+				foreach($this->getCarriers() as $carrier)
+				{
+					echo '<fieldset>';
+						echo '<h4>'.$carrier['label'].' : </h4>';
+			?>
+						<div>
+							<span><u><?php echo $this->__('Ouvert le'); ?></u> :</span><br/>
+							<div class="left" style="width:20%">
+								<?php for($i=0; $i<7; $i++): ?>
+									<label for="<?php echo $carrier['value'].'_ouvres_'.$i; ?>" style="display:block;width:100px;overflow:hidden">
+										<?php echo $days[$i]; ?>
+										<input style="float:right" type="checkbox" name="modes[<?php echo $carrier['value'] ?>][ouvres][<?php echo $i; ?>]"  id="<?php echo $carrier['value'].'_ouvres_'.$i; ?>" <?php echo ($cals['modes'][$carrier['value']]['ouvres'][$i]) ? 'checked="checked"' : '' ?> />
+									</label>
+								<?php endfor; ?>
+							</div>
+							<div class="left" style="width:80%">
+								<?php  echo $this->__('Heure limite'); ?>&nbsp;<input type="number" name="modes[<?php echo $carrier['value'] ?>][hlimite]" value="<?php echo $cals['modes'][$carrier['value']]['hlimite'] ?: '12' ?>" min="1" max="24" step="1" style="width:50px;margin-bottom:5px"/>&nbsp;h<br/>
+								<?php  echo $this->__('Délai réception'); ?>&nbsp;<input type="number" name="modes[<?php echo $carrier['value'] ?>][delai]" value="<?php echo $cals['modes'][$carrier['value']]['delai'] ?: '1' ?>" min="1" step="1" maxlength="2" style="width:50px;margin-bottom:5px"/>&nbsp;jour(s)
+							</div>
+						</div>
+						<div style="clear:both">
+							<?php // if(strpos($carrier['value'], 'owebiashipping3') === 0 || strpos($carrier['value'], 'owebiashipping2') === 0) : ?>
+							<?php if(strpos($carrier['value'], 'owebiashipping3') === 0): ?>
+								<div>
+									<span><u><?php echo $this->__('Jours de fermeture exceptionnelle'); ?></u> :</span><br/>
+									<div class="jours-exceptionnel">
+										<?php foreach($cals['modes'][$carrier['value']]['exceptionnels'] as $excep): ?>
+											<div style="width:100%">
+												<input type="text" name="modes[<?php echo $carrier['value'] ?>][exceptionnels][]" value="<?php echo implode('-', array_reverse(explode('-', $excep))); ?>" style="margin-bottom:5px"/>
+												<button style="padding:0!important" class="scalable delete deleteFerie" onclick="jQuery(this).closest(\'div\').remove();" type="button"><span></span></button>
+											</div>
+										<?php endforeach; ?>
+									</div>
+									<button class="addExceptionnel" data-code="<?php echo $carrier['value'] ?>" type="button"><?php echo $this->__('Ajouter un jour de fermeture exceptionnelle') ?></button>
+								</div>
+							<?php endif; ?>
+						</div>
+						<div style="clear:both">
+							<?php //if(strpos($carrier['value'], 'owebiashipping3') === 0 || strpos($carrier['value'], 'owebiashipping2') === 0) : ?>
+							<?php if(strpos($carrier['value'], 'owebiashipping3') === 0): ?>
+								<div>
+									<span><u><?php echo $this->__('Adresse et horaires'); ?></u> :</span><br/>
+									<div>
+										<label for="modes[<?php echo $carrier['value'] ?>][adresse]">Adresse</label>
+										<textarea id="modes[<?php echo $carrier['value'] ?>][adresse]" name="modes[<?php echo $carrier['value'] ?>][adresse]" cols="50" rows="4"><?php echo str_replace('<br/>', "\r\n", $cals['modes'][$carrier['value']]['adresse']); ?></textarea>
+										<label for="modes[<?php echo $carrier['value'] ?>][horaires]">Horaires</label>
+										<textarea id="modes[<?php echo $carrier['value'] ?>][horaires]" name="modes[<?php echo $carrier['value'] ?>][horaires]" cols="50" rows="4"><?php echo str_replace('<br/>', "\r\n", $cals['modes'][$carrier['value']]['horaires']); ?></textarea>
+									</div>
+								</div>
+							<?php endif; ?>
+						</div>
+					</fieldset>
+			<?php
+				}
+			?>
+		<button class="scalable save" type="submit"><span><?php echo $this->__("Save"); ?></span></button>
+	</form>
+</div>
+
+<script type="text/javascript">
+    editForm = new varienForm('edit_calendriers', '');
+</script>

@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <sunovisio translate="label" module="quotepdfprinter">
+            <label><![CDATA[ <img src="http://sunovisio.com/logo-admin.png" alt='Sunovisio' height='18' /> ]]>
+            </label>
+            <sort_order>99999</sort_order>
+        </sunovisio>
+    </tabs>
+    <sections>
+        <quotepdfprinter translate="label" module="quotepdfprinter">
+            <label>Quote PDF Printer</label>
+            <tab>sunovisio</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store> 
+            <groups>
+                <sunovisio_information translate="label">
+                    <label>Sunovisio help</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[<h2 style="text-align: center;"><img src="http://www.sunovisio.com/wp-content/themes/awake/images/logo.png" alt="Sunovisio" /></h2><h3>Get help when you need it</h3><p>Contact us via email <strong><a target="_blank" href="mailto:contact@sunovisio.com">contact@sunovisio.com</a></strong> and make sure to follow <strong><a target="_blank" title="Sunovisio on Twitter" href="http://twitter.com/sunovisio">@sunovisio</a></strong> on Twitter and on <strong><a target="_BLANK" href="http://facebook.com/sunovisio">Facebook</a></strong> to not miss out on important product updates, news, and tips! </p> <h3>Check our other extensions</h3> <p>The <strong><a target="_blank" title="Sunovisio extension shop" href="http://ecommerce.sunovisio.com">Sunovisio extension shop</a></strong> will offer you all extensions you need to increase your sales.</p><h3>Integration of your shop</h3><p>Visit our website to follow our previous integration and get a great idea of our abilities <strong><a target="_BLANK" href="http://sunovisio.com">http://www.sunovisio.com</a></strong></p><h3>Bug Tracker</h3><p>If you have any issue with this extension, don't hesitate to use our bug tracking system to submit a ticket. We will answer you as fast as possible. You can access the ticket system here: <strong><a href="http://ac.sunovisio.com/public/index.php?path_info=submit&project=Quote%20Pdf%20Printer" target="_BLANK">http://ac.sunovisio.com/public/index.php?path_info=submit&project=Quote%20Pdf%20Printer</a></strong></p>]]>
+                    </comment>
+                    <expanded>true</expanded>
+                </sunovisio_information>
+                <parameters translate="label">
+                    <label>General parameters</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled>
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </enabled>
+                        <quote_label>
+                            <label>Quote Format number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Use the symbol # to place your sequence number.</comment>             
+                        </quote_label>
+                        <quote_sequence>
+                            <label>Sequence Quote Start</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Quote Id will be added to this sequence to replace the # in  your Quote Format Number.</comment>             
+                        </quote_sequence>
+                        <filename_prefix>
+                            <label>Filename Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Prefix for the filename downloadable by client.</comment>             
+                        </filename_prefix>
+                    </fields>
+                </parameters>
+                <frontend_parameters translate="label">
+                    <label>Frontend parameters</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <label>
+                            <label>Label on cart page</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Label displayed on cart page.</comment>             
+                        </label>
+                        <display_link>
+                            <label>Display link only for logged in customer?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </display_link>
+                        <restrict_logged_in>
+                            <label>Only logged in customer can print a quote?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </restrict_logged_in>
+                        <enable_button_shipping_estimated>
+                            <label>Enable button only if shipping has been estimated?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </enable_button_shipping_estimated>
+                        <terms_and_conditions>
+                            <label>Terms And Conditions</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </terms_and_conditions>
+                    </fields>
+                </frontend_parameters>
+                <mail_setting>
+                    <label>Alert settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled>
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </enabled>
+                        <email_sender>
+                            <label>Email Sender</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_identity</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </email_sender>
+                        <email_template>
+                            <label>Email Template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </email_template>
+                        <send_to>
+                            <label>Send notification too</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>             
+                        </send_to>
+                        <send_attachment>
+                            <label>Send Quotation as Attachment</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </send_attachment>
+                    </fields>
+                </mail_setting>
+                <layout translate="label">
+                    <label>Layout</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <font translate="label comment">
+                            <label>Font</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>quotepdfprinter/fonts</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </font>
+                        <logo_configuration_description>
+                            <label></label>
+                            <frontend_model>quotepdfprinter/adminhtml_system_config_description</frontend_model>
+                            <text>Configuration fields for your top header layout</text>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>10</sort_order>            
+                        </logo_configuration_description>
+                        <logo_address_position>
+                            <label>Logo - address position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>quotepdfprinter/logoposition</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Position of the logo and the address</comment>             
+                        </logo_address_position>
+                        <address_font_size>
+                            <label>Address Font Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Font size of the address text</comment>             
+                        </address_font_size>
+                        <address_color>
+                            <label>Address Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the address text (hexadecimal format)</comment>             
+                        </address_color>
+                        <add_client_name>
+                            <label>Add Client Name and Email to PDF Quotation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </add_client_name>
+                        <quote_information_configuration_description>
+                            <label></label>
+                            <frontend_model>quotepdfprinter/adminhtml_system_config_description</frontend_model>
+                            <text>Configuration fields for your general quote information block</text>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>60</sort_order>            
+                        </quote_information_configuration_description>
+                        <quote_border_color>
+                            <label>Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the border block (hexadecimal format)</comment>             
+                        </quote_border_color>
+                        <quote_background_color>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the background block (hexadecimal format)</comment>             
+                        </quote_background_color>
+                        <quote_font_size>
+                            <label>Quote Font Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Font size of the quote block text</comment>             
+                        </quote_font_size>
+                        <quote_color>
+                            <label>Quote Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the quote block text (hexadecimal format)</comment>             
+                        </quote_color>
+                        <cart_header_configuration_description>
+                            <label></label>
+                            <frontend_model>quotepdfprinter/adminhtml_system_config_description</frontend_model>
+                            <text>Configuration fields for the header of the cart table</text>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>110</sort_order>            
+                        </cart_header_configuration_description>
+                        <cart_header_border_color>
+                            <label>Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the border block (hexadecimal format)</comment>             
+                        </cart_header_border_color>
+                        <cart_header_background_color>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the background block (hexadecimal format)</comment>             
+                        </cart_header_background_color>
+                        <cart_header_font_size>
+                            <label>Cart Header Font Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Font size of the cart header block text</comment>             
+                        </cart_header_font_size>
+                        <cart_header_color>
+                            <label>Cart Header Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the cart header block text (hexadecimal format)</comment>             
+                        </cart_header_color>
+                        <cart_configuration_description>
+                            <label></label>
+                            <frontend_model>quotepdfprinter/adminhtml_system_config_description</frontend_model>
+                            <text>Configuration fields for cart content</text>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>160</sort_order>            
+                        </cart_configuration_description>
+                        <cart_font_size>
+                            <label>Cart Content Font Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Font size of the cart content text</comment>             
+                        </cart_font_size>
+                        <cart_color>
+                            <label>Cart Content Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the cart content text (hexadecimal format)</comment>             
+                        </cart_color>
+                        <total_configuration_description>
+                            <label></label>
+                            <frontend_model>quotepdfprinter/adminhtml_system_config_description</frontend_model>
+                            <text>Configuration fields for totals block</text>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>190</sort_order>            
+                        </total_configuration_description>
+                        <total_color>
+                            <label>Total Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Color of the total content text (hexadecimal format)</comment>             
+                        </total_color>
+                        <subtotal_font_size>
+                            <label>Subtotal Font Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Font size of the subtotal text</comment>             
+                        </subtotal_font_size>
+                        <total_font_size>
+                            <label>Grand Total Font Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Font size of the grand total text</comment>             
+                        </total_font_size>
+                        <remove_zero_total>
+                            <label>Hide Zero Totals</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>            
+                        </remove_zero_total>
+                    </fields>
+                </layout>
+                <preview>
+                    <label>Preview</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>true</expanded>
+                    <fields>
+                        <preview_template>
+                            <label></label>
+                            <frontend_model>quotepdfprinter/adminhtml_system_config_preview</frontend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>40</sort_order>
+                        </preview_template>
+                    </fields>
+                </preview>
+            </groups>
+        </quotepdfprinter>
+    </sections> 
+</config>

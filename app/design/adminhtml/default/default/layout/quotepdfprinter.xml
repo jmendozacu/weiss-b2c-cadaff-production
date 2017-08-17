@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_system_config_edit>
+        <reference name="head">
+            <action method="addJs"><script>quotepdfprinter/jquery-1.10.2.min.js</script></action>
+            <action method="addJs"><script>quotepdfprinter/jquery-ui-1.10.3.custom.min.js</script></action>
+            <action method="addCss"><stylesheet>quotepdfprinter/ui-lightness/jquery-ui-1.10.3.custom.min.css</stylesheet></action>
+        </reference>
+    </adminhtml_system_config_edit>
+    <quotepdfprinter_adminhtml_quotepdfprinter_index>
+        <reference name="content"> 
+            <block name="quotepdfprinter" type="quotepdfprinter/adminhtml_quotepdfprinter"/> 
+        </reference> 
+    </quotepdfprinter_adminhtml_quotepdfprinter_index>
+</layout> 

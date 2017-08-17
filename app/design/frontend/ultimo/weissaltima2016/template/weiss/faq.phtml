@@ -1,0 +1,306 @@
+
+<script type="text/javascript">
+var ongldef = 0;
+
+
+
+
+
+//Initialize first demo:
+ddaccordion.init({
+	headerclass: "accordion_titre", //Shared CSS class name of headers group
+	contentclass: "accordion_content", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [ongldef], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: false, //persist state of opened contents within browser session?
+	toggleclass: ["", "accordion_open"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+
+
+
+<div class="contenu_page_static" style="padding-bottom:15px;">
+			 <br />
+             <div>Cette foire aux questions a pour but de vous proposer succinctement des réponses aux questions les plus fréquentes. Si vous ne trouvez pas de solution à vos interrogations, vous pouvez nous contacter par le biais du formulaire <a href="/contacts">Contact</a>. Le service client répondra à vos demandes dans les plus brefs délais.</div>
+			<h2>Utilisation du Site</h2>
+            <div> Cette rubrique contient toutes les réponses aux questions lièes à l'utilisation du site et à son fonctionnement.</div>
+
+            <div id="texte_scrollable" class="scroll-pane">
+            
+			<br>
+			<div class="accordion_titre accordion_open" headerindex="0h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Comment puis-je accéder à mes données personnelles ?</div>
+            <div class="accordion_content" contentindex="0c" style="display: block;">
+    			                                           
+               	<p>Vous devez être enregistré, et vous connecter à « <a href="customer/account">Mon Compte</a> » pour accéder à vos données personnelles. Vous pouvez aussi consulter le point 13 de nos <a href="/conditions-generales-de-vente">Conditions Générales de vente</a> pour plus d'information.</p>
+
+            </div>
+
+			<div class="accordion_titre accordion_open" headerindex="1h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Mon ordinateur n'accepte pas les cookies, puis-je commander ? </div>
+           <div class="accordion_content" contentindex="1c" style="display: block;">
+              
+            
+                	<p>Votre navigateur doit accepter les cookies pour pouvoir commander. Pour activer vos cookies, selon votre navigateur, nous vous invitons à :<br /><br />
+
+				Internet Explorer<br />
+				1.	Cliquez sur le menu <b>Outils</b>. <br />
+				2.	Sélectionnez <b>Options Internet</b>. <br />
+				3.	Cliquez sur l'onglet <b>Confidentialité</b>.<br />
+				4.	Cliquez sur le bouton <b>Par défaut</b> (ou amenez le curseur de la barre coulissante sur la position "Moyenne").<br /> 
+				5.	Cliquez sur le bouton <b>OK</b>. <br /><br />
+				Firefox<br />
+				1.	Cliquez sur le menu <b>Outils</b>. (Sous Mac, cliquez sur le menu <b>Firefox</b>.) <br />
+				2.	Sélectionnez <b>Options</b>. (Sous Mac, sélectionnez <b>Préférences</b>.) <br />
+				3.	Cliquez sur l'onglet <b>Vie privée</b>. <br />
+				4.	Cochez la case "Accepter les cookies". <br />
+				5.	Cliquez sur le bouton <b>OK</b>. <br />
+				</p>
+                  </div>
+             
+           <div class="accordion_titre accordion_open" headerindex="2h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Pourquoi s'enregistrer ?</div>
+          <div class="accordion_content" contentindex="2c" style="display: block;">
+                 
+					<p>
+					La création d'un compte permet d'obtenir une facture, un suivi de commande, mais aussi de mémoriser les articles choisis pour votre prochaine commande. Vos informations ne seront pas cédées à des tiers. 
+    <a href="http://www.chocolat-weiss.fr/customer/account/create">Enregistrez-vous!</a></p>
+				
+ 			</div>
+           
+               <div class="accordion_titre accordion_open" headerindex="3h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Est-ce que votre terminal de paiement est sécurisé ?</div>
+             <div class="accordion_content" contentindex="3c" style="display: block;">
+                
+					  Nous utilisons le terminal de paiement Merc@net de BNP Paribas. Ce terminal vous assure la confidentialité des données avec le cryptage SSL. Il respecte les standards de sécurité PCI DSS concernant le stockage  et la circulation des données sensibles.</p>
+</div>
+           
+            
+            
+               <div class="accordion_titre accordion_open" headerindex="4h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> J'ai égaré mon mot de passe, Que dois-je faire ?</div>
+            <div class="accordion_content" contentindex="4c" style="display: block;">
+                 
+									<p>
+			  Il vous suffit de cliquer sur <a href="http://www.chocolat-weiss.fr/customer/account/forgotpassword/">mot de passe oublié</a>, et il vous sera automatiquement envoyé sur votre boîte email. </p>
+
+</div>
+                        
+            
+              <div class="accordion_titre accordion_open" headerindex="5h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Comment se désinscrire de la newsletter ?</div>
+           <div class="accordion_content" contentindex="5c" style="display: block;">
+                
+							<p>
+					Chaque newsletter comprend une mention vous permettant de vous désinscrire de notre liste de diffusion. Il vous est aussi possible de vous désinscrire dans la rubrique <a href="/newsletter/manage/">Newsletter</a> de « Mon compte ».
+				</p>
+</div>
+              
+                <div class="clear"></div>
+            <div id="texte_scrollable" class="scroll-pane">
+               <h2>Commandes</h2>
+              <div> Cette rubrique contient toutes les réponses aux questions lièes au passage de commande, a leur traitement et au service après vente.</div>
+              <div class="accordion_titre accordion_open" headerindex="6h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Quelles solutions de paiement proposez-vous ?</div>
+             <div class="accordion_content" contentindex="6c" style="display: block;">
+               
+						<p>Nous acceptons les paiements par cartes bancaires et virements bancaires.</p>
+</div>
+              
+            
+               <div class="accordion_titre accordion_open" headerindex="7h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Comment régler sa commande par chèque ?</div>
+            <div class="accordion_content" contentindex="7c" style="display: block;">
+                
+					<p>Nous n'acceptons pas les chèques bancaires. Nous vous invitons à utiliser votre carte bancaire ou le virement pour régler votre commande.</p>
+</div>
+               
+            
+            
+              <div class="accordion_titre accordion_open" headerindex="8h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Quelles cartes bancaires acceptez-vous ?</div>
+           <div class="accordion_content" contentindex="8c" style="display: block;">
+                 
+		<p>Nous acceptons les cartes Visa, Mastercard, Carte Bleue et American Express.</p>		
+</div>
+          
+               <div class="accordion_titre accordion_open" headerindex="9h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Avez-vous un catalogue ?</div>
+           <div class="accordion_content" contentindex="9c" style="display: block;">
+                 
+				<p>Notre catalogue particulier est téléchargeable en cliquant sur « Catalogue général ».<br />
+				  Notre catalogue Entreprise est aussi téléchargeable dans la rubrique «<a href="http://www.chocolat-weiss.fr/cadeaux-d-entreprise">Chocolat Cadeaux D'affaire</a> ».<br />
+					Notre catalogue pour les professionnels est disponible sur demande en vous inscrivant sur « Espace Professionnels ». 
+				</p>
+</div>
+              
+               <div class="accordion_titre accordion_open" headerindex="10h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Que signifie « code offre » ? </div>
+         <div class="accordion_content" contentindex="10c" style="display: block;">
+                  
+				<p>Le code offre est un code offrant une promotion, un cadeau, ou une offre proposée sur le site internet <a href="http://www.chocolat-weiss.fr">www.chocolat-weiss.fr</a>. Ce code doit être saisi et validé lors du passage de commande dans votre panier. <br /><br />
+
+				Les codes offres sont disponibles sur la page d'accueil ou sur les newsletters que nous adressons à nos clients enregistrés.
+				</p>
+</div>
+              
+               <div class="accordion_titre accordion_open" headerindex="11h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Mon colis n’est pas conforme à ma commande, que faire ?</div>
+            <div class="accordion_content" contentindex="11c" style="display: block;">
+               
+							<p>Si votre colis est endommagé ou non conforme à sa livraison, nous vous invitons à le signaler sur le bon de livraison, et à prendre <a href="http://www.chocolat-weiss.fr/contacts/">contact</a> avec le service clients. <br /><br />
+
+				Nous vous prions d'utiliser le formulaire « <a href="http://www.chocolat-weiss.fr/contacts">Contacts </a>» pour nous adresser vos réclamations en mentionnant votre numéro de commande. </p>
+</div>
+   
+              <div class="accordion_titre accordion_open" headerindex="12h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>"  /> Quels prestataires utilisez-vous pour la livraison ?</div>
+           <div class="accordion_content" contentindex="12c" style="display: block;">
+             <p> Nous utilisons Chronopost pour les livraisons à destination de la France.</p>  
+			</div>
+           
+               <div class="accordion_titre accordion_open" headerindex="13h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Quels sont les délais de livraison ?</div>
+            <div class="accordion_content" contentindex="13c" style="display: block;">
+                 
+						<p>Les délais de livraison vont de 24 à 48 heures selon l'heure où vous avez validé votre commande. Nous vous invitons à passer votre commande avec la date de livraison souhaitée.<br />
+				Le chocolat est une denrée alimentaire sensible. Cependant vous pouvez être livré le samedi si vous optez pour une majoration. (<a href="http://www.chocolat-weiss.fr/qualite-de-livraison">Voir conditions de livraison</a>). </p>
+
+</div>
+             
+              <div class="accordion_titre accordion_open" headerindex="14h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Quels sont les coûts de livraison ?</div>
+            <div class="accordion_content" contentindex="14c" style="display: block;">
+                  
+							<p>Les coûts de livraison sont forfaitaires selon la valeur de votre commande. Ils sont détaillés sur la page<a href="http://www.chocolat-weiss.fr/qualite-de-livraison"> Livraison</a>. </p>
+</div>
+            
+               <div class="accordion_titre accordion_open" headerindex="15h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Livrez-vous l’étranger ?</div>
+             <div class="accordion_content" contentindex="15c" style="display: block;">
+                 
+					<p>Oui, les chocolats Weiss utilisent Colissimo international pour les livraison hors France.</p>
+</div>
+               
+               <div class="accordion_titre accordion_open" headerindex="16h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" />Je souhaite voir la liste des ingrédients pour chaque chocolat ?</div>
+            <div class="accordion_content" contentindex="16c" style="display: block;">
+                
+				<p>Les articles sont présentés dans une fiche produit. Un onglet « Secret de fabrication » contient la composition et la liste des ingrédients.</p>
+</div>
+            
+               <div class="accordion_titre accordion_open" headerindex="17h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Ou achetez-vous vos fèves ?</div>
+             <div class="accordion_content" contentindex="17c" style="display: block;">
+             
+				<p>Les articles sont présentés dans une fiche produit. Un onglet « Secret de fabrication » contient la composition et la liste des ingrédients.</p>
+</div>
+              
+                <div class="accordion_titre accordion_open" headerindex="18h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Quelles sont les conditions optimales pour conserver le chocolat ?</div>
+            <div class="accordion_content" contentindex="18c" style="display: block;">
+               
+						<p>Les conditions optimales pour conserver le chocolat sont dans un endroit sec et à l'abri de la lumière et des odeurs. La température optimale est constante entre 17 et 19°C. Le chocolat ne doit pas être exposé à plus de 21°C et une humidité supérieure à 60%. Nous vous invitons à lire notre rubrique <a href="http://www.chocolat-weiss.fr/bien-conserver-le-chocolat">Bien Conserver.</a></p>
+
+</div>
+            
+              <div class="accordion_titre accordion_open" headerindex="19h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Fabriquez-vous vos chocolats ?</div>
+             <div class="accordion_content" contentindex="19c" style="display: block;">
+                
+						<p>La Chocolaterie Weiss est l'une des dernières chocolateries françaises à maîtriser l'ensemble de la fabrication, de la sélection des fèves à la mise en vente des bonbons.</p>
+</div>
+               
+               <div class="accordion_titre accordion_open" headerindex="20h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Est-ce que vos chocolats contiennent de l’alcool ?</div>
+             <div class="accordion_content" contentindex="20c" style="display: block;">
+                 
+				<p>Les produits contenant de l'alcool sont indiqués. L'alcool et son pourcentage figurent dans l'onglet « Secret de fabrication » sur la fiche produit.</p>
+</div>
+              
+               <div class="accordion_titre accordion_open" headerindex="21h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Est-ce que tous vos produits sont en vente sur la Boutique internet ?</div>
+            <div class="accordion_content" contentindex="21c" style="display: block;">
+                 
+					<p>Certaines créations en chocolat ne peuvent être expédiées. Elles sont uniquement disponibles dans « <a href="/nos-boutiques-chocolat">Nos boutiques</a> ».<br />
+Nous travaillons uniquement avec des produits de saison. Nous ne pouvons pas commercialiser toutes nos créations tout au long de l'année.
+</p>
+               </div>
+            
+            
+             <div class="accordion_titre accordion_open" headerindex="22h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Commercialisez-vous un chocolat sans sucre ?</div>
+            <div class="accordion_content" contentindex="22c" style="display: block;">
+                 
+					<p>Non, nous  travaillons principalement avec des ingrédients 100% naturels qui n'altèrent pas le goût de nos fèves. La section sucre dans la rubrique « <a href="/sante-chocolat">Santé </a>» vous informe des sucres utilisés.</p>
+</div>
+</div>
+                  <div class="clear"></div>
+            <div id="texte_scrollable" class="scroll-pane"> 
+            
+            <h2>	Entreprises</h2>
+               <div class="accordion_titre accordion_open" headerindex="23h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Je souhaite commander des chocolats pour mon entreprise ?</div>
+             <div class="accordion_content" contentindex="23c" style="display: block;">
+                
+					<p>Weiss travaille en collaboration avec de nombreux professionnels qui utilisent nos produits pour récompenser leurs collaborateurs, promouvoir une gamme de produits ou encore recevoir des clients. Nous vous invitons à vous connecter à l'<a href="http://entreprise.chocolat-weiss.fr" alt="" >espace dédié aux entreprises</a>. Cet espace vous est exclusivement réservé et nécessite une authentficiation avec un numéro de siret. Vous bénéficierez alors de remise selon les quantités commandées. </p>
+
+</div>
+               
+            
+            
+               <div class="accordion_titre accordion_open" headerindex="24h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> J’ai besoin d’une facture. En délivrez-vous une ?</div>
+           <div class="accordion_content" contentindex="24c" style="display: block;">
+                
+					<p>Toutes les commandes passées en ligne sont consultables sur l'espace «<a href="/customer/account"> Mon Compte</a> ». Vous pouvez gérer vos commandes, et télécharger les factures sous format pdf. <br />
+				Si vous souhaitez être contacté par notre service commercial cadeaux d'entreprise, nous vous invitons à utiliser la rubrique « <a href="/contacts">Contact</a> ». </p>
+
+</div>
+              
+           
+            
+               <div class="accordion_titre accordion_open" headerindex="25h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Peut-on passer une commande avec des lieux de livraison différents ?</div>
+            <div class="accordion_content" contentindex="25c" style="display: block;">
+                
+				<p>La boutique internet ne permet pas de gérer une commande avec des lieux de livraison différents. Contactez le service commercial <a href="/cadeaux-d-entreprise">chocolat cadeaux d'entreprise</a>, et ils analyseront votre besoin et sa faisabilité. </p>
+</div>
+</div>
+               <div class="clear"></div>
+            <div id="texte_scrollable" class="scroll-pane">   
+           
+            <h2>Ingrédients</h2>
+            <div>	Nous vous invitons à consulter notre rubrique «<a href="/ingredients-chocolat">Ingrédients</a> » pour plus d'informations.<br />
+			
+			<br /></div>
+               <div class="accordion_titre accordion_open" headerindex="26h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Est-ce que vos chocolats contiennent des arachides ?</div>
+           <div class="accordion_content" contentindex="26c" style="display: block;">
+                
+				<p>Non, nos chocolats ne contiennent pas d'arachides. Vous pouvez consulter le paragraphe Allergies dans la rubrique « <a href="/ingredients-chocolat">ingredients-chocolat</a> » pour plus de renseignements.</p>
+</div>
+                         
+               <div class="accordion_titre accordion_open" headerindex="27h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Que signifie D.L.U.O. ?</div>
+            <div class="accordion_content" contentindex="29c" style="display: block;">
+                
+					<p>DLUO signifie Date Limite d'Utilisation Optimale. La D.L.U.O. est présente sur les emballages. 
+				</p>
+</div>
+              
+           
+            
+              <div class="accordion_titre accordion_open" headerindex="28h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Que signifie le pourcentage sur les chocolats ?</div>
+           <div class="accordion_content" contentindex="30c" style="display: block;">
+               
+					<p>Le pourcentage sur les chocolats indique la teneur en cacao minimum. 
+				</p>
+</div>
+             
+            
+            
+               <div class="accordion_titre accordion_open" headerindex="29h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Vos chocolats sont-ils 100% pur beurre de cacao ? </div>
+         <div class="accordion_content" contentindex="31c" style="display: block;">
+                
+				<p>La chocolaterie Weiss est fidèle aux recettes de son fondateur et n'utilisent que du beurre de cacao.
+			  Notre <a href="/charte-qualite-weiss">charte de qualité chocolats Weiss </a>vous indique notre éthique.</p>
+</div>
+            
+            
+            
+              <div class="accordion_titre accordion_open" headerindex="30h"><img src="<?php echo $this->getSkinUrl('images/boutiques_picto.jpg'); ?>" /> Est-ce que vos chocolats contiennent de la lécithine de soja ?</div>
+            <div class="accordion_content" contentindex="32c" style="display: block;">
+                  
+					<p>Certaines de nos recettes contiennent de la lécithine de soja. Weiss vous garantit une lécithine de soja sans ogm. <br />Consultez notre page <a href="/ingredients-chocolat">« ingredients-chocolat »</a> pour plus d'informations. </p>
+</div>
+                                 
+       </div>
+            <div class="clear"></div>
+            
+  			</div>
+		</div>

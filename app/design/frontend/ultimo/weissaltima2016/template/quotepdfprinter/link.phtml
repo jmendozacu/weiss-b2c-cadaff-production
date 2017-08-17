@@ -1,0 +1,41 @@
+<?php
+/**
+ * Sunovisio Extensions
+ * http://ecommerce.sunovisio.com
+ *
+ * @extension   Quote PDF Printer
+ * @type        Customer Support
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    Sunovisio
+ * @package     Sunovisio_QuotePdfPrinter
+ * @copyright   Copyright (c) 2012 Sunovisio (http://sunovisio.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php if (Mage::getStoreConfig('quotepdfprinter/parameters/enabled',Mage::app()->getStore()) && (!Mage::getStoreConfig('quotepdfprinter/frontend_parameters/display_link',Mage::app()->getStore()) ||  Mage::helper('customer')->isLoggedIn() )) { ?>
+    <?php
+    $enabled = true;
+    if (Mage::getStoreConfig('quotepdfprinter/frontend_parameters/enable_button_shipping_estimated')) {
+        $cart = Mage::getModel('checkout/cart')->getQuote();
+        $totals = $cart->getTotals();
+        if (!isset($totals['shipping'])) {
+            $enabled = false;
+        }
+    }
+    $location = (!Mage::helper('customer')->isLoggedIn()) ? $this->getUrl('customer/account') : $this->getUrl('quotepdfprinter/pdf/print',array('_secure'=>true));
+    ?>
+    <div class="printpdf">
+        <span class="printpdf-msg"><span class="printpdf-page"></span>Vous désirez estimer le montant de votre commande pour votre entreprise ?</span>
+        <button <?php echo ($enabled ? '' : 'disabled="disabled"'); ?> class="button btn-proceed-checkout btn-checkout <?php echo ($enabled ? '' : 'disabled'); ?>" onclick="javascript: window.location = '<?php echo $location; ?>';"><span><span><?php echo Mage::helper('quotepdfprinter')->getLabel(); ?></span></span></button>
+    </div>
+<?php } ?>

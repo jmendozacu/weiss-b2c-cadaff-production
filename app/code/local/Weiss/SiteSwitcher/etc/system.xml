@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<config>
+    <sections>
+        <design>
+            <groups>
+                <site_switcher translate="label">
+                    <label>Site Switcher</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>35</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                        <max_views translate="label comment">
+                            <label>Maximum views count</label>
+                            <comment>Number of pages seen by a user before the over-header is hidden.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_views>
+
+                        <max_delay translate="label comment">
+                            <label>Maximum display delay</label>
+                            <comment>Delay (in minutes) before the over-header is hidden.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_delay>
+
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+
+                        <cms_link_page translate="label">
+                            <label>CMS Link Page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_cms_page</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cms_link_page>
+
+                        <cms_link_label translate="label">
+                            <label>CMS Link Label</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cms_link_label>
+
+                        <selector_label translate="label">
+                            <label>Selector Label</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </selector_label>
+
+                        <selector_options translate="label comment">
+                            <label>Selector Options</label>
+                            <comment>Each option must be on a new line. Options URLs should be placed at the end of the line and wrapped into brackets.</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </selector_options>
+
+                        <footer_text translate="label">
+                            <label>Footer Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_text>
+
+                    </fields>
+                </site_switcher>
+            </groups>
+        </design>
+    </sections>
+</config>

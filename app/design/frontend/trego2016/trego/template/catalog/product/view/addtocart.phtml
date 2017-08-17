@@ -1,0 +1,57 @@
+<?php $_product = $this->getProduct(); ?>
+<?php $buttonTitle = $this->__('Add to Cart'); ?>
+<!-- For Social share -->
+<?php $productName = $_product->getName(); ?>
+<?php $productUrl = $_product->getProductUrl(); ?>
+<?php $productImage = $_product->getImageUrl() ?>
+
+<?php if($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <?php if(!$_product->isGrouped()): ?>
+        <div class="qty-holder">
+            <span class="qty-text"><?php echo $this->__('Quantité'); ?></span>
+            <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+            <div class="qty-changer">
+                <a href="javascript:void(0)" id="qty_inc"><span></span></a>
+                <a href="javascript:void(0)" id="qty_dec"><span></span></a>
+            </div>
+        </div>
+        <?php endif; ?>
+        <div class="btn-cart-container">
+            <div>  
+                <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span class="present"></span><?php echo $buttonTitle ?></span></button>
+                <div class="clearer"></div>
+                <a  onclick="return false"><span class="product-48-delivery"><span class="delivery-icon"></span><?php echo $this->__('Livraison sous 48h'); ?></span></a>
+                <div class="product-socials">
+                    <span><?php echo $this->__('Partager : '); ?></span>
+                    <!-- Twitter -->
+                    <a class="twitter-share" href="javascript:popWin('http://twitter.com/home/?status=<?php echo urlencode($productName . ' (' . $productUrl . ')'); ?>', 'twitter', 'width=640,height=480,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes');" title="<?php echo $this->__('Tweet') ?>">Twitter</a>
+                    <!-- Facebook -->
+                    <a class="fb-share" href="javascript:popWin('https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($productUrl); ?>&t=<?php echo urlencode($productName); ?>', 'facebook', 'width=640,height=480,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes');" title="<?php echo $this->__('Share on Facebook') ?>">Facebook</a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/chocolatweiss/" class="in"></a>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('', true, true) ?>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){               
+            jQuery("#qty_inc").click(function(){
+                jQuery("#qty").val((+jQuery("#qty").val() + 1) || 0);
+            });
+            jQuery("#qty_dec").click(function(){
+                jQuery("#qty").val((jQuery("#qty").val() - 1 > 0)?(jQuery("#qty").val() - 1) : 0);
+            });
+
+            // Add to cart tag manager event
+
+            jQuery('.add-to-cart').find('button').on('click',function(){
+                tagmanager_event('addToCart', {'id':'<?php echo $_product->getId(); ?>', 'name':'<?php echo $_product->getName(); ?>'});
+
+            });
+
+
+        });
+    </script>
+<?php endif; ?>

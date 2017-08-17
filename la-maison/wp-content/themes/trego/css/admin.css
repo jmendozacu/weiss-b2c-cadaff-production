@@ -1,0 +1,29 @@
+.post-type-testimonial table.wp-list-table td.column-thumbnail img {
+	width: 80px;
+	height: auto;
+}
+
+.post-type-portfolio table.wp-list-table td.column-thumbnail img {
+    width: 80px;
+    height: auto;
+}
+
+div#page_background #background_label {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+div#page_background #background {
+	display: inline-block;
+	width: 70% !important;
+}
+
+div#page_background #background_opacity_label {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+div#page_background #background_opacity {
+	display: inline-block;
+	width: 100px !important;
+}

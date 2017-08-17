@@ -1,0 +1,66 @@
+/*
+Styles for older IE versions (previous to IE9).
+*/
+
+.cart-collaterals .calc-shipping .tab-content {
+	min-height: 212px;
+}
+
+ul.cart_list li img {
+	height: auto;
+	width: 65px;
+}
+
+#order_review table.shop_table td.product-name {
+	width: 45%;
+}
+
+#order_review table.shop_table td.product-thumbnail img {
+	width: 65px;
+	height: auto;
+}
+
+#order_review table.order-review-table tfoot td {
+	padding-right: 20px;
+}
+
+select.border-none {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border: 1px solid #D5D5D5 !important;
+	background: url("images/select-icons.png") no-repeat scroll right center;
+	height: 24px;
+}
+
+.header-topbar .quick-access {
+	margin-top: 51px;
+}
+
+article.post header .entry-thumbnail img,
+article.page header .entry-thumbnail img,
+article.product header .entry-thumbnail img {
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.site-header .search-form{
+	    margin: 0;
+	    position: absolute;
+	    right: 22px;
+	    top: 25px;
+	    width: 180px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.site-header .search-form{
+	    margin: 0;
+	    position: absolute;
+	    right: 5px;
+	    top: 10px;
+	    width: 180px;
+	}
+}

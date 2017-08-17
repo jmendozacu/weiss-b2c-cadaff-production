@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head" ifconfig="quickview/viewsetting/enableview">
+            <block type="page/html" name="top.Js" as="topJs" template="trego/quickview/page/lablequickview.phtml" />
+            <action method="addJs">
+                <script>trego/quickview/js/trego_quickview.js</script>
+                <name>trego_quickview</name>
+            </action>
+            <action method="addJs">
+                <script>varien/product.js</script>
+                <name>trego_quickview</name>
+            </action>
+            <action method="addJs">
+                <script>trego/quickview/configurable.js</script>
+                <name>trego_quickview</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/bundle.js</name>
+            </action>
+            <action method="addItem"><type>skin_js</type><name>jquery_etalage/jquery.etalage.min.js</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.zoom.min.js</name><params/></action>
+            <action method="addCss"><stylesheet>jquery_etalage/etalage.css</stylesheet></action>
+            <action method="addItem">
+                <type>js_css</type>
+                <name>calendar/calendar-win2k-1.css</name>
+                <params />
+            </action>
+            <action method="addItem">
+                <type>js</type>
+                <name>calendar/calendar.js</name>
+            </action>
+            <action method="addItem">
+                <type>js</type>
+                <name>calendar/calendar-setup.js</name>
+            </action>
+            <action method="addItem" ifconfig="sales/msrp/enabled"><type>skin_js</type><name>js/msrp.js</name></action>
+        </reference>
+    </default>
+    <quickview_index_view>
+        <update handle="catalog_product_view" />
+        <remove name="header" />
+        <remove name="footer" />
+        <reference name="root">
+            <action method="setTemplate">
+                <template>trego/quickview/page/quickpage.phtml</template>
+            </action>
+        </reference>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <template>trego/quickview/catalog/product/view.phtml</template>
+            </action>
+        </reference>
+        <reference name="product.info.media">
+            <action method="setTemplate" ifconfig="quickview/viewsetting/enableview">
+                <template>catalog/product/view/media.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <remove name="product.info.upsell" />
+            <remove name="product.info.additional" />
+            <remove name="product.description" />
+            <remove name="product.attributes" />
+            <remove name="product.info.extrahint" />
+        </reference>
+    </quickview_index_view>
+</layout>

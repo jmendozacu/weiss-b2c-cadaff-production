@@ -1,0 +1,19 @@
+<?php
+/**
+ * Weiss SiteSwitcher subfooter switcher template file
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Jérôme Carrot <jecar@smile.fr>
+ * @copyright  Smile 2015
+ * @var        $this Weiss_SiteSwitcher_Block_Switcher
+ */
+?>
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery('#site-switcher').find('.switcher-label').on('click', function (evt) {
+        jQuery('#site-switcher').find('.switcher-selector').toggleClass('active');
+    });
+
+    //]]>
+</script>

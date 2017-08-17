@@ -1,0 +1,358 @@
+.ps-container {
+	position: absolute;
+	overflow: hidden;
+	text-transform: uppercase;
+	color: #555;
+	background: #fff;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.ps-container > div {
+	position: absolute;
+	box-shadow: inset 0 0 0 9999px rgba(100, 100, 100, 0.2);
+}
+
+.ps-container > div > div,
+.ps-slidewrapper > nav,
+.ps-slides > div {
+	position: absolute;
+}
+
+.ps-contentwrapper {
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	z-index: 1000;
+	width: 57%;
+}
+
+.ps-content {
+	background: #E9E9E9;
+	width: 100%;
+	height: 100%;
+	padding: 20% 30px 50px 250px;
+}
+
+.ps-content h2 {
+	color: #67665F;
+	font-family: 'PTSans_Caption';
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px 0 0;
+	text-align: right;
+}
+
+.ps-content h1 {
+	color: #494745;
+	font-family: 'Raleway_Thin';
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 60px;
+	padding: 15px 0 0;
+	text-align: right;
+	text-transform: none;
+}
+
+.ps-content p {
+	color: #666464;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 25px;
+	padding: 10px 0;
+	text-align: right;
+	text-transform: none;
+}
+
+.ps-content span.ps-price {
+	color: #D04D49;
+	display: block;
+	font-family: 'Lato_Regular';
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 35px;
+	margin: 0;
+	padding: 10px 0;
+	text-align: right;
+}
+
+.ps-content span.ps-price del {
+	color: #6D6C67;
+	padding-right: 20px;
+	font-size: 32px;
+}
+
+.ps-content span.ps-price ins {
+	text-decoration: none;
+}
+
+.ps-content a:last-child {
+	float: right;
+}
+
+.ps-slidewrapper {
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	overflow: hidden;
+	width: 43%;
+}
+
+.ps-slides {
+	top: 0px;
+	bottom: 200px;
+	width: 100%;
+}
+
+.ps-slides > div {
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 0 9999px rgba(179,157,250,0.1);
+}
+
+.ps-slidewrapper > nav {
+	width: 100%;
+	height: 200px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1000;
+}
+
+.ps-slidewrapper > nav > a {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	float: left;
+	box-shadow: inset 0 0 0 9999px rgba(207,227,206,0.8);
+	outline: none;
+}
+
+.ps-slidewrapper > nav > a:first-child {
+	box-shadow: inset 0 0 0 9999px rgba(233,217,141,0.8);
+}
+
+.no-touch .ps-slidewrapper > nav > a {
+	-webkit-transition: box-shadow 0.4s ease-in-out;
+	-moz-transition: box-shadow 0.4s ease-in-out;
+	-ms-transition: box-shadow 0.4s ease-in-out;
+	-o-transition: box-shadow 0.4s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
+}
+
+.no-touch .ps-slidewrapper > nav > a:hover {
+	box-shadow: inset 0 0 0 9999px rgba(246,224,121,0.1);
+}
+
+.no-touch .ps-slidewrapper > nav > a:first-child:hover {
+	box-shadow: inset 0 0 0 9999px rgba(249,15,15,0.1);
+}
+
+.ps-slidewrapper > nav > a:after {
+	content: '';
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -35px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.ps-slidewrapper > nav > a:first-child:after {
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	margin: -60px 0 0 -35px;
+}
+
+.ps-slides > div,
+.ps-slidewrapper > nav > a {
+	background-color: #E1E1E1;
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%;
+}
+
+.ps-move {
+	-webkit-transition: top 400ms ease-out;
+	-moz-transition: top 400ms ease-out;
+	-o-transition: top 400ms ease-out;
+	-ms-transition: top 400ms ease-out;
+	transition: top 400ms ease-out;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.ps-container {
+		top: 184px;
+		bottom: 60px;
+	}
+
+	.admin-bar .ps-container {
+		top: 202px;
+	}
+
+	.ps-content {
+		padding: 30px;
+	}
+
+	.ps-content h2 {
+		font-size: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.ps-content h1 {
+		font-size: 50px;
+		line-height: 50px;
+		padding: 15px 0 0;
+	}
+
+	.ps-content span.ps-price {
+		font-size: 30px;
+		line-height: 30px;
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.js .ps-content p {
+		font-size: 17px;
+	}
+
+	.ps-content span.ps-price del {
+		color: #6D6C67;
+		padding-right: 15px;
+		font-size: 27px;
+	}
+
+	.ps-content span.ps-price ins {
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.js .ps-container {
+		top: 130px;
+		bottom: 60px;
+	}
+
+	.admin-bar .ps-container {
+		top: 180px;
+	}
+
+	.js .ps-container > div {
+		width: 100%;
+	}
+
+	.js .ps-slides {
+		bottom: 320px;
+	}
+
+	.js .ps-slidewrapper > nav {
+		height: 100px;
+	}
+
+	.js .ps-contentwrapper {
+		top: auto;
+		height: 220px;
+		bottom: 100px;
+	}
+
+	.js .ps-content {
+		padding: 10px 20px;
+	}
+
+	.js .ps-content h2 {
+		font-size: 17px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.js .ps-content h1 {
+		font-size: 35px;
+		line-height: 35px;
+		padding: 5px 0 0;
+	}
+
+	.js .ps-content span.ps-price {
+		font-size: 25px;
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.js .ps-content span.ps-price del {
+		padding-right: 15px;
+		font-size: 22px;
+	}
+
+	.js .ps-content span.ps-price ins {
+		text-decoration: none;
+	}
+
+	.js .ps-content p {
+		line-height: 20px;
+		border: none;
+		padding: 5px 0 0;
+		font-size: 14px;
+	}
+
+	.js .ps-content a:last-child {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.js .ps-content p,
+	.ps-content a:last-child {
+		display: none;
+	}
+	.js .ps-content span.ps-price {
+		font-size: 25px;
+		line-height: 25px;
+		margin: 0;
+		padding: 0 0 10px;
+	}
+	.js .ps-contentwrapper {
+		height: 110px;
+		bottom: 70px;
+	}
+	.js .ps-slides {
+		bottom: 180px;
+	}
+	.js .ps-content h1 {
+		font-size: 30px;
+		line-height: 30px;
+		padding: 5px 0 0;
+	}
+	.js .ps-slidewrapper > nav {
+		height: 70px;
+	}
+}
+
+@media only screen and (max-width: 680px) and (max-height: 479px) {
+	.js .ps-content {
+		display: none;
+	}
+	.js .ps-contentwrapper {
+		height: 110px;
+		bottom: 70px;
+	}
+	.js .ps-slides {
+		bottom: 70px;
+	}
+}
+

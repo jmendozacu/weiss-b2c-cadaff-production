@@ -1,0 +1,251 @@
+<?php
+/**
+ * Shopping cart template
+ *
+ * @see Mage_Checkout_Block_Cart
+ */
+?>
+<div class="cart">
+    <div class="page-title title-buttons">
+        <h1><?php echo $this->__('Shopping Cart') ?></h1>
+    </div>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <?php echo $this->getChildHtml('form_before') ?>
+    <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
+        <?php echo $this->getBlockHtml('formkey'); ?>
+        <fieldset>
+            <table id="shopping-cart-table" class="data-table cart-table">
+
+            <?php $mergedCells = ($this->helper('tax')->displayCartBothPrices() ? 2 : 1); ?>
+                <thead>
+                    <tr>
+                        <th rowspan="<?php echo $mergedCells; ?>"><span class="nobr"><?php echo $this->__('Product') ?></span></th>
+                        <th rowspan="<?php echo $mergedCells; ?>"><span class="nobr"><?php echo $this->__('Product Code') ?></span></th>
+                        <?php /*if ($this->helper('wishlist')->isAllowInCart()) : ?>
+                        <th rowspan="<?php echo $mergedCells; ?>"><span class="nobr"><?php echo $this->__('Wishlist') ?></span></th>
+                        <?php endif*/ ?>
+                        <!--<th rowspan="<?php echo $mergedCells; ?>">&nbsp;</th>-->
+                        <th colspan="<?php echo $mergedCells; ?>"><span class="nobr"><?php echo $this->__('Unit Price') ?></span></th>
+                        <th rowspan="<?php echo $mergedCells; ?>"><?php echo $this->__('Quantity') ?></th>
+                        <th colspan="<?php echo $mergedCells; ?>"><?php echo $this->__('Subtotal') ?></th>
+                        <th rowspan="<?php echo $mergedCells; ?>" class="last">&nbsp;</th>
+                    </tr>
+                    <?php if ($this->helper('tax')->displayCartBothPrices()): ?>
+                    <tr>
+                        <th class="a-right"><?php echo $this->helper('tax')->getIncExcTaxLabel(false) ?></th>
+                        <th><?php echo $this->helper('tax')->getIncExcTaxLabel(true) ?></th>
+                        <th class="a-right"><?php echo $this->helper('tax')->getIncExcTaxLabel(false) ?></th>
+                        <th><?php echo $this->helper('tax')->getIncExcTaxLabel(true) ?></th>
+                    </tr>
+                    <?php endif; ?>
+                </thead>
+                <tbody>
+                <?php foreach($this->getItems() as $_item): ?>
+                    <?php echo $this->getItemHtml($_item) ?>
+                <?php endforeach ?>
+                </tbody>
+				<!-- modif LR 24/11/2015 suppression ligne modifier et vider panier--->
+                <tfoot>
+                    <tr>
+                        <td colspan="50" class="a-right">
+						<!-- <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update Shopping Cart'); ?>" class="button btn-update"><span><span><?php echo $this->__('Update Shopping Cart'); ?></span></span></button> -->
+                           <!-- <button type="submit" name="update_cart_action" value="empty_cart" title="<?php /*?><?php echo $this->__('Clear Shopping Cart'); ?><?php */?>" class="button btn-empty" id="empty_cart_button"><span><span><?php /*?><?php echo $this->__('Clear Shopping Cart'); ?><?php */?></span></span></button> */ <!--[if lt IE 8]>-->
+                            <input type="hidden" id="update_cart_action_container" />
+                            <script type="text/javascript">
+                            //<![CDATA[
+                                Event.observe(window, 'load', function()
+                                {
+                                    // Internet Explorer (lt 8) does not support value attribute in button elements
+                                    $emptyCartButton = $('empty_cart_button');
+                                    $cartActionContainer = $('update_cart_action_container');
+                                    if ($emptyCartButton && $cartActionContainer) {
+                                        Event.observe($emptyCartButton, 'click', function()
+                                        {
+                                            $emptyCartButton.setAttribute('name', 'update_cart_action_temp');
+                                            $cartActionContainer.setAttribute('name', 'update_cart_action');
+                                            $cartActionContainer.setValue('empty_cart');
+                                        });
+                                    }
+
+                                });
+                            //]]>
+                            </script>
+                            <!-- [endif]-->
+                        </td>
+                    </tr>
+                </tfoot>
+				<!---modif LR 24/11/2015 suppression ligne modifier et vider panier--->
+            </table>
+            <script type="text/javascript">decorateTable('shopping-cart-table')</script>
+        </fieldset>
+    </form>
+    <div class="cart-collaterals">
+        <div class="cart-extra">
+            <ul class="cart-extra-tab">
+            <?php if (!$this->getIsVirtual()):?>
+			 <li class="coupon-tab expanded"><?php echo $this->__('Discount code') ?></li>
+                            <?php endif; ?>    
+						<li class="tax-tab"><?php echo $this->__('Estimate shipping & taxes') ?></li>
+            </ul>
+            <div class="akordeon">
+                <?php if (!$this->getIsVirtual()):?>
+				 <div class="item-coupon akordeon-item">
+                    <div class="akordeon-item-head">
+                        <div class="akordeon-item-head-container">
+                            <div class="akordeon-heading">
+                                <?php echo $this->__('Discount code') ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="akordeon-item-body">
+                        <div class="akordeon-item-content">
+                            <?php echo $this->getChildHtml('coupon') ?>
+                        </div>
+                    </div>
+                </div>
+				 
+                <?php endif; ?>
+				 <div class="item-tax akordeon-item">
+                    <div class="akordeon-item-head">
+                        <div class="akordeon-item-head-container">
+                            <div class="akordeon-heading">
+                                <?php echo $this->__('Estimate shipping & taxes') ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="akordeon-item-body">
+                        <div class="akordeon-item-content">
+                            <?php echo $this->getChildHtml('shipping'); ?>
+                        </div>
+                    </div>
+                </div>
+				 
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                jQuery('.cart-extra .akordeon').akordeon({ buttons: false, toggle: false });
+                jQuery('.cart-extra-tab li').click(function(){
+                    if(jQuery(this).hasClass('tax-tab')){
+                        jQuery('.item-tax .akordeon-item-head-container').click();
+                    }
+                    if(jQuery(this).hasClass('coupon-tab')){
+                        jQuery('.item-coupon .akordeon-item-head-container').click();
+                    }
+                    jQuery(this).parent().children('.expanded').removeClass('expanded');
+                    jQuery(this).addClass('expanded');
+                });
+            });
+        </script>
+        <div class="totals">
+		<!--modif lr deplacement coupon 241115-->
+		<!--<div class="akordeon-item-body">
+		<div class="akordeon-item-content" style="text-transform: uppercase; font-size: 13px;">
+		 <?php /* echo $this->getChildHtml('coupon') */?>
+		 </div></div>-->
+		<!--modif lr deplacement coupon 241115-->
+            <?php echo $this->getChildHtml('totals'); ?>
+            <?php if(!$this->hasError()): ?>
+            <ul class="checkout-types">
+            <?php
+                $i = 0;
+            ?>
+            <?php if($this->getContinueShoppingUrl()): ?>
+                <?php
+                    $i = 1;
+                ?>
+                <li class="first">
+                    <button type="button" title="<?php echo $this->__('Continue Shopping') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
+                </li>
+            <?php endif; ?>
+            <?php foreach ($this->getMethods('methods') as $method): ?>
+                <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                <li class="<?php echo ($i==0)?'first':''; ?>"><?php echo $methodHtml; ?></li>
+                <?php
+                    $i++;
+                ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+            </ul>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<div>
+<!-- insertion bloc loi hamon LR -->
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('loi_hamon')->toHtml(); ?>
+<!-- fin insertion bloc loi hamon LR -->
+</div>
+
+<?php  if(Mage::getModel('core/variable')->loadByCode('zanox')->getValue('plain') == 'on'): ?>
+	<!-- Mastertag ZANOX -->
+	<?php 
+		$zxtab = []; 
+		foreach($this->getItems() as $item)
+		{
+			$zxtab[] = [
+				"identifier" => $item->getSku(),
+				"amount" => sprintf("%.2f", $item->getProduct()->getPrice()),
+				"currency" => "EUR",
+				"quantity" => (int)$item->getQty()
+				];
+		}
+	?>
+	<script type="text/javascript">
+	var zx_products = <?php echo json_encode($zxtab, true); ?>;
+	</script>
+
+	<!-- Start of Basket Page Mastertag Code: -->
+	<div class="zx_4C659C7E414EFDBD09BA zx_mediaslot">
+		<script type="text/javascript">
+			window._zx = window._zx || [];
+			window._zx.push({"id":"4C659C7E414EFDBD09BA"});
+			(function(d) {
+				var s = d.createElement("script"); s.async = true;
+				s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//static.zanox.com/scripts/zanox.js";
+				var a = d.getElementsByTagName("script")[0]; a.parentNode.insertBefore(s, a);
+			}(document));
+		</script>
+	</div>
+	<!-- End of Basket Page Mastertag Code -->
+<?php endif; ?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        // jQuery(".qty_inc").each(function(){
+            // jQuery(this).on('click', function(e){
+                // jQuery(this).parent().parent().children("input.qty").val((+jQuery(this).parent().parent().children("input.qty").val() + 1) || 0);
+                // e.preventDefault();
+            // });
+        // });
+        // jQuery(".qty_dec").each(function(){
+            // jQuery(this).on('click',function(e){
+                // var qty_val = jQuery(this).parent().parent().children("input.qty").val();
+                // if(qty_val - 1 > 0)
+                    // qty_val = qty_val - 1;
+                // else
+                    // qty_val = 0;
+                // jQuery(this).parent().parent().children("input.qty").val(qty_val);
+                // e.preventDefault();
+            // });
+        // });
+        jQuery(".btn-qty").each(function(){
+            jQuery(this).on('click',function(e){
+				e.preventDefault();
+				var to_add = parseInt(jQuery(this).data('qty'));
+				var qty_input = jQuery(this).parent().find('input.qty');
+                var qty_val = parseInt(jQuery(qty_input).val());
+				if(qty_val < 0 && qty_input == 1)
+					return;
+                var final_qty = (qty_val+to_add) > 1 ?  qty_val+to_add : 1;
+                jQuery(qty_input).val(final_qty);
+				jQuery(qty_input).parents('form').submit();
+            });
+        });
+		jQuery('#tab-side-container').easytabs({
+			animate: false,
+			tabActiveClass: "selected-tab",
+			panelActiveClass: "displayed"
+		}); 
+    });
+</script>

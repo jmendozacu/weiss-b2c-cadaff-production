@@ -1,0 +1,54 @@
+<?php
+/**
+ * Weiss SiteSwitcher overheader switcher template file
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Jérôme Carrot <jecar@smile.fr>
+ * @copyright  Smile 2015
+ * @var        $this Weiss_SiteSwitcher_Block_Switcher
+ */
+?>
+  <?php $site = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>
+<?php /*if ($this->isVisible()):*/ ?>
+
+<div id="site-switcher" class="site-switcher-container site-switcher-header main-container col1-layout">
+    <div class="container main">
+        <div class="inner-container">
+
+            <div class="left reinsurance-top hide-below-768">
+                <ul class="left left-list">                   
+                    <li ><a href="<?php echo $site; ?>la-maison/livraison-chocolats-weiss/#tarifs-de-livraison "><i class="header-top-icon icon-delivery"></i><?php echo $this->__('Livraison offerte en') ?> <br class="break-line" /><?php echo $this->__("France dès 35€ d'achat") ?></a></li>
+                    <li class="hide-below-1280"><a href="<?php echo $site; ?>la-maison/livraison-chocolats-weiss/#details"><i class="header-top-icon icon-multishipping"></i><?php echo $this->__("Livraison en 48h") ?></a></li>                    
+                    <li class="hide-below-960"><a href="<?php echo $site; ?>la-maison/le-chocolat-selon-weiss/"><i class="header-top-icon icon-quote"></i><?php echo $this->__("Fabrication française")?></a></li>
+<!--                    <li><span><i class="header-top-icon icon-phone"></i>04 77 49 41 42</span></li>-->
+                </ul>
+            </div>
+            <div class="right site-switcher-element">
+                <div class="right switcher-selector" >
+                        <span class="switcher-label">
+                            <?php echo str_replace('...','',$this->getSelectorLabel()); ?>
+<!--                            <span class="ic ic-down"></span>-->
+<!--                            <span class="ic ic-up"></span>-->
+                            <span class="switcher-arrow"></span>
+                            </span>
+                    <ul class="switcher-list">
+                        <?php foreach ($this->getSelectorOptions() as $option): ?>
+                            <li>
+                                <a href="<?php echo $option['value'] ?>">
+                                    <i class="ic ic-right"></i>
+                                    <span><?php echo $option['label'] ?></span>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php //endif; ?>
+
+

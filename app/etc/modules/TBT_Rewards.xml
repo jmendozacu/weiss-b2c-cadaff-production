@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TBT_Rewards>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <TBT_Common/>
+                <Mage_Rule/>
+                <Mage_Catalog/>
+                <Mage_Sales/>
+                <Mage_Customer/>
+				<Magebright_Multicoupons/>
+            </depends>
+        </TBT_Rewards>
+    </modules>
+</config>

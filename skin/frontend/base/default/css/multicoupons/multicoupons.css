@@ -1,0 +1,4 @@
+.multiple_coupon_container .item { display: inline-block; width: 100%; }
+.multiple_coupon_container .item .coupon-title { float: left; }
+.multiple_coupon_container .item .coupon-cancle { float: right; }
+.multiple_coupon_container h2 {margin-top:10px;}

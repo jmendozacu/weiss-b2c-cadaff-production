@@ -1,0 +1,51 @@
+<?php
+ /**
+ * GoMage LightCheckout Extension
+ *
+ * @category     Extension
+ * @copyright    Copyright (c) 2010-2015 GoMage (http://www.gomage.com)
+ * @author       GoMage
+ * @license      http://www.gomage.com/license-agreement/  Single domain license
+ * @terms of use http://www.gomage.com/terms-of-use
+ * @version      Release: 5.9
+ * @since        Class available since Release 1.0
+ */
+?>
+<?php if(Mage::helper('gomage_deliverydate')->isEnableDeliveryDate()): ?>
+    <h2 class="glc-title"><span id="glc-deliverydate-number" class="glc-number"><?php echo (Mage::getSingleton('checkout/session')->getShippingSameAsBilling() ? '3' : '4'); ?></span><strong><?php echo $this->__('Time of Delivery');?></strong></h2>
+    <div class="glc-col">
+    <?php if (Mage::getStoreConfig('gomage_checkout/deliverydate/display_datetext') && Mage::getStoreConfig('gomage_checkout/deliverydate/datetext')): ?>
+            <div class="delivery-date-text"><?php echo Mage::getStoreConfig('gomage_checkout/deliverydate/datetext') ?></div><br />
+        <?php endif; ?>
+        <div class="delivery-date">
+            <?php foreach($this->getFields() as $field): ?>
+                <div class="delivery-date-<?php echo $field->getId()?> left">
+                    <?php echo $field->getHtml() ?>
+                </div>
+            <?php endforeach?>
+            <input id="dilivery-date-customeroffset-input" name="deliverydate[customer_offset]" type="hidden" class="hidden" />
+        </div><br />
+        <div class="customer-comment">
+            <label for="customer_comment"><?php echo $this->__('Je saisis mon message cadeau qui sera inséré dans mon colis :') ?></label>
+            <textarea id="customer_comment" name="customer_comment" cols="30"
+                      rows="5"><?php echo $this->getCustomerComment(); ?></textarea>
+        </div>
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var _date	= new Date();
+        var offset	= (_date.getTimezoneOffset()*60);
+        $('dilivery-date-customeroffset-input').value = offset;
+        var glc_dilivery_date_shipping_methods = <?php echo Zend_Json::encode(Mage::helper('gomage_deliverydate')->getShippingMethods()) ?>;
+        jQuery(document).ready(function(){
+            jQuery('#delivery_date').after("<br/><span class='lc-after-date-str'>Ou je souhaite offrir mes chocolats et je choisis la date de livraison </span>");
+            if($('s_method_owebiashipping1_chronopost_france_semaine').checked == false){
+                jQuery('#s_method_owebiashipping1_chronopost_france_semaine').click();
+            };
+            if($('billing_use_for_shipping_yes').checked == true){
+                jQuery('#billing_use_for_shipping_yes').click();
+            };
+        });
+    //]]>
+    </script>
+<?php endif; ?>

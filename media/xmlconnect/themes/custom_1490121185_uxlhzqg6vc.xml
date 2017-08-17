@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<theme><manifest translate="label" module="xmlconnect">
+            <name>custom_1490121185_uxlhzqg6vc</name>
+            <label>weiss</label>
+            <version>1.0</version>
+            <requires>1.4.0.2</requires>
+    </manifest><configuration><native><navigationBar><tintColor>#C9B9D8</tintColor></navigationBar><body><primaryColor>#FFFFFF</primaryColor><secondaryColor>#FFFFFF</secondaryColor><backgroundColor>#FFFFFF</backgroundColor><scrollBackgroundColor>#FFFFFF</scrollBackgroundColor></body><categoryItem><tintColor>#735E92</tintColor><backgroundColor>#FFFFFF</backgroundColor></categoryItem><itemActions><relatedProductBackgroundColor>#FFFFFF</relatedProductBackgroundColor></itemActions></native><extra><fontColors><header>#735E92</header><primary>#54565A</primary><secondary>#54565A</secondary><price>#54565A</price></fontColors></extra></configuration></theme>

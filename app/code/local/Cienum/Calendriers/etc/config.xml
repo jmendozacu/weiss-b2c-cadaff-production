@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Cienum_Calendriers>
+            <version>0.0.1</version>
+        </Cienum_Calendriers>
+    </modules>
+    <global>
+        <helpers>
+            <calendriers>
+                <class>Cienum_Calendriers_Helper</class>
+            </calendriers>  
+        </helpers>
+		<blocks>
+            <calendriers>
+                <class>Cienum_Calendriers_Block</class>
+            </calendriers>
+        </blocks>
+    </global>
+	<admin>
+        <routers>
+            <calendriers>
+                <use>admin</use>
+                <args>
+                    <module>Cienum_Calendriers</module>
+                    <frontName>calendriers</frontName>
+                </args>
+            </calendriers>
+        </routers>
+    </admin>
+	<adminhtml>
+		<layout>
+			<updates>
+				<calendriers>
+					<file>calendriers.xml</file>
+				</calendriers>
+			</updates>
+		</layout>
+	</adminhtml>
+</config>

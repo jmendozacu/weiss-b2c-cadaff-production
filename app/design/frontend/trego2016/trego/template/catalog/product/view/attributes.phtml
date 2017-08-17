@@ -1,0 +1,36 @@
+<?php
+    $_helper = $this->helper('catalog/output');
+    $_product = $this->getProduct()
+?>
+<?php if($_additional = $this->getAdditionalData()): ?>
+
+    <?php
+    $new_additional = array();
+    foreach ($_additional as $n_key => $n_val){
+        if($n_key == 'weiss_ingredients' || $n_key == 'weiss_allergenes' || $n_key == 'weiss_valeurs_nutritionnelles'){
+            $new_additional[$n_key] = $n_val;
+        }
+    }
+//        echo "<pre>";
+//            print_r($new_additional);
+//        echo "</pre>";
+    ?>
+<?php foreach ($new_additional as $_data): ?>
+<div class="akordeon-item">
+<div class="akordeon-item-head">
+    <div class="akordeon-item-head-container">
+        <div class="akordeon-heading">
+            <span class="akordeon-heading"><?php echo $this->htmlEscape($this->__($_data['label'])) ?></span>
+        </div>
+    </div>
+</div>
+<div class="akordeon-item-body">
+    <div class="akordeon-item-content">
+<?php echo  $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
+    </div>
+</div>
+    </div>
+    <?php endforeach; ?>
+<!--    <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>-->
+<?php endif;?>
+

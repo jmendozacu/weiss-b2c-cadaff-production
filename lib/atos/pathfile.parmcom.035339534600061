@@ -1,0 +1,35 @@
+#########################################################################
+#
+# Pathfile
+#
+# Liste fichiers parametres utilisés par le module de paiement
+#
+#########################################################################
+
+# ------------------------------------------------------------------------
+# Chemin vers le répertoire des logos depuis le web alias
+# Exemple pour le répertoire www.merchant.com/cyberplus/payment/logo/
+# indiquer:
+# ------------------------------------------------------------------------
+#
+D_LOGO!http://weissv2.ntic.fr/media/atos/!
+#
+#------------------------------------------------------------------------
+#  Fichiers parametres lies a l'api cyberplus paiement
+#------------------------------------------------------------------------
+#
+# Certificat du commercant
+#
+F_CERTIFICATE!/var/www/atos_magento/certif!
+#
+# Fichier paramètre commercant
+#
+F_PARAM!/var/www/atos_magento/parmcom!
+#
+# Fichier des paramètres communs
+#
+F_DEFAULT!/var/www/atos_magento/pathfile.parmcom.035339534600061!
+#
+# --------------------------------------------------------------------------
+# End of file
+# --------------------------------------------------------------------------

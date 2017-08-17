@@ -1,0 +1,65 @@
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<!--Start  Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MCJ26C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--End  Google Tag Manager -->
+<div class="overlay-top"></div>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col2-left-layout">
+            <div class="main">
+<!-- Add cart and user icon -->
+                <?php $count = $this->helper('checkout/cart')->getSummaryCount(); ?>
+                    <div class="cart-user-links">
+                        <div class="cart-link">
+                            <a href="<?php echo Mage::helper('checkout/cart')->getCartUrl(); ?>">
+                                <span><?php echo $this->__('mon panier'); ?></span>
+                            </a>
+                            
+                            <?php if(intval($count) > 0) : ?><span class="total-cart-item"><?php  echo $count ?></span><?php endif; ?>
+                        </div>
+                        <div class="user-link">
+                            <a href="<?php echo Mage::getUrl('customer/account'); ?>">
+                                <span><?php echo $this->__('mon compte'); ?></span>
+                            </a>
+                           
+                        </div>
+                        
+                        <?php if(Mage::getSingleton('customer/session')->isLoggedIn()) : ?>
+                        <span class="welcome-user">
+                            <h4><?php echo $this->__('Bienvenue : '); ?> <?php echo  Mage::getSingleton('customer/session')->getCustomer()->getName(); ?></h4>
+                            <a title="<?php echo $this->__('Logout'); ?>" href="/customer/account/logout/"><?php echo $this->__('Logout'); ?></a>
+                            </span>
+                        <?php endif; ?>                                                                     
+                        
+                    </div>
+                
+                
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-precontent"><?php echo $this->getChildHtml('precontents') ?></div>
+                <div class="col-main">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+                <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Cienum_Checkout>
+            <version>0.0.1</version>
+        </Cienum_Checkout>
+    </modules>
+    <global>
+		<models>
+			<checkout>
+				<rewrite>
+					<type_onepage>Cienum_Checkout_Model_Type_Onepage</type_onepage>
+				</rewrite>
+			</checkout>
+		</models>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <onepage>Cienum_Checkout_Block_Onepage</onepage>
+                    <onepage_shipping>Cienum_Checkout_Block_Onepage_Shipping</onepage_shipping>
+                    <onepage_billing>Cienum_Checkout_Block_Onepage_Billing</onepage_billing>
+                </rewrite>
+            </checkout>
+        </blocks>
+		<fieldsets>
+    		<sales_convert_quote>
+    			<gomage_deliverydate><to_order>gomage_deliverydate</to_order></gomage_deliverydate>
+    			<gomage_deliverydate_formated><to_order>gomage_deliverydate_formated</to_order></gomage_deliverydate_formated>
+    		</sales_convert_quote>
+    	</fieldsets>
+    </global>
+    <frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <Cienum_Checkout before="Mage_Checkout">Cienum_Checkout</Cienum_Checkout>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
+</config>

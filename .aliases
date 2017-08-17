@@ -1,0 +1,12 @@
+alias dir='ls -l'
+alias la='ls -a'
+alias lm='ls | more'
+alias llm='ls -l | more'
+alias lla='ls -la'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias bye=exit
+alias cls=clear
+alias vt220='export TERM=vt220'
+alias info='more /etc/passwd | grep -i'

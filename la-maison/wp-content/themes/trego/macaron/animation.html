@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="http://www.chocolat-weiss.fr/skin/frontend/weiss/weiss_new/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.chocolat-weiss.fr/skin/frontend/weiss/weiss_new/favicon.ico" type="image/x-icon" />
+<title>Macarons Chocolat Weiss</title>
+<style type="text/css">
+#page{
+	background-color:#000;
+		position: relative; /* on positionne le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+ }
+
+#header{
+	text-align:center;
+	margin-top:20px;
+}
+	
+#logo{
+	position:absolute;
+	top:5px;
+	float:left;
+}
+
+#master_titre{
+margin:auto;
+}
+
+#master_titre h1{
+	color:#b893b9;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.ville {
+	font-size:14px;
+	text-align:left;
+	float:left;
+	padding:0 17px 0px 10px;
+}
+
+#footer{
+		width:980px;
+	margin-bottom:10px;
+	margin-top:10px;	
+}
+#footer .footer_text{
+	color:#fff;
+	font-size: 16px;
+	text-align:center;
+	width:980px;
+	margin:auto;}
+	
+#footer .ville h2{
+		color:#fff;
+			}
+			
+#footer .ville h3{
+		color:#b893b9;
+padding:0;}
+			
+#footer .ville{
+	color:#ffffff;
+	float:left;
+}
+#footer .ville ul li{
+	color:#fff;
+	   	list-style: none;
+}
+
+#adresse ul li{
+	
+	list-style:none;
+	
+	color:fff;
+	padding: 0 15px 10px 0;
+	float:left;
+
+}
+
+#adresse ul {
+	margin:auto;
+		text-align:center;
+		width:980px;
+}
+
+.flip_container {
+				width: 450px;
+				height: 450px;
+				margin: -20px auto 10px;
+				border: none;       }
+
+</style>
+ <script type="text/javascript" src="swfobject.js"></script>
+</head>
+<body style="background-color:#000; margin:0;" height="700px">
+<div id="page">
+	/*debut header*/
+    <div id="header">
+    	<div id="logo"><img src="http://www.weiss.fr/_img/macaron/images/logo_macarons.jpg" style="float:left; margin-top:0px;" height="111" width="150" alt""/></div>
+        <div id="master_titre"><h1>Les macarons par Weiss</h1></div>
+    </div>
+    /* fin header*/
+      	<div class="flip_container">
+        	<div id="flip1">
+		</div>
+		</div>
+<script type="text/javascript">
+	swfobject.embedSWF("Flip.swf", "flip1", "450", "450", "5.0.0", false, {xmlfile:"default.xml", loaderColor:"0xCCCCCC"});
+</script>
+      
+  <div id="footer"><img alt="" src="http://www.chocolat-weiss.fr/skin/frontend/weiss/weiss/images/points.png" height="28px" width="987px" align="center">
+  	 <div class="footer_text"><h2>Découvrez en boutique les petits coffrets de 9, 18 ou 27 macarons Weiss, <br />
+     ainsi que la pyramide de 40 macarons pour vos tables de fête ! </h2>
+     </div>
+     <div id="adresse" width="987px">
+  		
+        <ul>
+        
+        <li class="ville">
+    	<h3>Saint Etienne</h3>
+       1, rue Eugène Weiss<br />
+       8, rue du Général Foy
+       </li>
+       <li class="ville">
+        <h3>Lyon</h3>             
+       50, rue de Brest</li>
+       
+         <li class="ville">
+        <h3>Paris VI </h3>
+        62, rue de Seine
+        </li>
+        <li class="ville">
+       <h3>Clermont-Ferrand</h3>
+         2, Rue Ernest Renan
+        </li>
+       <li class="ville">
+        <h3>Lille</h3>
+        42, rue Lepelletier
+        </li>
+         <li class="ville">
+        <h3>Le Puy <br />
+        </h3>
+        33 Bld Maréchal Fayolle
+        </li>
+      	<li class="ville">
+        <h3>Strasbourg</h3> 7, rue des orfèvres
+        </li>
+        </ul>
+	</div>
+	 </div>
+</div>
+</body>
+</html>

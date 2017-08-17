@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Weiss_SiteSwitcher>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Weiss_SiteSwitcher>
+    </modules>
+</config>

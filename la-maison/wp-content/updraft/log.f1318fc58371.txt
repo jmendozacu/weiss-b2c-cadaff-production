@@ -1,0 +1,12 @@
+0376.911 (1) Opened log file at time: Tue, 21 Mar 2017 10:13:26 +0000 on http://www.chocolat-weiss.fr/la-maison
+0376.912 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.35 WP: 4.7.3 PHP: 5.5.37 (fpm-fcgi, Linux weissweb.cienum.fr 2.6.32-431.5.1.el6.x86_64 #1 SMP Wed Feb 12 00:41:43 UTC 2014 x86_64) MySQL: 5.5.34 WPLANG: fr_FR Server: Apache/2.2.15 (CentOS) safe_mode: 0 max_execution_time: 900 memory_limit: 1000M (used: 33M | 33.8M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0376.916 (1) Free space on disk containing Updraft's temporary directory: 95930.2 MB
+0376.917 (1) It looks like WordPress's scheduler has started multiple instances of this resumption
+0376.920 (1) Terminate: check-in exists with activity within the last 30 seconds (time_mod=1490091206, time_now=1490091206.9, diff=0, size=n/a). This likely means that another UpdraftPlus run is at work; so we will exit.
+0376.921 (1) Rescheduling resumption 2: moving to 300 seconds from now (1490091506)
+0376.923 (1) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 0 = 300
+0813.200 (2) Opened log file at time: Tue, 21 Mar 2017 10:20:43 +0000 on http://www.chocolat-weiss.fr/la-maison
+0813.249 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.35 WP: 4.7.3 PHP: 5.5.37 (fpm-fcgi, Linux weissweb.cienum.fr 2.6.32-431.5.1.el6.x86_64 #1 SMP Wed Feb 12 00:41:43 UTC 2014 x86_64) MySQL: 5.5.34 WPLANG: fr_FR Server: Apache/2.2.15 (CentOS) safe_mode: 0 max_execution_time: 900 memory_limit: 1000M (used: 23.5M | 24M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0813.251 (2) Free space on disk containing Updraft's temporary directory: 95928.1 MB
+0813.253 (2) Backup run: resumption=2, nonce=f1318fc58371, begun at=1490090829 (814s ago), job type=backup, previous check-in=0s
+0813.253 (2) Terminate: This backup job is already finished (1).

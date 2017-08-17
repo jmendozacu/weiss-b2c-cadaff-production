@@ -1,0 +1,5 @@
+<script type="text/javascript">
+    //<![CDATA[
+    document.write('<div class="rewardssocial-twitter-tweet-wrapper rewardssocial-rewardable"><a href="https://twitter.com/share" class="twitter-share-button rewardssocial-rewardable" data-text="<?php echo addslashes($this->getTweet()); ?>" <?php echo ($this->getTweetedUrl()) ? "data-url=" . $this->getTweetedUrl() : "" ?> <?php echo (!$this->isCounterEnabled()) ? "data-count=\"none\"" : "" ?>><?php echo $this->__("Tweet") ?></a></div>');
+    //]]>
+</script>

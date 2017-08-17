@@ -1,0 +1,318 @@
+﻿
+/**
+ * Weiss SiteSwitcher CSS style sheet
+ *
+ * @category   Weiss
+ * @package    Weiss_SiteSwitcher
+ * @author     Florian Renel <frenel@altima-agency.com>
+ * @copyright  Altima 2016
+ */
+
+.site-switcher-container {
+    color: #ffffff;
+    font-family: Raleway, georgia, serif;
+	/*width:100%;
+	z-index:90000;
+	position:relative;*/
+}
+
+.site-switcher-header {
+    background-color: #54565a;
+    height: 36px;
+}
+.reinsurance-top ul {
+    list-style-type: none;
+    display: table;
+
+}
+.reinsurance-top ul li{
+    display: table-cell;
+    font-size: 12px;
+    border-left: 1px solid #cacaca;
+    line-height: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.reinsurance-top ul li a,
+.reinsurance-top ul li > span {
+    width: 100%;
+    display: inline-block;
+    padding: 0 29px;
+    text-align: left;
+    color: white;
+}
+.reinsurance-top ul li a .header-top-icon,
+.reinsurance-top ul li > span .header-top-icon {
+    display: inline-block;
+    margin-right: 11px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.reinsurance-top .icon-quote, .reinsurance-top .icon-delivery,.reinsurance-top .icon-multishipping, .reinsurance-top .icon-phone{
+    background: url(../images/sprites.png) no-repeat;
+}
+
+.reinsurance-top .icon-quote{
+    background-position: -151px 0;
+    width: 12px;
+    height: 15px;
+}
+
+.reinsurance-top .icon-delivery{
+    background-position: -99px 0;
+    width: 24px;
+    height: 15px;
+}
+
+.reinsurance-top .icon-multishipping{
+    background-position: -51px 0;
+    width: 18px;
+    height: 15px;
+}
+
+.reinsurance-top .icon-phone{
+    background-position: -4px -2px ;
+    width: 9px;
+    height: 15px;
+}
+
+.reinsurance-top ul li:last-child {
+    border-right: 1px solid #cacaca;
+}
+.site-switcher-footer {
+    display: none;
+}
+
+
+
+.site-switcher-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-switcher-container a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.site-switcher-container .title {
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+.site-switcher-container .title h1 {
+    display: inline;
+    line-height: 46px;
+
+    font-size: 19px;
+    margin: 0;
+}
+
+.site-switcher-container .footer-text {
+    font-size: 13px;
+    line-height: 70px;
+    color: #879094;
+}
+
+.site-switcher-element {
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+
+.site-switcher-element .switcher-selector {
+    display: inline-block;
+    background:#735e92;
+    cursor: pointer;
+    position: relative;
+    z-index: 300;
+}
+.site-switcher-element .switcher-label {
+    padding: 0 0 0 29px;
+	color: white;
+}
+.site-switcher-element .switcher-label .ic {
+    background-color: white;
+    color: #735e92;
+    margin-left: 10px;
+    margin-right: 29px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+.site-switcher-element .switcher-label .ic:before {
+    display: block;
+    padding-top: 2px;
+}
+.site-switcher-element .switcher-selector .ic-up {
+    display: none;
+    padding-top: 0px;
+}
+.site-switcher-element .switcher-selector.active .ic-up {
+    display: inline-block;
+}
+.site-switcher-element .switcher-selector.active .ic-down {
+    display: none;
+}
+.switcher-list {
+    width: 100%;
+    display: none;
+    background: #f7f7f7;
+    position: absolute;
+}
+.site-switcher-element .switcher-selector.active .switcher-list {
+    display: block;
+}
+
+.switcher-list li:first-child {
+
+}
+.switcher-list li {
+    text-align: left;
+    border: 1px solid #cacaca;
+    border-top: none;
+}
+.switcher-list li a {
+    color: #54565a;
+    display: block;
+    width: 100%;
+}
+
+.switcher-list li a:hover {
+    color: #54565a;
+    text-decoration: none;
+}
+.switcher-list li a:hover span {
+    text-decoration: underline;
+}
+.switcher-list li a .ic {
+    margin-left: 28px;
+    margin-right: 2px;
+    color: #c5afd5;
+}
+
+
+/*
+ * Media query for width < 1280
+ */
+
+@media (max-width: 1279px) {
+
+    .site-switcher-container .title h1 {
+        font-size: 17px;
+    }
+
+    .site-switcher-container .weiss-arrow {
+        margin-left: 12px;
+    }
+
+}
+
+/*
+ * Media query for width < 960
+ */
+
+@media (max-width: 959px) {
+
+    .site-switcher-container .weiss-arrow {
+        margin-left: 0;
+        background-position: 0 -25px;
+        top: -6px;
+    }
+
+    .site-switcher-container .title {
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    .site-switcher-container .title h1 {
+        line-height: 32px;
+    }
+
+    .site-switcher-header .right-list {
+        margin-bottom: 1px;
+    }
+
+    .site-switcher-header .right-list li .inner {
+        line-height: 30px;
+        margin-bottom: 6px;
+    }
+
+    .site-switcher-header .right-list select {
+        position: relative;
+        top: -2px;
+    }
+}
+
+/*
+ * Media query for width < 768
+ */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #site-switcher {
+        background: #735e92;
+        height: 38px;
+    }
+    .site-switcher-container .site-switcher-element {
+        float: none !important;
+        width: 100%;
+        display: block;
+        line-height: 38px;
+        font-size: 16px;
+    }
+    .site-switcher-container .switcher-selector {
+        float: none !important;
+    }
+}
+@media only screen and (min-width: 768px){
+    .mobile-collapsible .block-title {
+        cursor: default;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #site-switcher .inner-container {
+        padding: 0;
+    }
+    .reinsurance-top ul li,
+    .reinsurance-top ul li a .header-top-icon,
+    .reinsurance-top ul li span .header-top-icon {
+        line-height: 15px;
+    }
+
+}
+/*
+ * Restate some ultimo/weiss CSS rules to make the site switcher module independant
+ */
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+.site-switcher-container .container {
+
+
+}
+
+.site-switcher-container .inner-container {
+    padding: 0 12px;
+}
+
+.inner-container::before,
+.inner-container::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+
+.inner-container::after {
+    clear: both;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}

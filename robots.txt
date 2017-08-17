@@ -1,0 +1,87 @@
+User-agent: *
+Allow: /
+#Disallow: /
+#######################################
+############### SITEMAP ###############
+#######################################
+Sitemap: http://www.chocolat-weiss.fr/sitemap.xml
+#######################################
+################ PAGES ################
+#######################################
+Disallow: /cookie
+Disallow: /conditions-generales-de-vente.html 
+#######################################
+##### MAGENTO DIRECTORIES & FILES #####
+#######################################
+##### Directories #####
+Disallow: /404/
+Disallow: /app/
+Disallow: /cgi-bin/
+Disallow: /downloader/
+Disallow: /includes/
+Disallow: /lib/
+Disallow: /magento/
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /stats/
+Disallow: /var/
+Disallow: /_img/
+Disallow: /catalogue/
+Disallow: /cinewsletter/
+
+
+##### Paths (clean URLs) #####
+Disallow: /index.php/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalog/product/gallery/
+Disallow: /catalog/product/upload/
+Disallow: /catalogsearch/
+Disallow: /checkout/
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /poll/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /tag/
+Disallow: /wishlist/
+Disallow: /la-maison/blocks/
+##### Files #####
+Disallow: /cron.php
+Disallow: /cron.sh
+Disallow: /error_log
+Disallow: /install.php
+Disallow: /LICENSE.html
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /STATUS.txt
+#######################################
+######## QUERY STRING BLOCKER #########
+#######################################
+#Uncomment if your site is a brand new un-cached site and all query strings.
+Disallow: /*?
+#######################################
+#### WORDPRESS DIRECTORIES & FILES ####
+#######################################
+##### Uncomment if using Wordpress in subdirectory #####
+Disallow: /la-maison/wp-content/plugins/
+Disallow: /la-maison/wp-content/themes/
+Disallow: /la-maison/wp-content/upgrade/
+Disallow: /la-maison/wp-admin/
+Disallow: /la-maison/wp-includes/
+#######################################
+########### SCREAMING FROG ############
+#######################################
+User-agent: Screaming Frog SEO Spider
+Allow: /
+Disallow: /*.gif$
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.bmp$
+Disallow: /*.xml$
+Disallow: /*.css$
+Disallow: /*.js$

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    MessageBusiness
+ * @package     MessageBusiness_ContactsSync
+ * @author 		Sinabs - http://www.sinabs.fr
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+	<sections>
+		<mb_contactssync translate="label" module="contactssync">
+			<label>Message Business</label>
+			<tab>customer</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>101</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<account translate="label">
+					<label>Credentials of your account on Message Business</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<account_number translate="label">
+							<label>Account number</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</account_number>
+						<apikey translate="label">
+							<label>Account API key</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</apikey>
+					</fields>
+				</account>
+				<sync translate="label">
+					<label>Import contacts between databases</label>
+					<frontend_type>text</frontend_type>
+					<frontend_model>contactssync/system_config_form_fieldset_import</frontend_model>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<accept_interface_level translate="label">
+							<label>Imported Datas</label>
+							<frontend_type>select</frontend_type>
+							<source_model>contactssync/system_config_source_synchro_type</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</accept_interface_level>
+						<full_extract translate="label,comment">
+							<label>Full Importation</label>
+							<comment><![CDATA[Reimport all data. Be careful, this import may take some extra time (By default, after the initial import, we import only the modified data).]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</full_extract>
+						<accept_interface_option translate="label">
+							<label>Updating Magento Newsletter Opt-in</label>
+							<comment><![CDATA[Update newsletter subscription et Partners Optin between Message Business Account and Magento site (recommended).]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</accept_interface_option>
+						<run_sync translate="label,comment">
+							<frontend_type>button</frontend_type>
+							<frontend_model>contactssync/adminhtml_sync_button</frontend_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</run_sync>
+					</fields>
+				</sync>
+				<newsletter translate="label">
+                    <label>Newsletter Subscription Form</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <subscription>
+                            <frontend_type>select</frontend_type>
+                            <source_model>contactssync/system_config_source_newsletter_subscription</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </subscription>
+                    </fields>
+                </newsletter>
+				<infos translate="label">
+					<label>At your service</label>
+					<frontend_type>text</frontend_type>
+					<frontend_model>contactssync/system_config_form_fieldset_service</frontend_model>
+					<sort_order>40</sort_order>
+					<show_in_default>1</show_in_default>
+            		<show_in_website>1</show_in_website>
+            		<show_in_store>1</show_in_store>
+				</infos>
+			</groups>
+		</mb_contactssync>
+	</sections>
+</config>

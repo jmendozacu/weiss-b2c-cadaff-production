@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    MessageBusiness
+ * @package     MessageBusiness_ContactsSync
+ * @author 		Sinabs - http://www.sinabs.fr
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+	<modules>
+		<MessageBusiness_ContactsSync>
+			<version>1.0</version>
+		</MessageBusiness_ContactsSync>
+	</modules>
+	<global>
+       <resources>
+         <contactssync_setup>
+            <setup>
+               <module>MessageBusiness_ContactsSync</module>
+            </setup>
+            <connection>
+               <use>core_setup</use>
+            </connection>
+         </contactssync_setup>
+        </resources>
+		<models>
+			<contactssync>
+				<class>MessageBusiness_ContactsSync_Model</class>
+			</contactssync>
+		</models>
+		<helpers>
+			<contactssync>
+				<class>MessageBusiness_ContactsSync_Helper</class>
+			</contactssync>
+		</helpers>
+		<blocks>
+			<contactssync>
+				<class>MessageBusiness_ContactsSync_Block</class>
+			</contactssync>
+		</blocks>
+		<events>
+			<admin_system_config_changed_section_mb_contactssync>
+				<observers>
+					<contactssync>
+						<type>singleton</type>
+						<class>contactssync/observer</class>
+						<method>saveConfig</method>
+					</contactssync>
+				</observers>
+			</admin_system_config_changed_section_mb_contactssync>
+			<newsletter_subscriber_save_before>
+				<observers>
+					<contactssync_subscriber>
+						<type>singleton</type>
+						<class>contactssync/observer</class>
+						<method>newsletterSubscriberChange</method>
+					</contactssync_subscriber>
+				</observers>
+			</newsletter_subscriber_save_before>
+		</events>
+	</global>
+	<default>
+		<contactssync>
+			<sync>
+				<sync_type>1</sync_type>
+				<sync_mode>2</sync_mode>
+				<optin_activate>1</optin_activate>
+			</sync>
+		</contactssync>
+	</default>
+	<frontend>
+		<routers>
+			<contactssync>
+				<use>standard</use>
+				<args>
+					<module>MessageBusiness_ContactsSync</module>
+					<frontName>messagebusiness</frontName>
+				</args>
+			</contactssync>
+		</routers>
+	</frontend>
+	<admin>
+		<routers>
+			<contactssync_admin>
+				<use>admin</use>
+				<args>
+					<module>MessageBusiness_ContactsSync_Adminhtml</module>
+					<frontName>adminmb</frontName>
+				</args>
+			</contactssync_admin>
+		</routers>
+	</admin>
+	<adminhtml>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<mb_contactssync translate="title" module="contactssync">
+											<title>Section Message Business</title>
+										</mb_contactssync>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<translate>
+			<modules>
+				<MessageBusiness_ContactsSync>
+					<files>
+						<default>MessageBusiness_ContactsSync.csv</default>
+					</files>
+				</MessageBusiness_ContactsSync>
+			</modules>
+		</translate>
+	</adminhtml>
+</config>
